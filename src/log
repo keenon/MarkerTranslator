@@ -1,0 +1,3511 @@
+2024-01-18 17:17:29,022 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:17:29,022 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:17:29,022 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:17:29,022 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:17:29,022 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:17:29,022 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:17:29,022 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:17:29,022 Initializing wandb...
+2024-01-18 17:17:30,437 ## Loading datasets with skeletons:
+2024-01-18 17:18:53,796 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:18:53,796 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:18:53,797 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:18:53,797 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:18:53,797 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:18:53,797 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:18:53,797 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:18:53,797 ## Loading datasets with skeletons:
+2024-01-18 17:20:03,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:20:03,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:20:03,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:20:03,332 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:20:03,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:20:03,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:20:03,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:20:03,332 ## Loading datasets with skeletons:
+2024-01-18 17:42:20,691 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:42:20,692 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:42:20,692 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:42:20,692 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:42:20,692 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:42:20,692 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:42:20,692 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:42:20,692 ## Loading datasets with skeletons:
+2024-01-18 17:50:31,518 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:50:31,518 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:50:31,519 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:50:31,519 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:50:31,519 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:50:31,519 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:50:31,519 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:50:31,519 ## Loading datasets with skeletons:
+2024-01-18 17:51:22,291 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:51:22,291 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:51:22,292 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:51:22,292 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:51:22,292 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:51:22,292 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:51:22,292 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:51:22,292 ## Loading datasets with skeletons:
+2024-01-18 17:51:23,506 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 17:53:25,009 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:25,010 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:25,010 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:25,010 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:53:25,010 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:25,010 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:25,010 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:25,010 ## Loading datasets with skeletons:
+2024-01-18 17:53:26,217 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 17:53:46,275 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:46,275 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:46,275 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:46,275 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:53:46,275 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:46,275 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:46,275 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:53:46,275 ## Loading datasets with skeletons:
+2024-01-18 17:53:47,556 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 17:56:36,769 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:56:36,770 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:56:36,770 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:56:36,770 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:56:36,770 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:56:36,770 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:56:36,770 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:56:36,770 ## Loading datasets with skeletons:
+2024-01-18 17:56:37,930 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 17:58:39,320 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:58:39,321 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:58:39,321 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:58:39,321 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:58:39,321 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:58:39,321 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:58:39,321 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:58:39,321 ## Loading datasets with skeletons:
+2024-01-18 17:58:40,459 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 17:59:20,211 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:59:20,212 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:59:20,213 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:59:20,213 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 17:59:20,213 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:59:20,213 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:59:20,213 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 17:59:20,213 ## Loading datasets with skeletons:
+2024-01-18 17:59:21,399 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:00:21,886 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:00:21,887 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:00:21,887 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:00:21,887 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:00:21,887 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:00:21,887 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:00:21,887 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:00:21,887 ## Loading datasets with skeletons:
+2024-01-18 18:00:23,086 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:01:50,498 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:01:50,499 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:01:50,499 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:01:50,499 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:01:50,499 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:01:50,499 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:01:50,499 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:01:50,499 ## Loading datasets with skeletons:
+2024-01-18 18:01:51,632 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:02:17,242 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:02:17,242 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:02:17,242 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:02:17,242 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:02:17,242 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:02:17,242 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:02:17,242 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:02:17,242 ## Loading datasets with skeletons:
+2024-01-18 18:02:18,448 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:04:16,615 Dev Set Evaluation: 
+2024-01-18 18:04:36,312   - Batch 100/4184
+2024-01-18 18:04:51,555   - Batch 200/4184
+2024-01-18 18:05:07,076   - Batch 300/4184
+2024-01-18 18:05:22,176   - Batch 400/4184
+2024-01-18 18:05:36,866   - Batch 500/4184
+2024-01-18 18:05:51,830   - Batch 600/4184
+2024-01-18 18:06:07,369   - Batch 700/4184
+2024-01-18 18:06:23,372   - Batch 800/4184
+2024-01-18 18:06:39,828   - Batch 900/4184
+2024-01-18 18:06:54,893   - Batch 1000/4184
+2024-01-18 18:07:06,092 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:07:06,092 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:07:06,092 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:07:06,092 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:07:06,092 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:07:06,092 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:07:06,092 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:07:06,092 ## Loading datasets with skeletons:
+2024-01-18 18:07:07,267 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:09:09,493 Dev Set Evaluation: 
+2024-01-18 18:09:28,729   - Batch 100/4184
+2024-01-18 18:09:43,520   - Batch 200/4184
+2024-01-18 18:09:58,394   - Batch 300/4184
+2024-01-18 18:10:13,657   - Batch 400/4184
+2024-01-18 18:10:42,530 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:10:42,530 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:10:42,531 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:10:42,531 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:10:42,531 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:10:42,531 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:10:42,531 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:10:42,531 ## Loading datasets with skeletons:
+2024-01-18 18:10:43,685 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:11:02,435   - Batch 100/4184
+2024-01-18 18:11:17,214   - Batch 200/4184
+2024-01-18 18:11:37,143 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:11:37,143 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:11:37,143 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:11:37,143 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:11:37,143 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:11:37,143 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:11:37,143 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:11:37,143 Initializing wandb...
+2024-01-18 18:11:38,426 ## Loading datasets with skeletons:
+2024-01-18 18:11:39,578 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:11:58,666   - Batch 100/4184
+2024-01-18 18:12:13,493   - Batch 200/4184
+2024-01-18 18:12:28,308   - Batch 300/4184
+2024-01-18 18:12:43,653   - Batch 400/4184
+2024-01-18 18:13:03,560 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:13:03,560 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:13:03,560 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:13:03,560 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:13:03,561 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:13:03,561 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:13:03,561 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:13:03,561 Initializing wandb...
+2024-01-18 18:13:04,756 ## Loading datasets with skeletons:
+2024-01-18 18:13:05,922 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:13:26,199   - Batch 100/4184
+2024-01-18 18:13:42,344   - Batch 200/4184
+2024-01-18 18:13:58,802   - Batch 300/4184
+2024-01-18 18:14:14,825   - Batch 400/4184
+2024-01-18 18:14:30,991   - Batch 500/4184
+2024-01-18 18:15:43,620 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:15:43,620 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:15:43,620 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:15:43,620 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:15:43,620 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:15:43,620 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:15:43,620 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:15:43,620 Initializing wandb...
+2024-01-18 18:15:46,673 ## Loading datasets with skeletons:
+2024-01-18 18:15:47,925 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:16:42,510 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:16:42,510 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:16:42,510 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:16:42,510 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:16:42,510 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:16:42,510 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:16:42,510 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:16:42,510 ## Loading datasets with skeletons:
+2024-01-18 18:16:43,647 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:17:25,166 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:17:25,166 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:17:25,166 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:17:25,166 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:17:25,166 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:17:25,166 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:17:25,166 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:17:25,166 ## Loading datasets with skeletons:
+2024-01-18 18:17:26,294 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:18:05,227 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:18:05,227 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:18:05,228 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:18:05,228 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:18:05,228 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:18:05,228 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:18:05,228 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:18:05,228 ## Loading datasets with skeletons:
+2024-01-18 18:18:06,358 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:19:18,652 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:18,652 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:18,653 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:18,653 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:19:18,653 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:18,653 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:18,653 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:18,653 ## Loading datasets with skeletons:
+2024-01-18 18:19:19,831 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:19:35,027 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:35,027 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:35,027 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:35,027 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:19:35,027 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:35,028 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:35,028 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:19:35,028 ## Loading datasets with skeletons:
+2024-01-18 18:19:36,139 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=512, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=512, out_features=512, bias=True)
+  (3): Sigmoid()
+  (4): Linear(in_features=512, out_features=100, bias=True)
+  (5): Sigmoid()
+)
+2024-01-18 18:19:54,181   - Batch 100/4184
+2024-01-18 18:20:08,414   - Batch 200/4184
+2024-01-18 18:20:22,657   - Batch 300/4184
+2024-01-18 18:20:37,037   - Batch 400/4184
+2024-01-18 18:20:51,342   - Batch 500/4184
+2024-01-18 18:21:05,713   - Batch 600/4184
+2024-01-18 18:21:20,082   - Batch 700/4184
+2024-01-18 18:23:07,857 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:23:07,858 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:23:07,858 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:23:07,858 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:23:07,858 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:23:07,858 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:23:07,858 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:23:07,858 ## Loading datasets with skeletons:
+2024-01-18 18:23:09,033 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:23:29,369   - Batch 100/4184
+2024-01-18 18:23:46,175   - Batch 200/4184
+2024-01-18 18:24:02,617   - Batch 300/4184
+2024-01-18 18:24:18,932   - Batch 400/4184
+2024-01-18 18:24:35,339   - Batch 500/4184
+2024-01-18 18:24:53,350 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:24:53,350 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:24:53,350 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:24:53,350 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:24:53,350 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:24:53,350 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:24:53,350 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:24:53,350 Initializing wandb...
+2024-01-18 18:24:54,625 ## Loading datasets with skeletons:
+2024-01-18 18:24:55,869 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:25:44,145   - Batch 100/4184
+2024-01-18 18:26:28,275   - Batch 200/4184
+2024-01-18 18:27:14,068   - Batch 300/4184
+2024-01-18 18:27:33,601 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:27:33,601 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:27:33,601 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:27:33,601 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:27:33,601 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:27:33,601 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:27:33,601 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:27:33,601 Initializing wandb...
+2024-01-18 18:27:34,739 ## Loading datasets with skeletons:
+2024-01-18 18:27:36,310 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=4096, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:29:39,615 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:29:39,616 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:29:39,616 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:29:39,616 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:29:39,616 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:29:39,616 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:29:39,616 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:29:39,616 Initializing wandb...
+2024-01-18 18:29:40,863 ## Loading datasets with skeletons:
+2024-01-18 18:29:42,095 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:30:42,766 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:30:42,767 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:30:42,767 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:30:42,767 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:30:42,767 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:30:42,767 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:30:42,767 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:30:42,767 Initializing wandb...
+2024-01-18 18:30:44,175 ## Loading datasets with skeletons:
+2024-01-18 18:30:45,419 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:31:44,556 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:31:44,557 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:31:44,557 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:31:44,557 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:31:44,557 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:31:44,557 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:31:44,557 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:31:44,557 Initializing wandb...
+2024-01-18 18:31:47,652 ## Loading datasets with skeletons:
+2024-01-18 18:31:48,977 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:32:37,944   - Batch 100/4184
+2024-01-18 18:33:21,958   - Batch 200/4184
+2024-01-18 18:34:08,045   - Batch 300/4184
+2024-01-18 18:34:54,142   - Batch 400/4184
+2024-01-18 18:35:38,350   - Batch 500/4184
+2024-01-18 18:36:24,861   - Batch 600/4184
+2024-01-18 18:37:05,039 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:05,039 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:05,039 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:05,039 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:37:05,039 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:05,039 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:05,039 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:05,039 Initializing wandb...
+2024-01-18 18:37:06,304 ## Loading datasets with skeletons:
+2024-01-18 18:37:43,812 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:43,813 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:43,813 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:43,813 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:37:43,813 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:43,813 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:43,813 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:37:43,813 ## Loading datasets with skeletons:
+2024-01-18 18:37:44,211 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:37:47,390   - Batch 4/4
+2024-01-18 18:37:48,246 epoch=0 / 10
+2024-01-18 18:37:48,246 Training Set Evaluation: 
+2024-01-18 18:37:49,804   - Batch 4/4
+2024-01-18 18:37:50,609 epoch=1 / 10
+2024-01-18 18:37:50,609 Training Set Evaluation: 
+2024-01-18 18:37:52,191   - Batch 4/4
+2024-01-18 18:37:53,015 epoch=2 / 10
+2024-01-18 18:37:53,015 Training Set Evaluation: 
+2024-01-18 18:37:54,582   - Batch 4/4
+2024-01-18 18:37:55,418 epoch=3 / 10
+2024-01-18 18:37:55,418 Training Set Evaluation: 
+2024-01-18 18:37:56,971   - Batch 4/4
+2024-01-18 18:37:57,787 epoch=4 / 10
+2024-01-18 18:37:57,787 Training Set Evaluation: 
+2024-01-18 18:37:59,374   - Batch 4/4
+2024-01-18 18:38:00,211 epoch=5 / 10
+2024-01-18 18:38:00,211 Training Set Evaluation: 
+2024-01-18 18:38:01,811   - Batch 4/4
+2024-01-18 18:38:02,638 epoch=6 / 10
+2024-01-18 18:38:02,638 Training Set Evaluation: 
+2024-01-18 18:42:15,173 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:43:09,894 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:44:14,309 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:45:23,565 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:45:38,965 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:46:56,597 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:46:56,598 latest_checkpoint='../checkpoints/lstm/epoch_6_batch_3.pt'
+2024-01-18 18:47:51,556 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:47:51,557 latest_checkpoint='../checkpoints/lstm/epoch_6_batch_3.pt'
+2024-01-18 18:49:05,850 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:49:05,852 latest_checkpoint='../checkpoints/lstm/epoch_6_batch_3.pt'
+2024-01-18 18:51:30,801 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:51:30,802 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=108, bias=True)
+  (3): ScaledTanh()
+)
+2024-01-18 18:51:30,802 latest_checkpoint='../checkpoints/lstm/epoch_6_batch_3.pt'
+2024-01-18 18:51:38,004 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:38,004 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:38,005 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:38,005 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:51:38,005 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:38,005 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:38,005 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:38,005 ## Loading datasets with skeletons:
+2024-01-18 18:51:38,374 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:51:38,375 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=108, bias=True)
+  (3): ScaledTanh()
+)
+2024-01-18 18:51:38,375 latest_checkpoint='/Users/keenonwerling/Desktop/dev/MarkerTranslator/checkpoints/lstm/epoch_6_batch_3.pt'
+2024-01-18 18:51:53,741 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:53,742 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:53,742 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:53,742 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:51:53,742 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:53,742 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:53,742 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:51:53,742 ## Loading datasets with skeletons:
+2024-01-18 18:51:54,131 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:51:54,131 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=108, bias=True)
+  (3): ScaledTanh()
+)
+2024-01-18 18:51:56,891   - Batch 7/7
+2024-01-18 18:51:57,173 epoch=0 / 10
+2024-01-18 18:51:57,174 Training Set Evaluation: 
+2024-01-18 18:51:58,233   - Batch 7/7
+2024-01-18 18:51:58,454 epoch=1 / 10
+2024-01-18 18:51:58,455 Training Set Evaluation: 
+2024-01-18 18:51:59,501   - Batch 7/7
+2024-01-18 18:51:59,726 epoch=2 / 10
+2024-01-18 18:51:59,726 Training Set Evaluation: 
+2024-01-18 18:52:00,805   - Batch 7/7
+2024-01-18 18:52:01,036 epoch=3 / 10
+2024-01-18 18:52:01,036 Training Set Evaluation: 
+2024-01-18 18:52:02,103   - Batch 7/7
+2024-01-18 18:52:02,326 epoch=4 / 10
+2024-01-18 18:52:02,326 Training Set Evaluation: 
+2024-01-18 18:52:03,386   - Batch 7/7
+2024-01-18 18:52:03,606 epoch=5 / 10
+2024-01-18 18:52:03,606 Training Set Evaluation: 
+2024-01-18 18:52:04,637   - Batch 7/7
+2024-01-18 18:52:04,855 epoch=6 / 10
+2024-01-18 18:52:04,855 Training Set Evaluation: 
+2024-01-18 18:52:05,914   - Batch 7/7
+2024-01-18 18:52:06,138 epoch=7 / 10
+2024-01-18 18:52:06,138 Training Set Evaluation: 
+2024-01-18 18:52:07,182   - Batch 7/7
+2024-01-18 18:52:07,395 epoch=8 / 10
+2024-01-18 18:52:07,395 Training Set Evaluation: 
+2024-01-18 18:52:08,449   - Batch 7/7
+2024-01-18 18:52:08,666 epoch=9 / 10
+2024-01-18 18:52:08,667 Training Set Evaluation: 
+2024-01-18 18:52:30,779 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:52:30,780 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=108, bias=True)
+  (3): ScaledTanh()
+)
+2024-01-18 18:52:30,780 latest_checkpoint='../checkpoints/lstm/epoch_9_batch_6.pt'
+2024-01-18 18:53:50,903 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:53:50,904 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:53:50,904 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:53:50,904 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:53:50,904 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:53:50,904 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:53:50,904 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:53:50,904 ## Loading datasets with skeletons:
+2024-01-18 18:53:51,339 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:53:51,339 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): ScaledTanh()
+)
+2024-01-18 18:53:54,125   - Batch 7/7
+2024-01-18 18:53:54,361 epoch=0 / 10
+2024-01-18 18:53:54,361 Training Set Evaluation: 
+2024-01-18 18:53:55,468   - Batch 7/7
+2024-01-18 18:53:55,669 epoch=1 / 10
+2024-01-18 18:53:55,669 Training Set Evaluation: 
+2024-01-18 18:53:56,771   - Batch 7/7
+2024-01-18 18:53:56,980 epoch=2 / 10
+2024-01-18 18:53:56,980 Training Set Evaluation: 
+2024-01-18 18:53:58,092   - Batch 7/7
+2024-01-18 18:53:58,294 epoch=3 / 10
+2024-01-18 18:53:58,294 Training Set Evaluation: 
+2024-01-18 18:53:59,386   - Batch 7/7
+2024-01-18 18:53:59,601 epoch=4 / 10
+2024-01-18 18:53:59,601 Training Set Evaluation: 
+2024-01-18 18:54:00,715   - Batch 7/7
+2024-01-18 18:54:00,904 epoch=5 / 10
+2024-01-18 18:54:00,905 Training Set Evaluation: 
+2024-01-18 18:54:02,001   - Batch 7/7
+2024-01-18 18:54:02,191 epoch=6 / 10
+2024-01-18 18:54:02,191 Training Set Evaluation: 
+2024-01-18 18:54:03,304   - Batch 7/7
+2024-01-18 18:54:03,495 epoch=7 / 10
+2024-01-18 18:54:03,495 Training Set Evaluation: 
+2024-01-18 18:54:04,603   - Batch 7/7
+2024-01-18 18:54:04,793 epoch=8 / 10
+2024-01-18 18:54:04,793 Training Set Evaluation: 
+2024-01-18 18:54:05,880   - Batch 7/7
+2024-01-18 18:54:06,069 epoch=9 / 10
+2024-01-18 18:54:06,069 Training Set Evaluation: 
+2024-01-18 18:54:28,324 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:54:28,324 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): ScaledTanh()
+)
+2024-01-18 18:54:28,325 latest_checkpoint='../checkpoints/lstm/epoch_9_batch_6.pt'
+2024-01-18 18:55:13,398 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:13,399 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:13,399 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:13,399 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:55:13,399 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:13,399 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:13,399 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:13,399 ## Loading datasets with skeletons:
+2024-01-18 18:55:23,374 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:23,374 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:23,374 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:23,375 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:55:23,375 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:23,375 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:23,375 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:55:23,375 ## Loading datasets with skeletons:
+2024-01-18 18:55:23,755 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:55:23,755 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 18:55:26,498   - Batch 7/7
+2024-01-18 18:55:26,737 epoch=0 / 10
+2024-01-18 18:55:26,738 Training Set Evaluation: 
+2024-01-18 18:55:27,828   - Batch 7/7
+2024-01-18 18:55:28,027 epoch=1 / 10
+2024-01-18 18:55:28,027 Training Set Evaluation: 
+2024-01-18 18:55:29,119   - Batch 7/7
+2024-01-18 18:55:29,330 epoch=2 / 10
+2024-01-18 18:55:29,330 Training Set Evaluation: 
+2024-01-18 18:55:30,408   - Batch 7/7
+2024-01-18 18:55:30,608 epoch=3 / 10
+2024-01-18 18:55:30,608 Training Set Evaluation: 
+2024-01-18 18:55:31,692   - Batch 7/7
+2024-01-18 18:55:31,882 epoch=4 / 10
+2024-01-18 18:55:31,882 Training Set Evaluation: 
+2024-01-18 18:55:32,973   - Batch 7/7
+2024-01-18 18:55:33,166 epoch=5 / 10
+2024-01-18 18:55:33,166 Training Set Evaluation: 
+2024-01-18 18:55:34,272   - Batch 7/7
+2024-01-18 18:55:34,459 epoch=6 / 10
+2024-01-18 18:55:34,459 Training Set Evaluation: 
+2024-01-18 18:55:35,555   - Batch 7/7
+2024-01-18 18:55:35,743 epoch=7 / 10
+2024-01-18 18:55:35,743 Training Set Evaluation: 
+2024-01-18 18:55:36,836   - Batch 7/7
+2024-01-18 18:55:37,021 epoch=8 / 10
+2024-01-18 18:55:37,021 Training Set Evaluation: 
+2024-01-18 18:55:38,105   - Batch 7/7
+2024-01-18 18:55:38,293 epoch=9 / 10
+2024-01-18 18:55:38,293 Training Set Evaluation: 
+2024-01-18 18:56:05,693 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:56:05,693 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 18:56:05,693 latest_checkpoint='../checkpoints/lstm/epoch_9_batch_6.pt'
+2024-01-18 18:56:54,126 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:56:54,126 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 18:56:54,126 latest_checkpoint='../checkpoints/lstm/epoch_9_batch_6.pt'
+2024-01-18 18:58:12,125 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:58:12,127 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 18:58:12,127 latest_checkpoint='../checkpoints/lstm/epoch_9_batch_6.pt'
+2024-01-18 18:59:20,507 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:59:20,508 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:59:20,508 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:59:20,508 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 18:59:20,508 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:59:20,508 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:59:20,508 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 18:59:20,508 ## Loading datasets with skeletons:
+2024-01-18 18:59:20,939 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 18:59:20,939 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 18:59:23,635   - Batch 7/7
+2024-01-18 18:59:24,005 epoch=0 / 10
+2024-01-18 18:59:24,006 Training Set Evaluation: 
+2024-01-18 18:59:25,069   - Batch 7/7
+2024-01-18 18:59:25,389 epoch=1 / 10
+2024-01-18 18:59:25,389 Training Set Evaluation: 
+2024-01-18 18:59:26,453   - Batch 7/7
+2024-01-18 18:59:26,777 epoch=2 / 10
+2024-01-18 18:59:26,777 Training Set Evaluation: 
+2024-01-18 18:59:27,821   - Batch 7/7
+2024-01-18 18:59:28,118 epoch=3 / 10
+2024-01-18 18:59:28,118 Training Set Evaluation: 
+2024-01-18 18:59:29,154   - Batch 7/7
+2024-01-18 18:59:29,450 epoch=4 / 10
+2024-01-18 18:59:29,450 Training Set Evaluation: 
+2024-01-18 18:59:30,486   - Batch 7/7
+2024-01-18 19:00:14,301 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:00:14,302 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:00:14,302 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:00:14,302 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:00:14,302 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:00:14,302 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:00:14,302 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:00:14,302 ## Loading datasets with skeletons:
+2024-01-18 19:00:14,688 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:00:14,688 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:00:17,388   - Batch 7/7
+2024-01-18 19:00:18,173 epoch=0 / 10
+2024-01-18 19:00:18,173 Training Set Evaluation: 
+2024-01-18 19:00:19,233   - Batch 7/7
+2024-01-18 19:00:19,544 epoch=1 / 10
+2024-01-18 19:00:19,544 Training Set Evaluation: 
+2024-01-18 19:00:20,615   - Batch 7/7
+2024-01-18 19:00:20,929 epoch=2 / 10
+2024-01-18 19:00:20,930 Training Set Evaluation: 
+2024-01-18 19:00:21,979   - Batch 7/7
+2024-01-18 19:00:22,282 epoch=3 / 10
+2024-01-18 19:00:22,282 Training Set Evaluation: 
+2024-01-18 19:00:23,338   - Batch 7/7
+2024-01-18 19:00:23,627 epoch=4 / 10
+2024-01-18 19:00:23,627 Training Set Evaluation: 
+2024-01-18 19:00:24,679   - Batch 7/7
+2024-01-18 19:00:24,968 epoch=5 / 10
+2024-01-18 19:00:24,968 Training Set Evaluation: 
+2024-01-18 19:00:26,052   - Batch 7/7
+2024-01-18 19:00:26,338 epoch=6 / 10
+2024-01-18 19:00:26,338 Training Set Evaluation: 
+2024-01-18 19:00:27,393   - Batch 7/7
+2024-01-18 19:00:27,679 epoch=7 / 10
+2024-01-18 19:00:27,679 Training Set Evaluation: 
+2024-01-18 19:00:28,726   - Batch 7/7
+2024-01-18 19:00:29,004 epoch=8 / 10
+2024-01-18 19:00:29,004 Training Set Evaluation: 
+2024-01-18 19:00:30,061   - Batch 7/7
+2024-01-18 19:00:30,348 epoch=9 / 10
+2024-01-18 19:00:30,348 Training Set Evaluation: 
+2024-01-18 19:01:05,560 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:01:05,560 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:01:05,560 latest_checkpoint='../checkpoints/lstm/epoch_9_batch_6.pt'
+2024-01-18 19:01:38,912 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:01:38,912 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:01:38,912 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:01:38,912 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:01:38,912 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:01:38,912 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:01:38,912 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:01:38,912 Initializing wandb...
+2024-01-18 19:01:45,261 ## Loading datasets with skeletons:
+2024-01-18 19:02:09,647 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:02:09,649 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:02:52,884   - Batch 100/126838
+2024-01-18 19:03:07,828   - Batch 200/126838
+2024-01-18 19:03:22,551   - Batch 300/126838
+2024-01-18 19:03:37,181   - Batch 400/126838
+2024-01-18 19:03:52,556   - Batch 500/126838
+2024-01-18 19:04:07,417   - Batch 600/126838
+2024-01-18 19:04:22,701   - Batch 700/126838
+2024-01-18 19:04:37,437   - Batch 800/126838
+2024-01-18 19:04:52,131   - Batch 900/126838
+2024-01-18 19:05:06,446   - Batch 1000/126838
+2024-01-18 19:05:21,409   - Batch 1100/126838
+2024-01-18 19:05:51,555 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:51,555 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:51,555 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:51,555 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:05:51,555 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:51,555 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:51,555 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:51,555 Initializing wandb...
+2024-01-18 19:05:52,704 ## Loading datasets with skeletons:
+2024-01-18 19:05:53,107 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:05:53,107 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:05:58,372 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:58,372 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:58,372 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:58,372 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:05:58,372 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:58,372 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:58,372 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:05:58,372 ## Loading datasets with skeletons:
+2024-01-18 19:05:58,754 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:05:58,755 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:06:02,698   - Batch 7/7
+2024-01-18 19:06:03,286 epoch=0 / 10
+2024-01-18 19:06:03,286 Training Set Evaluation: 
+2024-01-18 19:06:05,643   - Batch 7/7
+2024-01-18 19:06:06,226 epoch=1 / 10
+2024-01-18 19:06:06,226 Training Set Evaluation: 
+2024-01-18 19:06:08,600   - Batch 7/7
+2024-01-18 19:06:09,203 epoch=2 / 10
+2024-01-18 19:06:09,203 Training Set Evaluation: 
+2024-01-18 19:06:11,579   - Batch 7/7
+2024-01-18 19:06:12,171 epoch=3 / 10
+2024-01-18 19:06:12,171 Training Set Evaluation: 
+2024-01-18 19:06:14,541   - Batch 7/7
+2024-01-18 19:06:15,134 epoch=4 / 10
+2024-01-18 19:06:15,134 Training Set Evaluation: 
+2024-01-18 19:06:17,517   - Batch 7/7
+2024-01-18 19:06:18,426 epoch=5 / 10
+2024-01-18 19:06:18,426 Training Set Evaluation: 
+2024-01-18 19:06:20,786   - Batch 7/7
+2024-01-18 19:06:21,383 epoch=6 / 10
+2024-01-18 19:06:21,383 Training Set Evaluation: 
+2024-01-18 19:06:23,749   - Batch 7/7
+2024-01-18 19:06:24,360 epoch=7 / 10
+2024-01-18 19:06:24,360 Training Set Evaluation: 
+2024-01-18 19:06:26,724   - Batch 7/7
+2024-01-18 19:06:27,327 epoch=8 / 10
+2024-01-18 19:06:27,327 Training Set Evaluation: 
+2024-01-18 19:06:29,692   - Batch 7/7
+2024-01-18 19:06:30,297 epoch=9 / 10
+2024-01-18 19:06:30,297 Training Set Evaluation: 
+2024-01-18 19:07:00,206 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:00,207 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:00,207 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:00,207 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:07:00,207 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:00,207 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:00,207 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:00,207 ## Loading datasets with skeletons:
+2024-01-18 19:07:00,583 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:07:00,583 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:07:04,467   - Batch 7/7
+2024-01-18 19:07:04,886 epoch=0 / 10
+2024-01-18 19:07:04,886 Training Set Evaluation: 
+2024-01-18 19:07:07,226   - Batch 7/7
+2024-01-18 19:07:07,646 epoch=1 / 10
+2024-01-18 19:07:07,646 Training Set Evaluation: 
+2024-01-18 19:07:09,993   - Batch 7/7
+2024-01-18 19:07:10,416 epoch=2 / 10
+2024-01-18 19:07:10,416 Training Set Evaluation: 
+2024-01-18 19:07:17,353 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:17,354 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:17,354 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:17,354 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:07:17,354 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:17,354 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:17,354 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:07:17,354 ## Loading datasets with skeletons:
+2024-01-18 19:07:17,730 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:07:17,730 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:07:21,822   - Batch 7/7
+2024-01-18 19:07:22,249 epoch=0 / 10
+2024-01-18 19:07:22,249 Training Set Evaluation: 
+2024-01-18 19:07:24,627   - Batch 7/7
+2024-01-18 19:07:25,052 epoch=1 / 10
+2024-01-18 19:07:25,052 Training Set Evaluation: 
+2024-01-18 19:07:27,444   - Batch 7/7
+2024-01-18 19:07:27,877 epoch=2 / 10
+2024-01-18 19:07:27,877 Training Set Evaluation: 
+2024-01-18 19:07:30,254   - Batch 7/7
+2024-01-18 19:07:30,701 epoch=3 / 10
+2024-01-18 19:07:30,701 Training Set Evaluation: 
+2024-01-18 19:07:33,074   - Batch 7/7
+2024-01-18 19:07:33,510 epoch=4 / 10
+2024-01-18 19:07:33,510 Training Set Evaluation: 
+2024-01-18 19:07:35,880   - Batch 7/7
+2024-01-18 19:07:36,309 epoch=5 / 10
+2024-01-18 19:07:36,310 Training Set Evaluation: 
+2024-01-18 19:07:38,684   - Batch 7/7
+2024-01-18 19:07:39,111 epoch=6 / 10
+2024-01-18 19:07:39,111 Training Set Evaluation: 
+2024-01-18 19:07:41,502   - Batch 7/7
+2024-01-18 19:07:41,954 epoch=7 / 10
+2024-01-18 19:07:41,955 Training Set Evaluation: 
+2024-01-18 19:07:44,340   - Batch 7/7
+2024-01-18 19:07:44,774 epoch=8 / 10
+2024-01-18 19:07:44,774 Training Set Evaluation: 
+2024-01-18 19:07:47,156   - Batch 7/7
+2024-01-18 19:07:47,654 epoch=9 / 10
+2024-01-18 19:07:47,654 Training Set Evaluation: 
+2024-01-18 19:08:04,498 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:04,498 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:04,498 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:04,498 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:08:04,498 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:04,498 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:04,498 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:04,498 ## Loading datasets with skeletons:
+2024-01-18 19:08:04,875 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:08:04,875 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:08:08,866   - Batch 7/7
+2024-01-18 19:08:09,452 epoch=0 / 10
+2024-01-18 19:08:09,452 Training Set Evaluation: 
+2024-01-18 19:08:11,863   - Batch 7/7
+2024-01-18 19:08:12,436 epoch=1 / 10
+2024-01-18 19:08:12,437 Training Set Evaluation: 
+2024-01-18 19:08:14,862   - Batch 7/7
+2024-01-18 19:08:15,445 epoch=2 / 10
+2024-01-18 19:08:15,445 Training Set Evaluation: 
+2024-01-18 19:08:17,888   - Batch 7/7
+2024-01-18 19:08:18,588 epoch=3 / 10
+2024-01-18 19:08:18,588 Training Set Evaluation: 
+2024-01-18 19:08:21,030   - Batch 7/7
+2024-01-18 19:08:21,623 epoch=4 / 10
+2024-01-18 19:08:21,623 Training Set Evaluation: 
+2024-01-18 19:08:24,057   - Batch 7/7
+2024-01-18 19:08:24,631 epoch=5 / 10
+2024-01-18 19:08:24,631 Training Set Evaluation: 
+2024-01-18 19:08:27,061   - Batch 7/7
+2024-01-18 19:08:27,646 epoch=6 / 10
+2024-01-18 19:08:27,646 Training Set Evaluation: 
+2024-01-18 19:08:30,114   - Batch 7/7
+2024-01-18 19:08:30,696 epoch=7 / 10
+2024-01-18 19:08:30,696 Training Set Evaluation: 
+2024-01-18 19:08:33,121   - Batch 7/7
+2024-01-18 19:08:33,703 epoch=8 / 10
+2024-01-18 19:08:33,703 Training Set Evaluation: 
+2024-01-18 19:08:36,133   - Batch 7/7
+2024-01-18 19:08:36,717 epoch=9 / 10
+2024-01-18 19:08:36,717 Training Set Evaluation: 
+2024-01-18 19:08:55,850 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:55,850 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:55,850 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:55,850 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:08:55,850 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:55,850 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:55,850 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:08:55,850 ## Loading datasets with skeletons:
+2024-01-18 19:08:56,229 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:08:56,229 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:09:00,190   - Batch 7/7
+2024-01-18 19:09:00,782 epoch=0 / 10
+2024-01-18 19:09:00,782 Training Set Evaluation: 
+2024-01-18 19:09:03,226   - Batch 7/7
+2024-01-18 19:09:03,810 epoch=1 / 10
+2024-01-18 19:09:03,810 Training Set Evaluation: 
+2024-01-18 19:09:06,236   - Batch 7/7
+2024-01-18 19:09:06,826 epoch=2 / 10
+2024-01-18 19:09:06,827 Training Set Evaluation: 
+2024-01-18 19:09:14,939 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:14,939 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:14,939 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:14,939 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:09:14,939 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:14,939 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:14,939 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:14,939 ## Loading datasets with skeletons:
+2024-01-18 19:09:15,320 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:09:15,320 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:09:19,357   - Batch 7/7
+2024-01-18 19:09:19,952 epoch=0 / 10
+2024-01-18 19:09:19,952 Training Set Evaluation: 
+2024-01-18 19:09:22,384   - Batch 7/7
+2024-01-18 19:09:22,974 epoch=1 / 10
+2024-01-18 19:09:22,974 Training Set Evaluation: 
+2024-01-18 19:09:25,396   - Batch 7/7
+2024-01-18 19:09:25,988 epoch=2 / 10
+2024-01-18 19:09:25,988 Training Set Evaluation: 
+2024-01-18 19:09:28,408   - Batch 7/7
+2024-01-18 19:09:28,994 epoch=3 / 10
+2024-01-18 19:09:28,994 Training Set Evaluation: 
+2024-01-18 19:09:40,423 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:40,423 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:40,423 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:40,423 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:09:40,423 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:40,423 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:40,423 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:09:40,423 ## Loading datasets with skeletons:
+2024-01-18 19:09:40,803 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:09:40,804 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:09:44,789   - Batch 7/7
+2024-01-18 19:09:45,374 epoch=0 / 10
+2024-01-18 19:09:45,374 Training Set Evaluation: 
+2024-01-18 19:09:47,843   - Batch 7/7
+2024-01-18 19:09:48,577 epoch=1 / 10
+2024-01-18 19:09:48,577 Training Set Evaluation: 
+2024-01-18 19:09:51,026   - Batch 7/7
+2024-01-18 19:09:51,602 epoch=2 / 10
+2024-01-18 19:09:51,602 Training Set Evaluation: 
+2024-01-18 19:09:54,047   - Batch 7/7
+2024-01-18 19:09:54,641 epoch=3 / 10
+2024-01-18 19:09:54,641 Training Set Evaluation: 
+2024-01-18 19:09:57,079   - Batch 7/7
+2024-01-18 19:09:57,663 epoch=4 / 10
+2024-01-18 19:09:57,663 Training Set Evaluation: 
+2024-01-18 19:10:00,094   - Batch 7/7
+2024-01-18 19:10:00,679 epoch=5 / 10
+2024-01-18 19:10:00,679 Training Set Evaluation: 
+2024-01-18 19:10:03,117   - Batch 7/7
+2024-01-18 19:10:03,708 epoch=6 / 10
+2024-01-18 19:10:03,709 Training Set Evaluation: 
+2024-01-18 19:10:19,823 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:10:19,824 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:10:19,824 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:10:19,824 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:10:19,824 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:10:19,824 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:10:19,824 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:10:19,824 Initializing wandb...
+2024-01-18 19:10:21,175 ## Loading datasets with skeletons:
+2024-01-18 19:10:44,928 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:10:44,928 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:11:46,392   - Batch 100/126838
+2024-01-18 19:12:22,024   - Batch 200/126838
+2024-01-18 19:12:57,561   - Batch 300/126838
+2024-01-18 19:13:33,261   - Batch 400/126838
+2024-01-18 19:14:08,949   - Batch 500/126838
+2024-01-18 19:14:44,625   - Batch 600/126838
+2024-01-18 19:15:20,391   - Batch 700/126838
+2024-01-18 19:15:57,045   - Batch 800/126838
+2024-01-18 19:16:32,409   - Batch 900/126838
+2024-01-18 19:17:07,653   - Batch 1000/126838
+2024-01-18 19:17:43,476   - Batch 1100/126838
+2024-01-18 19:18:18,718   - Batch 1200/126838
+2024-01-18 19:18:53,956   - Batch 1300/126838
+2024-01-18 19:19:29,335   - Batch 1400/126838
+2024-01-18 19:20:04,742   - Batch 1500/126838
+2024-01-18 19:20:40,097   - Batch 1600/126838
+2024-01-18 19:21:15,430   - Batch 1700/126838
+2024-01-18 19:21:50,781   - Batch 1800/126838
+2024-01-18 19:22:26,149   - Batch 1900/126838
+2024-01-18 19:23:01,565   - Batch 2000/126838
+2024-01-18 19:23:37,744   - Batch 2100/126838
+2024-01-18 19:24:13,234   - Batch 2200/126838
+2024-01-18 19:24:48,792   - Batch 2300/126838
+2024-01-18 19:25:24,346   - Batch 2400/126838
+2024-01-18 19:25:59,934   - Batch 2500/126838
+2024-01-18 19:26:35,473   - Batch 2600/126838
+2024-01-18 19:27:11,101   - Batch 2700/126838
+2024-01-18 19:27:46,697   - Batch 2800/126838
+2024-01-18 19:28:22,390   - Batch 2900/126838
+2024-01-18 19:28:58,154   - Batch 3000/126838
+2024-01-18 19:29:34,444   - Batch 3100/126838
+2024-01-18 19:30:10,137   - Batch 3200/126838
+2024-01-18 19:30:45,716   - Batch 3300/126838
+2024-01-18 19:31:21,324   - Batch 3400/126838
+2024-01-18 19:31:56,927   - Batch 3500/126838
+2024-01-18 19:32:32,450   - Batch 3600/126838
+2024-01-18 19:33:08,050   - Batch 3700/126838
+2024-01-18 19:33:44,735   - Batch 3800/126838
+2024-01-18 19:34:23,994   - Batch 3900/126838
+2024-01-18 19:35:00,232   - Batch 4000/126838
+2024-01-18 19:36:04,812 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:36:04,812 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:36:04,812 latest_checkpoint='../checkpoints/lstm/epoch_0_batch_3999.pt'
+2024-01-18 19:38:45,281 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:38:45,281 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:38:45,281 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:38:45,281 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:38:45,281 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:38:45,281 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:38:45,281 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:38:45,281 ## Loading datasets with skeletons:
+2024-01-18 19:38:45,663 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:38:45,663 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:38:50,146   - Batch 7/7
+2024-01-18 19:38:51,000 epoch=0 / 10
+2024-01-18 19:38:51,000 Training Set Evaluation: 
+2024-01-18 19:38:53,510   - Batch 7/7
+2024-01-18 19:38:54,358 epoch=1 / 10
+2024-01-18 19:38:54,358 Training Set Evaluation: 
+2024-01-18 19:38:56,846   - Batch 7/7
+2024-01-18 19:38:57,670 epoch=2 / 10
+2024-01-18 19:38:57,670 Training Set Evaluation: 
+2024-01-18 19:39:00,153   - Batch 7/7
+2024-01-18 19:39:00,978 epoch=3 / 10
+2024-01-18 19:39:00,978 Training Set Evaluation: 
+2024-01-18 19:39:11,173 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:11,173 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:11,173 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:11,173 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:39:11,173 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:11,173 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:11,174 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:11,174 ## Loading datasets with skeletons:
+2024-01-18 19:39:11,549 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:39:11,549 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:39:15,590   - Batch 7/7
+2024-01-18 19:39:16,175 epoch=0 / 10
+2024-01-18 19:39:16,175 Training Set Evaluation: 
+2024-01-18 19:39:18,648   - Batch 7/7
+2024-01-18 19:39:19,234 epoch=1 / 10
+2024-01-18 19:39:19,234 Training Set Evaluation: 
+2024-01-18 19:39:33,757 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:33,757 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:33,757 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:33,757 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:39:33,757 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:33,757 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:33,757 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:39:33,757 ## Loading datasets with skeletons:
+2024-01-18 19:39:34,134 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:39:34,134 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:39:38,160   - Batch 7/7
+2024-01-18 19:39:38,636 epoch=0 / 10
+2024-01-18 19:39:38,636 Training Set Evaluation: 
+2024-01-18 19:39:41,317   - Batch 7/7
+2024-01-18 19:39:41,765 epoch=1 / 10
+2024-01-18 19:39:41,765 Training Set Evaluation: 
+2024-01-18 19:39:44,239   - Batch 7/7
+2024-01-18 19:39:44,702 epoch=2 / 10
+2024-01-18 19:39:44,702 Training Set Evaluation: 
+2024-01-18 19:39:47,069   - Batch 7/7
+2024-01-18 19:39:47,507 epoch=3 / 10
+2024-01-18 19:39:47,507 Training Set Evaluation: 
+2024-01-18 19:39:49,918   - Batch 7/7
+2024-01-18 19:39:50,529 epoch=4 / 10
+2024-01-18 19:39:50,529 Training Set Evaluation: 
+2024-01-18 19:39:52,891   - Batch 7/7
+2024-01-18 19:39:53,498 epoch=5 / 10
+2024-01-18 19:39:53,498 Training Set Evaluation: 
+2024-01-18 19:39:55,872   - Batch 7/7
+2024-01-18 19:39:56,484 epoch=6 / 10
+2024-01-18 19:39:56,484 Training Set Evaluation: 
+2024-01-18 19:39:58,856   - Batch 7/7
+2024-01-18 19:39:59,459 epoch=7 / 10
+2024-01-18 19:39:59,459 Training Set Evaluation: 
+2024-01-18 19:40:01,812   - Batch 7/7
+2024-01-18 19:40:02,419 epoch=8 / 10
+2024-01-18 19:40:02,419 Training Set Evaluation: 
+2024-01-18 19:40:04,797   - Batch 7/7
+2024-01-18 19:40:05,403 epoch=9 / 10
+2024-01-18 19:40:05,404 Training Set Evaluation: 
+2024-01-18 19:40:31,093 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:40:31,094 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:40:31,094 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:40:31,094 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:40:31,094 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:40:31,094 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:40:31,094 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:40:31,094 ## Loading datasets with skeletons:
+2024-01-18 19:40:31,491 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:40:31,491 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:40:35,571   - Batch 7/7
+2024-01-18 19:40:36,046 epoch=0 / 10
+2024-01-18 19:40:36,046 Training Set Evaluation: 
+2024-01-18 19:40:38,521   - Batch 7/7
+2024-01-18 19:40:38,996 epoch=1 / 10
+2024-01-18 19:40:38,996 Training Set Evaluation: 
+2024-01-18 19:40:41,474   - Batch 7/7
+2024-01-18 19:40:41,919 epoch=2 / 10
+2024-01-18 19:40:41,919 Training Set Evaluation: 
+2024-01-18 19:40:44,375   - Batch 7/7
+2024-01-18 19:40:44,831 epoch=3 / 10
+2024-01-18 19:40:44,832 Training Set Evaluation: 
+2024-01-18 19:40:47,269   - Batch 7/7
+2024-01-18 19:40:47,740 epoch=4 / 10
+2024-01-18 19:40:47,741 Training Set Evaluation: 
+2024-01-18 19:40:50,174   - Batch 7/7
+2024-01-18 19:40:50,621 epoch=5 / 10
+2024-01-18 19:40:50,621 Training Set Evaluation: 
+2024-01-18 19:40:53,035   - Batch 7/7
+2024-01-18 19:40:53,486 epoch=6 / 10
+2024-01-18 19:40:53,486 Training Set Evaluation: 
+2024-01-18 19:40:55,978   - Batch 7/7
+2024-01-18 19:40:56,428 epoch=7 / 10
+2024-01-18 19:40:56,428 Training Set Evaluation: 
+2024-01-18 19:40:58,894   - Batch 7/7
+2024-01-18 19:40:59,351 epoch=8 / 10
+2024-01-18 19:40:59,351 Training Set Evaluation: 
+2024-01-18 19:41:01,803   - Batch 7/7
+2024-01-18 19:41:02,245 epoch=9 / 10
+2024-01-18 19:41:02,245 Training Set Evaluation: 
+2024-01-18 19:41:37,732 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:41:37,732 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:41:37,732 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:41:37,732 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:41:37,732 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:41:37,732 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:41:37,732 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:41:37,732 ## Loading datasets with skeletons:
+2024-01-18 19:41:38,123 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:41:38,123 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:41:42,151   - Batch 7/7
+2024-01-18 19:41:42,652 epoch=0 / 10
+2024-01-18 19:41:42,652 Training Set Evaluation: 
+2024-01-18 19:41:45,087   - Batch 7/7
+2024-01-18 19:41:45,587 epoch=1 / 10
+2024-01-18 19:41:45,587 Training Set Evaluation: 
+2024-01-18 19:41:48,022   - Batch 7/7
+2024-01-18 19:41:48,486 epoch=2 / 10
+2024-01-18 19:41:48,486 Training Set Evaluation: 
+2024-01-18 19:41:50,917   - Batch 7/7
+2024-01-18 19:41:51,354 epoch=3 / 10
+2024-01-18 19:41:51,354 Training Set Evaluation: 
+2024-01-18 19:41:53,779   - Batch 7/7
+2024-01-18 19:41:54,223 epoch=4 / 10
+2024-01-18 19:41:54,223 Training Set Evaluation: 
+2024-01-18 19:41:56,690   - Batch 7/7
+2024-01-18 19:41:57,135 epoch=5 / 10
+2024-01-18 19:41:57,135 Training Set Evaluation: 
+2024-01-18 19:41:59,611   - Batch 7/7
+2024-01-18 19:42:00,064 epoch=6 / 10
+2024-01-18 19:42:00,064 Training Set Evaluation: 
+2024-01-18 19:42:02,497   - Batch 7/7
+2024-01-18 19:42:02,960 epoch=7 / 10
+2024-01-18 19:42:02,960 Training Set Evaluation: 
+2024-01-18 19:42:05,393   - Batch 7/7
+2024-01-18 19:42:05,829 epoch=8 / 10
+2024-01-18 19:42:05,829 Training Set Evaluation: 
+2024-01-18 19:42:08,284   - Batch 7/7
+2024-01-18 19:42:08,737 epoch=9 / 10
+2024-01-18 19:42:08,737 Training Set Evaluation: 
+2024-01-18 19:42:22,132 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:22,132 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:22,132 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:22,132 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:42:22,132 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:22,132 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:22,132 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:22,132 ## Loading datasets with skeletons:
+2024-01-18 19:42:22,526 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:42:22,526 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:42:26,576   - Batch 7/7
+2024-01-18 19:42:27,038 epoch=0 / 10
+2024-01-18 19:42:27,038 Training Set Evaluation: 
+2024-01-18 19:42:29,513   - Batch 7/7
+2024-01-18 19:42:29,989 epoch=1 / 10
+2024-01-18 19:42:29,989 Training Set Evaluation: 
+2024-01-18 19:42:32,432   - Batch 7/7
+2024-01-18 19:42:32,868 epoch=2 / 10
+2024-01-18 19:42:32,868 Training Set Evaluation: 
+2024-01-18 19:42:40,074 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:40,075 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:40,075 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:40,075 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:42:40,075 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:40,075 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:40,075 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:42:40,075 ## Loading datasets with skeletons:
+2024-01-18 19:42:40,464 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=2048, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:42:40,464 self.out_mlp=Sequential(
+  (0): Linear(in_features=2048, out_features=2048, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=2048, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:42:44,493   - Batch 7/7
+2024-01-18 19:42:44,954 epoch=0 / 10
+2024-01-18 19:42:44,954 Training Set Evaluation: 
+2024-01-18 19:42:47,383   - Batch 7/7
+2024-01-18 19:42:48,118 epoch=1 / 10
+2024-01-18 19:42:48,118 Training Set Evaluation: 
+2024-01-18 19:42:50,604   - Batch 7/7
+2024-01-18 19:42:51,053 epoch=2 / 10
+2024-01-18 19:42:51,053 Training Set Evaluation: 
+2024-01-18 19:42:53,469   - Batch 7/7
+2024-01-18 19:42:53,932 epoch=3 / 10
+2024-01-18 19:42:53,932 Training Set Evaluation: 
+2024-01-18 19:42:56,372   - Batch 7/7
+2024-01-18 19:42:56,805 epoch=4 / 10
+2024-01-18 19:42:56,805 Training Set Evaluation: 
+2024-01-18 19:42:59,247   - Batch 7/7
+2024-01-18 19:42:59,686 epoch=5 / 10
+2024-01-18 19:42:59,686 Training Set Evaluation: 
+2024-01-18 19:43:02,125   - Batch 7/7
+2024-01-18 19:43:02,563 epoch=6 / 10
+2024-01-18 19:43:02,563 Training Set Evaluation: 
+2024-01-18 19:43:05,034   - Batch 7/7
+2024-01-18 19:43:05,479 epoch=7 / 10
+2024-01-18 19:43:05,479 Training Set Evaluation: 
+2024-01-18 19:43:07,920   - Batch 7/7
+2024-01-18 19:43:08,355 epoch=8 / 10
+2024-01-18 19:43:08,355 Training Set Evaluation: 
+2024-01-18 19:43:10,788   - Batch 7/7
+2024-01-18 19:43:11,239 epoch=9 / 10
+2024-01-18 19:43:11,239 Training Set Evaluation: 
+2024-01-18 19:43:38,106 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:38,106 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:38,106 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:38,106 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:43:38,106 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:38,106 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:38,106 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:38,106 Initializing wandb...
+2024-01-18 19:43:39,418 ## Loading datasets with skeletons:
+2024-01-18 19:43:51,880 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:51,880 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:51,880 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:51,880 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:43:51,880 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:51,880 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:51,880 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:43:51,880 ## Loading datasets with skeletons:
+2024-01-18 19:43:52,192 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:43:52,192 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:43:54,882   - Batch 7/7
+2024-01-18 19:43:55,066 epoch=0 / 10
+2024-01-18 19:43:55,066 Training Set Evaluation: 
+2024-01-18 19:43:56,133   - Batch 7/7
+2024-01-18 19:43:56,313 epoch=1 / 10
+2024-01-18 19:43:56,313 Training Set Evaluation: 
+2024-01-18 19:43:57,372   - Batch 7/7
+2024-01-18 19:43:57,554 epoch=2 / 10
+2024-01-18 19:43:57,554 Training Set Evaluation: 
+2024-01-18 19:43:58,634   - Batch 7/7
+2024-01-18 19:43:58,808 epoch=3 / 10
+2024-01-18 19:43:58,808 Training Set Evaluation: 
+2024-01-18 19:43:59,880   - Batch 7/7
+2024-01-18 19:44:00,051 epoch=4 / 10
+2024-01-18 19:44:00,051 Training Set Evaluation: 
+2024-01-18 19:44:01,146   - Batch 7/7
+2024-01-18 19:44:01,328 epoch=5 / 10
+2024-01-18 19:44:01,328 Training Set Evaluation: 
+2024-01-18 19:44:02,421   - Batch 7/7
+2024-01-18 19:44:02,593 epoch=6 / 10
+2024-01-18 19:44:02,593 Training Set Evaluation: 
+2024-01-18 19:44:03,692   - Batch 7/7
+2024-01-18 19:44:03,868 epoch=7 / 10
+2024-01-18 19:44:03,868 Training Set Evaluation: 
+2024-01-18 19:44:04,950   - Batch 7/7
+2024-01-18 19:44:05,130 epoch=8 / 10
+2024-01-18 19:44:05,130 Training Set Evaluation: 
+2024-01-18 19:44:06,195   - Batch 7/7
+2024-01-18 19:44:06,363 epoch=9 / 10
+2024-01-18 19:44:06,363 Training Set Evaluation: 
+2024-01-18 19:44:21,950 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:21,951 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:21,951 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:21,951 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:44:21,951 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:21,951 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:21,951 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:21,951 ## Loading datasets with skeletons:
+2024-01-18 19:44:22,265 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:44:22,265 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:44:24,894   - Batch 7/7
+2024-01-18 19:44:25,022 epoch=0 / 10
+2024-01-18 19:44:25,022 Training Set Evaluation: 
+2024-01-18 19:44:26,097   - Batch 7/7
+2024-01-18 19:44:26,221 epoch=1 / 10
+2024-01-18 19:44:26,221 Training Set Evaluation: 
+2024-01-18 19:44:27,285   - Batch 7/7
+2024-01-18 19:44:27,417 epoch=2 / 10
+2024-01-18 19:44:27,418 Training Set Evaluation: 
+2024-01-18 19:44:28,471   - Batch 7/7
+2024-01-18 19:44:28,595 epoch=3 / 10
+2024-01-18 19:44:28,595 Training Set Evaluation: 
+2024-01-18 19:44:29,650   - Batch 7/7
+2024-01-18 19:44:29,773 epoch=4 / 10
+2024-01-18 19:44:29,773 Training Set Evaluation: 
+2024-01-18 19:44:30,829   - Batch 7/7
+2024-01-18 19:44:30,961 epoch=5 / 10
+2024-01-18 19:44:30,961 Training Set Evaluation: 
+2024-01-18 19:44:32,017   - Batch 7/7
+2024-01-18 19:44:32,136 epoch=6 / 10
+2024-01-18 19:44:32,136 Training Set Evaluation: 
+2024-01-18 19:44:39,572 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:39,572 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:39,572 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:39,572 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:44:39,572 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:39,572 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:39,572 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:44:39,572 ## Loading datasets with skeletons:
+2024-01-18 19:44:39,882 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:44:39,882 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:44:42,522   - Batch 7/7
+2024-01-18 19:44:42,645 epoch=0 / 10
+2024-01-18 19:44:42,645 Training Set Evaluation: 
+2024-01-18 19:44:43,716   - Batch 7/7
+2024-01-18 19:44:43,838 epoch=1 / 10
+2024-01-18 19:44:43,839 Training Set Evaluation: 
+2024-01-18 19:44:44,900   - Batch 7/7
+2024-01-18 19:44:45,024 epoch=2 / 10
+2024-01-18 19:44:45,024 Training Set Evaluation: 
+2024-01-18 19:44:46,097   - Batch 7/7
+2024-01-18 19:44:46,228 epoch=3 / 10
+2024-01-18 19:44:46,228 Training Set Evaluation: 
+2024-01-18 19:44:47,313   - Batch 7/7
+2024-01-18 19:44:47,434 epoch=4 / 10
+2024-01-18 19:44:47,434 Training Set Evaluation: 
+2024-01-18 19:44:48,506   - Batch 7/7
+2024-01-18 19:44:48,626 epoch=5 / 10
+2024-01-18 19:44:48,627 Training Set Evaluation: 
+2024-01-18 19:44:49,684   - Batch 7/7
+2024-01-18 19:44:49,803 epoch=6 / 10
+2024-01-18 19:44:49,803 Training Set Evaluation: 
+2024-01-18 19:44:50,865   - Batch 7/7
+2024-01-18 19:44:50,987 epoch=7 / 10
+2024-01-18 19:44:50,988 Training Set Evaluation: 
+2024-01-18 19:44:52,045   - Batch 7/7
+2024-01-18 19:44:52,167 epoch=8 / 10
+2024-01-18 19:44:52,168 Training Set Evaluation: 
+2024-01-18 19:44:53,233   - Batch 7/7
+2024-01-18 19:44:53,361 epoch=9 / 10
+2024-01-18 19:44:53,361 Training Set Evaluation: 
+2024-01-18 19:45:05,810 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:45:05,811 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:45:05,811 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:45:05,811 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 19:45:05,811 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:45:05,811 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:45:05,811 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 19:45:05,811 Initializing wandb...
+2024-01-18 19:45:07,010 ## Loading datasets with skeletons:
+2024-01-18 19:45:31,505 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 19:45:31,505 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 19:46:12,633   - Batch 100/126838
+2024-01-18 19:46:26,854   - Batch 200/126838
+2024-01-18 19:46:41,027   - Batch 300/126838
+2024-01-18 19:46:55,450   - Batch 400/126838
+2024-01-18 19:47:09,495   - Batch 500/126838
+2024-01-18 19:47:23,895   - Batch 600/126838
+2024-01-18 19:47:38,064   - Batch 700/126838
+2024-01-18 19:47:52,612   - Batch 800/126838
+2024-01-18 19:48:06,639   - Batch 900/126838
+2024-01-18 19:48:20,822   - Batch 1000/126838
+2024-01-18 19:48:34,943   - Batch 1100/126838
+2024-01-18 19:48:49,067   - Batch 1200/126838
+2024-01-18 19:49:03,089   - Batch 1300/126838
+2024-01-18 19:49:17,168   - Batch 1400/126838
+2024-01-18 19:49:31,445   - Batch 1500/126838
+2024-01-18 19:49:45,563   - Batch 1600/126838
+2024-01-18 19:49:59,837   - Batch 1700/126838
+2024-01-18 19:50:13,802   - Batch 1800/126838
+2024-01-18 19:50:28,097   - Batch 1900/126838
+2024-01-18 19:50:42,092   - Batch 2000/126838
+2024-01-18 19:50:56,632   - Batch 2100/126838
+2024-01-18 19:51:10,599   - Batch 2200/126838
+2024-01-18 19:51:24,851   - Batch 2300/126838
+2024-01-18 19:51:38,814   - Batch 2400/126838
+2024-01-18 19:51:53,055   - Batch 2500/126838
+2024-01-18 19:52:07,068   - Batch 2600/126838
+2024-01-18 19:52:21,298   - Batch 2700/126838
+2024-01-18 19:52:35,297   - Batch 2800/126838
+2024-01-18 19:52:49,536   - Batch 2900/126838
+2024-01-18 19:53:03,498   - Batch 3000/126838
+2024-01-18 19:53:17,552   - Batch 3100/126838
+2024-01-18 19:53:31,799   - Batch 3200/126838
+2024-01-18 19:53:45,975   - Batch 3300/126838
+2024-01-18 19:54:01,155   - Batch 3400/126838
+2024-01-18 19:54:15,547   - Batch 3500/126838
+2024-01-18 19:54:31,073   - Batch 3600/126838
+2024-01-18 19:54:46,024   - Batch 3700/126838
+2024-01-18 19:55:00,698   - Batch 3800/126838
+2024-01-18 19:55:15,097   - Batch 3900/126838
+2024-01-18 19:55:29,811   - Batch 4000/126838
+2024-01-18 19:55:44,483   - Batch 4100/126838
+2024-01-18 19:55:59,142   - Batch 4200/126838
+2024-01-18 19:56:13,485   - Batch 4300/126838
+2024-01-18 19:56:28,693   - Batch 4400/126838
+2024-01-18 19:56:43,269   - Batch 4500/126838
+2024-01-18 19:56:58,290   - Batch 4600/126838
+2024-01-18 19:57:12,967   - Batch 4700/126838
+2024-01-18 19:57:27,661   - Batch 4800/126838
+2024-01-18 19:57:41,775   - Batch 4900/126838
+2024-01-18 19:57:56,357   - Batch 5000/126838
+2024-01-18 19:58:10,529   - Batch 5100/126838
+2024-01-18 19:58:24,963   - Batch 5200/126838
+2024-01-18 19:58:39,218   - Batch 5300/126838
+2024-01-18 19:58:54,033   - Batch 5400/126838
+2024-01-18 19:59:08,856   - Batch 5500/126838
+2024-01-18 19:59:23,946   - Batch 5600/126838
+2024-01-18 19:59:38,184   - Batch 5700/126838
+2024-01-18 19:59:52,572   - Batch 5800/126838
+2024-01-18 20:00:06,845   - Batch 5900/126838
+2024-01-18 20:00:21,502   - Batch 6000/126838
+2024-01-18 20:00:35,976   - Batch 6100/126838
+2024-01-18 20:00:50,338   - Batch 6200/126838
+2024-01-18 20:01:04,548   - Batch 6300/126838
+2024-01-18 20:01:19,579   - Batch 6400/126838
+2024-01-18 20:01:34,184   - Batch 6500/126838
+2024-01-18 20:01:49,089   - Batch 6600/126838
+2024-01-18 20:02:03,417   - Batch 6700/126838
+2024-01-18 20:02:17,875   - Batch 6800/126838
+2024-01-18 20:02:31,932   - Batch 6900/126838
+2024-01-18 20:02:45,937   - Batch 7000/126838
+2024-01-18 20:03:00,777   - Batch 7100/126838
+2024-01-18 20:03:15,146   - Batch 7200/126838
+2024-01-18 20:03:29,920   - Batch 7300/126838
+2024-01-18 20:03:44,287   - Batch 7400/126838
+2024-01-18 20:03:58,506   - Batch 7500/126838
+2024-01-18 20:04:12,828   - Batch 7600/126838
+2024-01-18 20:04:53,624 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:04:53,625 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:04:53,625 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:04:53,625 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:04:53,625 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:04:53,625 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:04:53,625 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:04:53,625 ## Loading datasets with skeletons:
+2024-01-18 20:04:53,937 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:04:53,937 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:04:56,637   - Batch 7/7
+2024-01-18 20:04:56,811 epoch=0 / 10
+2024-01-18 20:04:56,811 Training Set Evaluation: 
+2024-01-18 20:04:57,904   - Batch 7/7
+2024-01-18 20:04:58,075 epoch=1 / 10
+2024-01-18 20:04:58,075 Training Set Evaluation: 
+2024-01-18 20:04:59,259   - Batch 7/7
+2024-01-18 20:04:59,452 epoch=2 / 10
+2024-01-18 20:04:59,452 Training Set Evaluation: 
+2024-01-18 20:05:00,652   - Batch 7/7
+2024-01-18 20:05:00,820 epoch=3 / 10
+2024-01-18 20:05:00,820 Training Set Evaluation: 
+2024-01-18 20:05:01,899   - Batch 7/7
+2024-01-18 20:05:02,066 epoch=4 / 10
+2024-01-18 20:05:02,066 Training Set Evaluation: 
+2024-01-18 20:05:03,147   - Batch 7/7
+2024-01-18 20:05:03,316 epoch=5 / 10
+2024-01-18 20:05:03,316 Training Set Evaluation: 
+2024-01-18 20:05:04,385   - Batch 7/7
+2024-01-18 20:05:04,556 epoch=6 / 10
+2024-01-18 20:05:04,556 Training Set Evaluation: 
+2024-01-18 20:05:05,647   - Batch 7/7
+2024-01-18 20:05:05,824 epoch=7 / 10
+2024-01-18 20:05:05,824 Training Set Evaluation: 
+2024-01-18 20:05:06,915   - Batch 7/7
+2024-01-18 20:05:07,087 epoch=8 / 10
+2024-01-18 20:05:07,087 Training Set Evaluation: 
+2024-01-18 20:05:08,167   - Batch 7/7
+2024-01-18 20:05:08,338 epoch=9 / 10
+2024-01-18 20:05:08,338 Training Set Evaluation: 
+2024-01-18 20:05:28,526 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:28,527 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:28,527 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:28,527 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:05:28,527 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:28,527 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:28,527 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:28,527 ## Loading datasets with skeletons:
+2024-01-18 20:05:28,822 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:05:28,822 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:05:35,796 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:35,796 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:35,796 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:35,796 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:05:35,796 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:35,796 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:35,796 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:35,796 ## Loading datasets with skeletons:
+2024-01-18 20:05:36,090 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:05:36,091 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:05:38,688   - Batch 7/7
+2024-01-18 20:05:38,810 epoch=0 / 10
+2024-01-18 20:05:38,810 Training Set Evaluation: 
+2024-01-18 20:05:52,226 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:52,226 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:52,226 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:52,226 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:05:52,226 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:52,226 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:52,226 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:05:52,226 ## Loading datasets with skeletons:
+2024-01-18 20:05:52,524 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:05:52,524 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:05:55,196   - Batch 7/7
+2024-01-18 20:05:55,321 epoch=0 / 10
+2024-01-18 20:05:55,321 Training Set Evaluation: 
+2024-01-18 20:05:56,428   - Batch 7/7
+2024-01-18 20:05:56,547 epoch=1 / 10
+2024-01-18 20:05:56,547 Training Set Evaluation: 
+2024-01-18 20:08:20,645 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:20,646 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:20,646 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:20,646 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:08:20,646 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:20,646 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:20,646 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:20,646 ## Loading datasets with skeletons:
+2024-01-18 20:08:20,997 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:08:20,997 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:08:23,733   - Batch 7/7
+2024-01-18 20:08:23,872 epoch=0 / 10
+2024-01-18 20:08:23,872 Training Set Evaluation: 
+2024-01-18 20:08:33,138 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:33,138 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:33,138 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:33,138 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:08:33,138 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:33,138 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:33,138 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:08:33,138 ## Loading datasets with skeletons:
+2024-01-18 20:08:33,439 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:08:33,439 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:08:36,091   - Batch 7/7
+2024-01-18 20:08:36,213 epoch=0 / 10
+2024-01-18 20:08:36,213 Training Set Evaluation: 
+2024-01-18 20:08:37,290   - Batch 7/7
+2024-01-18 20:08:37,412 epoch=1 / 10
+2024-01-18 20:08:37,412 Training Set Evaluation: 
+2024-01-18 20:08:38,507   - Batch 7/7
+2024-01-18 20:08:38,630 epoch=2 / 10
+2024-01-18 20:08:38,631 Training Set Evaluation: 
+2024-01-18 20:08:39,725   - Batch 7/7
+2024-01-18 20:08:39,848 epoch=3 / 10
+2024-01-18 20:08:39,848 Training Set Evaluation: 
+2024-01-18 20:08:40,938   - Batch 7/7
+2024-01-18 20:08:41,068 epoch=4 / 10
+2024-01-18 20:08:41,068 Training Set Evaluation: 
+2024-01-18 20:08:42,156   - Batch 7/7
+2024-01-18 20:08:42,280 epoch=5 / 10
+2024-01-18 20:08:42,280 Training Set Evaluation: 
+2024-01-18 20:08:43,362   - Batch 7/7
+2024-01-18 20:08:43,485 epoch=6 / 10
+2024-01-18 20:08:43,485 Training Set Evaluation: 
+2024-01-18 20:08:44,566   - Batch 7/7
+2024-01-18 20:08:44,684 epoch=7 / 10
+2024-01-18 20:08:44,684 Training Set Evaluation: 
+2024-01-18 20:08:45,780   - Batch 7/7
+2024-01-18 20:08:45,903 epoch=8 / 10
+2024-01-18 20:08:45,903 Training Set Evaluation: 
+2024-01-18 20:08:46,977   - Batch 7/7
+2024-01-18 20:08:47,100 epoch=9 / 10
+2024-01-18 20:08:47,100 Training Set Evaluation: 
+2024-01-18 20:09:03,704 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:09:03,705 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:09:03,705 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:09:03,705 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:09:03,705 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:09:03,705 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:09:03,705 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:09:03,705 Initializing wandb...
+2024-01-18 20:09:04,935 ## Loading datasets with skeletons:
+2024-01-18 20:09:29,252 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:09:29,252 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:10:10,672   - Batch 100/126838
+2024-01-18 20:10:25,176   - Batch 200/126838
+2024-01-18 20:10:40,018   - Batch 300/126838
+2024-01-18 20:10:54,815   - Batch 400/126838
+2024-01-18 20:11:09,299   - Batch 500/126838
+2024-01-18 20:11:23,898   - Batch 600/126838
+2024-01-18 20:11:39,586   - Batch 700/126838
+2024-01-18 20:11:53,958   - Batch 800/126838
+2024-01-18 20:12:08,153   - Batch 900/126838
+2024-01-18 20:12:22,745   - Batch 1000/126838
+2024-01-18 20:12:36,993   - Batch 1100/126838
+2024-01-18 20:12:51,734   - Batch 1200/126838
+2024-01-18 20:13:05,939   - Batch 1300/126838
+2024-01-18 20:13:20,690   - Batch 1400/126838
+2024-01-18 20:13:34,751   - Batch 1500/126838
+2024-01-18 20:13:48,774   - Batch 1600/126838
+2024-01-18 20:14:02,824   - Batch 1700/126838
+2024-01-18 20:14:17,270   - Batch 1800/126838
+2024-01-18 20:14:31,854   - Batch 1900/126838
+2024-01-18 20:15:27,078 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:15:27,078 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:15:27,078 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:15:27,078 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:15:27,078 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:15:27,078 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:15:27,078 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:15:27,078 Initializing wandb...
+2024-01-18 20:15:28,318 ## Loading datasets with skeletons:
+2024-01-18 20:15:52,002 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:15:52,002 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:16:56,099 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:16:56,099 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:16:56,100 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:16:56,100 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:16:56,100 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:16:56,100 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:16:56,100 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:16:56,100 Initializing wandb...
+2024-01-18 20:17:12,480 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:12,481 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:12,481 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:12,481 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:17:12,481 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:12,481 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:12,481 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:12,481 ## Loading datasets with skeletons:
+2024-01-18 20:17:54,853 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:54,854 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:54,854 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:54,854 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:17:54,854 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:54,854 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:54,854 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:17:54,854 ## Loading datasets with skeletons:
+2024-01-18 20:17:55,163 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:17:55,163 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:17:58,131   - Batch 7/7
+2024-01-18 20:17:58,361 epoch=0 / 10
+2024-01-18 20:17:58,362 Training Set Evaluation: 
+2024-01-18 20:17:59,749   - Batch 7/7
+2024-01-18 20:17:59,985 epoch=1 / 10
+2024-01-18 20:17:59,985 Training Set Evaluation: 
+2024-01-18 20:18:01,352   - Batch 7/7
+2024-01-18 20:18:01,598 epoch=2 / 10
+2024-01-18 20:18:01,598 Training Set Evaluation: 
+2024-01-18 20:18:03,016   - Batch 7/7
+2024-01-18 20:18:03,254 epoch=3 / 10
+2024-01-18 20:18:03,254 Training Set Evaluation: 
+2024-01-18 20:18:04,715   - Batch 7/7
+2024-01-18 20:18:04,942 epoch=4 / 10
+2024-01-18 20:18:04,942 Training Set Evaluation: 
+2024-01-18 20:18:06,314   - Batch 7/7
+2024-01-18 20:18:06,549 epoch=5 / 10
+2024-01-18 20:18:06,549 Training Set Evaluation: 
+2024-01-18 20:18:07,927   - Batch 7/7
+2024-01-18 20:18:08,159 epoch=6 / 10
+2024-01-18 20:18:08,159 Training Set Evaluation: 
+2024-01-18 20:18:09,525   - Batch 7/7
+2024-01-18 20:18:09,756 epoch=7 / 10
+2024-01-18 20:18:09,756 Training Set Evaluation: 
+2024-01-18 20:18:11,155   - Batch 7/7
+2024-01-18 20:18:11,395 epoch=8 / 10
+2024-01-18 20:18:11,395 Training Set Evaluation: 
+2024-01-18 20:18:12,817   - Batch 7/7
+2024-01-18 20:18:13,046 epoch=9 / 10
+2024-01-18 20:18:13,046 Training Set Evaluation: 
+2024-01-18 20:18:39,549 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:18:39,549 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:18:39,549 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:18:39,550 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-18 20:18:39,550 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:18:39,550 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:18:39,550 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-18 20:18:39,550 Initializing wandb...
+2024-01-18 20:18:44,355 ## Loading datasets with skeletons:
+2024-01-18 20:19:08,334 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-18 20:19:08,335 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-18 20:20:08,869   - Batch 100/126838
+2024-01-18 20:20:47,305   - Batch 200/126838
+2024-01-18 20:21:25,664   - Batch 300/126838
+2024-01-18 20:22:03,666   - Batch 400/126838
+2024-01-18 20:22:42,767   - Batch 500/126838
+2024-01-18 20:23:21,697   - Batch 600/126838
+2024-01-18 20:24:00,250   - Batch 700/126838
+2024-01-18 20:24:39,016   - Batch 800/126838
+2024-01-18 20:25:18,484   - Batch 900/126838
+2024-01-18 20:25:57,488   - Batch 1000/126838
+2024-01-18 20:26:35,471   - Batch 1100/126838
+2024-01-18 20:27:13,338   - Batch 1200/126838
+2024-01-18 20:27:51,958   - Batch 1300/126838
+2024-01-18 20:28:30,106   - Batch 1400/126838
+2024-01-18 20:29:07,873   - Batch 1500/126838
+2024-01-18 20:29:45,678   - Batch 1600/126838
+2024-01-18 20:30:24,108   - Batch 1700/126838
+2024-01-18 20:31:02,319   - Batch 1800/126838
+2024-01-18 20:31:40,003   - Batch 1900/126838
+2024-01-18 20:32:18,397   - Batch 2000/126838
+2024-01-18 20:32:56,479   - Batch 2100/126838
+2024-01-18 20:33:34,326   - Batch 2200/126838
+2024-01-18 20:34:12,151   - Batch 2300/126838
+2024-01-18 20:34:50,584   - Batch 2400/126838
+2024-01-18 20:35:28,422   - Batch 2500/126838
+2024-01-18 20:36:06,607   - Batch 2600/126838
+2024-01-18 20:36:44,399   - Batch 2700/126838
+2024-01-18 20:37:22,925   - Batch 2800/126838
+2024-01-18 20:38:00,972   - Batch 2900/126838
+2024-01-18 20:38:38,876   - Batch 3000/126838
+2024-01-18 20:39:17,947   - Batch 3100/126838
+2024-01-18 20:39:58,611   - Batch 3200/126838
+2024-01-18 20:40:38,173   - Batch 3300/126838
+2024-01-18 20:41:16,479   - Batch 3400/126838
+2024-01-18 20:41:55,064   - Batch 3500/126838
+2024-01-18 20:42:32,774   - Batch 3600/126838
+2024-01-18 20:43:10,724   - Batch 3700/126838
+2024-01-18 20:43:49,078   - Batch 3800/126838
+2024-01-18 20:44:27,079   - Batch 3900/126838
+2024-01-18 20:45:04,861   - Batch 4000/126838
+2024-01-18 20:45:42,916   - Batch 4100/126838
+2024-01-18 20:46:21,479   - Batch 4200/126838
+2024-01-18 20:46:59,087   - Batch 4300/126838
+2024-01-18 20:47:37,143   - Batch 4400/126838
+2024-01-18 20:48:14,871   - Batch 4500/126838
+2024-01-18 20:48:53,066   - Batch 4600/126838
+2024-01-18 20:49:31,073   - Batch 4700/126838
+2024-01-18 20:50:08,669   - Batch 4800/126838
+2024-01-18 20:50:46,186   - Batch 4900/126838
+2024-01-18 20:51:23,890   - Batch 5000/126838
+2024-01-18 20:52:01,427   - Batch 5100/126838
+2024-01-18 20:52:38,844   - Batch 5200/126838
+2024-01-18 20:53:16,394   - Batch 5300/126838
+2024-01-18 20:53:53,897   - Batch 5400/126838
+2024-01-18 20:54:31,475   - Batch 5500/126838
+2024-01-18 20:55:08,994   - Batch 5600/126838
+2024-01-18 20:55:46,676   - Batch 5700/126838
+2024-01-18 20:56:24,326   - Batch 5800/126838
+2024-01-18 20:57:02,000   - Batch 5900/126838
+2024-01-18 20:57:39,782   - Batch 6000/126838
+2024-01-18 20:58:17,538   - Batch 6100/126838
+2024-01-18 20:58:55,325   - Batch 6200/126838
+2024-01-18 20:59:33,017   - Batch 6300/126838
+2024-01-18 21:00:10,902   - Batch 6400/126838
+2024-01-18 21:00:48,427   - Batch 6500/126838
+2024-01-18 21:01:25,909   - Batch 6600/126838
+2024-01-18 21:02:03,484   - Batch 6700/126838
+2024-01-18 21:02:41,001   - Batch 6800/126838
+2024-01-18 21:03:18,612   - Batch 6900/126838
+2024-01-18 21:03:56,600   - Batch 7000/126838
+2024-01-18 21:04:34,064   - Batch 7100/126838
+2024-01-18 21:05:11,599   - Batch 7200/126838
+2024-01-18 21:05:49,774   - Batch 7300/126838
+2024-01-18 21:06:27,270   - Batch 7400/126838
+2024-01-18 21:07:05,385   - Batch 7500/126838
+2024-01-18 21:07:43,006   - Batch 7600/126838
+2024-01-18 21:08:21,382   - Batch 7700/126838
+2024-01-18 21:08:59,341   - Batch 7800/126838
+2024-01-18 21:09:36,991   - Batch 7900/126838
+2024-01-18 21:10:14,952   - Batch 8000/126838
+2024-01-18 21:10:53,025   - Batch 8100/126838
+2024-01-18 21:11:31,090   - Batch 8200/126838
+2024-01-18 21:12:08,845   - Batch 8300/126838
+2024-01-18 21:12:46,934   - Batch 8400/126838
+2024-01-18 21:13:25,021   - Batch 8500/126838
+2024-01-18 21:14:03,013   - Batch 8600/126838
+2024-01-18 21:14:40,765   - Batch 8700/126838
+2024-01-18 21:15:18,705   - Batch 8800/126838
+2024-01-18 21:15:56,910   - Batch 8900/126838
+2024-01-18 21:16:35,576   - Batch 9000/126838
+2024-01-18 21:17:13,916   - Batch 9100/126838
+2024-01-18 21:17:52,012   - Batch 9200/126838
+2024-01-18 21:18:29,858   - Batch 9300/126838
+2024-01-18 21:19:07,261   - Batch 9400/126838
+2024-01-18 21:19:44,967   - Batch 9500/126838
+2024-01-18 21:20:22,996   - Batch 9600/126838
+2024-01-18 21:21:00,926   - Batch 9700/126838
+2024-01-18 21:21:38,562   - Batch 9800/126838
+2024-01-18 21:22:16,612   - Batch 9900/126838
+2024-01-18 21:22:54,635   - Batch 10000/126838
+2024-01-18 21:23:32,453   - Batch 10100/126838
+2024-01-18 21:24:10,164   - Batch 10200/126838
+2024-01-18 21:24:48,494   - Batch 10300/126838
+2024-01-18 21:25:26,184   - Batch 10400/126838
+2024-01-18 21:26:04,087   - Batch 10500/126838
+2024-01-18 21:26:41,500   - Batch 10600/126838
+2024-01-18 21:27:19,895   - Batch 10700/126838
+2024-01-18 21:27:57,337   - Batch 10800/126838
+2024-01-18 21:28:34,944   - Batch 10900/126838
+2024-01-18 21:29:12,345   - Batch 11000/126838
+2024-01-18 21:29:50,255   - Batch 11100/126838
+2024-01-18 21:30:27,639   - Batch 11200/126838
+2024-01-18 21:31:05,217   - Batch 11300/126838
+2024-01-18 21:31:42,834   - Batch 11400/126838
+2024-01-18 21:32:20,523   - Batch 11500/126838
+2024-01-18 21:32:58,111   - Batch 11600/126838
+2024-01-18 21:33:35,845   - Batch 11700/126838
+2024-01-18 21:34:13,485   - Batch 11800/126838
+2024-01-18 21:34:51,176   - Batch 11900/126838
+2024-01-18 21:35:28,842   - Batch 12000/126838
+2024-01-18 21:36:06,579   - Batch 12100/126838
+2024-01-18 21:36:44,264   - Batch 12200/126838
+2024-01-18 21:37:21,851   - Batch 12300/126838
+2024-01-18 21:37:59,595   - Batch 12400/126838
+2024-01-18 21:38:37,288   - Batch 12500/126838
+2024-01-18 21:39:14,960   - Batch 12600/126838
+2024-01-18 21:39:52,517   - Batch 12700/126838
+2024-01-18 21:40:30,195   - Batch 12800/126838
+2024-01-18 21:41:07,719   - Batch 12900/126838
+2024-01-18 21:41:45,200   - Batch 13000/126838
+2024-01-18 21:42:22,928   - Batch 13100/126838
+2024-01-18 21:43:00,624   - Batch 13200/126838
+2024-01-18 21:43:38,387   - Batch 13300/126838
+2024-01-18 21:44:15,937   - Batch 13400/126838
+2024-01-18 21:44:53,530   - Batch 13500/126838
+2024-01-18 21:45:31,227   - Batch 13600/126838
+2024-01-18 21:46:09,176   - Batch 13700/126838
+2024-01-18 21:46:46,771   - Batch 13800/126838
+2024-01-18 21:47:24,897   - Batch 13900/126838
+2024-01-18 21:48:02,638   - Batch 14000/126838
+2024-01-18 21:48:40,420   - Batch 14100/126838
+2024-01-18 21:49:17,959   - Batch 14200/126838
+2024-01-18 21:49:55,669   - Batch 14300/126838
+2024-01-18 21:50:33,762   - Batch 14400/126838
+2024-01-18 21:51:11,362   - Batch 14500/126838
+2024-01-18 21:51:49,225   - Batch 14600/126838
+2024-01-18 21:52:26,748   - Batch 14700/126838
+2024-01-18 21:53:04,504   - Batch 14800/126838
+2024-01-18 21:53:42,483   - Batch 14900/126838
+2024-01-18 21:54:20,253   - Batch 15000/126838
+2024-01-18 21:54:58,344   - Batch 15100/126838
+2024-01-18 21:55:36,138   - Batch 15200/126838
+2024-01-18 21:56:14,281   - Batch 15300/126838
+2024-01-18 21:56:52,634   - Batch 15400/126838
+2024-01-18 21:57:30,420   - Batch 15500/126838
+2024-01-18 21:58:08,428   - Batch 15600/126838
+2024-01-18 21:58:46,432   - Batch 15700/126838
+2024-01-18 21:59:24,845   - Batch 15800/126838
+2024-01-18 22:00:02,361   - Batch 15900/126838
+2024-01-18 22:00:40,185   - Batch 16000/126838
+2024-01-18 22:01:18,326   - Batch 16100/126838
+2024-01-18 22:01:56,168   - Batch 16200/126838
+2024-01-18 22:02:33,759   - Batch 16300/126838
+2024-01-18 22:03:11,701   - Batch 16400/126838
+2024-01-18 22:03:49,882   - Batch 16500/126838
+2024-01-18 22:04:27,633   - Batch 16600/126838
+2024-01-18 22:05:05,307   - Batch 16700/126838
+2024-01-18 22:05:43,212   - Batch 16800/126838
+2024-01-18 22:06:21,484   - Batch 16900/126838
+2024-01-18 22:06:59,418   - Batch 17000/126838
+2024-01-18 22:07:37,340   - Batch 17100/126838
+2024-01-18 22:08:15,486   - Batch 17200/126838
+2024-01-18 22:08:54,028   - Batch 17300/126838
+2024-01-18 22:09:31,753   - Batch 17400/126838
+2024-01-18 22:10:09,601   - Batch 17500/126838
+2024-01-18 22:10:47,135   - Batch 17600/126838
+2024-01-18 22:11:25,649   - Batch 17700/126838
+2024-01-18 22:12:03,123   - Batch 17800/126838
+2024-01-18 22:12:41,021   - Batch 17900/126838
+2024-01-18 22:13:18,853   - Batch 18000/126838
+2024-01-18 22:13:56,702   - Batch 18100/126838
+2024-01-18 22:14:34,149   - Batch 18200/126838
+2024-01-18 22:15:11,982   - Batch 18300/126838
+2024-01-18 22:15:49,750   - Batch 18400/126838
+2024-01-18 22:16:27,297   - Batch 18500/126838
+2024-01-18 22:17:05,105   - Batch 18600/126838
+2024-01-18 22:17:42,762   - Batch 18700/126838
+2024-01-18 22:18:20,481   - Batch 18800/126838
+2024-01-18 22:18:58,126   - Batch 18900/126838
+2024-01-18 22:19:35,763   - Batch 19000/126838
+2024-01-18 22:20:13,461   - Batch 19100/126838
+2024-01-18 22:20:51,210   - Batch 19200/126838
+2024-01-18 22:21:28,758   - Batch 19300/126838
+2024-01-18 22:22:06,236   - Batch 19400/126838
+2024-01-18 22:22:43,826   - Batch 19500/126838
+2024-01-18 22:23:21,580   - Batch 19600/126838
+2024-01-18 22:23:59,404   - Batch 19700/126838
+2024-01-18 22:24:36,981   - Batch 19800/126838
+2024-01-18 22:25:14,730   - Batch 19900/126838
+2024-01-18 22:25:52,597   - Batch 20000/126838
+2024-01-18 22:26:30,311   - Batch 20100/126838
+2024-01-18 22:27:07,809   - Batch 20200/126838
+2024-01-18 22:27:45,414   - Batch 20300/126838
+2024-01-18 22:28:23,037   - Batch 20400/126838
+2024-01-18 22:29:00,791   - Batch 20500/126838
+2024-01-18 22:29:38,566   - Batch 20600/126838
+2024-01-18 22:30:16,487   - Batch 20700/126838
+2024-01-18 22:30:54,558   - Batch 20800/126838
+2024-01-18 22:31:32,158   - Batch 20900/126838
+2024-01-18 22:32:09,489   - Batch 21000/126838
+2024-01-18 22:32:46,983   - Batch 21100/126838
+2024-01-18 22:33:25,547   - Batch 21200/126838
+2024-01-18 22:34:03,305   - Batch 21300/126838
+2024-01-18 22:34:41,183   - Batch 21400/126838
+2024-01-18 22:35:19,227   - Batch 21500/126838
+2024-01-18 22:35:56,822   - Batch 21600/126838
+2024-01-18 22:36:34,450   - Batch 21700/126838
+2024-01-18 22:37:12,176   - Batch 21800/126838
+2024-01-18 22:37:50,493   - Batch 21900/126838
+2024-01-18 22:38:28,418   - Batch 22000/126838
+2024-01-18 22:39:06,115   - Batch 22100/126838
+2024-01-18 22:39:43,951   - Batch 22200/126838
+2024-01-18 22:40:22,067   - Batch 22300/126838
+2024-01-18 22:41:00,063   - Batch 22400/126838
+2024-01-18 22:41:37,825   - Batch 22500/126838
+2024-01-18 22:42:15,654   - Batch 22600/126838
+2024-01-18 22:42:53,698   - Batch 22700/126838
+2024-01-18 22:43:31,477   - Batch 22800/126838
+2024-01-18 22:44:09,400   - Batch 22900/126838
+2024-01-18 22:44:47,297   - Batch 23000/126838
+2024-01-18 22:45:25,034   - Batch 23100/126838
+2024-01-18 22:46:02,966   - Batch 23200/126838
+2024-01-18 22:46:40,882   - Batch 23300/126838
+2024-01-18 22:47:19,030   - Batch 23400/126838
+2024-01-18 22:47:56,897   - Batch 23500/126838
+2024-01-18 22:48:34,678   - Batch 23600/126838
+2024-01-18 22:49:12,513   - Batch 23700/126838
+2024-01-18 22:49:50,584   - Batch 23800/126838
+2024-01-18 22:50:28,513   - Batch 23900/126838
+2024-01-18 22:51:06,069   - Batch 24000/126838
+2024-01-18 22:51:43,860   - Batch 24100/126838
+2024-01-18 22:52:21,693   - Batch 24200/126838
+2024-01-18 22:52:59,347   - Batch 24300/126838
+2024-01-18 22:53:36,941   - Batch 24400/126838
+2024-01-18 22:54:14,730   - Batch 24500/126838
+2024-01-18 22:54:52,444   - Batch 24600/126838
+2024-01-18 22:55:30,117   - Batch 24700/126838
+2024-01-18 22:56:07,607   - Batch 24800/126838
+2024-01-18 22:56:45,176   - Batch 24900/126838
+2024-01-18 22:57:22,799   - Batch 25000/126838
+2024-01-18 22:58:00,463   - Batch 25100/126838
+2024-01-18 22:58:38,145   - Batch 25200/126838
+2024-01-18 22:59:15,879   - Batch 25300/126838
+2024-01-18 22:59:53,727   - Batch 25400/126838
+2024-01-18 23:00:31,448   - Batch 25500/126838
+2024-01-18 23:01:09,052   - Batch 25600/126838
+2024-01-18 23:01:46,788   - Batch 25700/126838
+2024-01-18 23:02:24,596   - Batch 25800/126838
+2024-01-18 23:03:02,264   - Batch 25900/126838
+2024-01-18 23:03:39,972   - Batch 26000/126838
+2024-01-18 23:04:17,786   - Batch 26100/126838
+2024-01-18 23:04:55,447   - Batch 26200/126838
+2024-01-18 23:05:33,092   - Batch 26300/126838
+2024-01-18 23:06:10,798   - Batch 26400/126838
+2024-01-18 23:06:48,493   - Batch 26500/126838
+2024-01-18 23:07:26,225   - Batch 26600/126838
+2024-01-18 23:08:03,965   - Batch 26700/126838
+2024-01-18 23:08:41,701   - Batch 26800/126838
+2024-01-18 23:09:19,447   - Batch 26900/126838
+2024-01-18 23:09:57,337   - Batch 27000/126838
+2024-01-18 23:10:35,212   - Batch 27100/126838
+2024-01-18 23:11:13,005   - Batch 27200/126838
+2024-01-18 23:11:50,958   - Batch 27300/126838
+2024-01-18 23:12:28,909   - Batch 27400/126838
+2024-01-18 23:13:07,503   - Batch 27500/126838
+2024-01-18 23:13:45,139   - Batch 27600/126838
+2024-01-18 23:14:23,203   - Batch 27700/126838
+2024-01-18 23:15:00,750   - Batch 27800/126838
+2024-01-18 23:15:38,346   - Batch 27900/126838
+2024-01-18 23:16:16,118   - Batch 28000/126838
+2024-01-18 23:16:53,948   - Batch 28100/126838
+2024-01-18 23:17:32,222   - Batch 28200/126838
+2024-01-18 23:18:10,139   - Batch 28300/126838
+2024-01-18 23:18:48,454   - Batch 28400/126838
+2024-01-18 23:19:26,308   - Batch 28500/126838
+2024-01-18 23:20:04,184   - Batch 28600/126838
+2024-01-18 23:20:41,915   - Batch 28700/126838
+2024-01-18 23:21:20,939   - Batch 28800/126838
+2024-01-18 23:21:58,831   - Batch 28900/126838
+2024-01-18 23:22:37,153   - Batch 29000/126838
+2024-01-18 23:23:14,883   - Batch 29100/126838
+2024-01-18 23:23:53,327   - Batch 29200/126838
+2024-01-18 23:24:31,279   - Batch 29300/126838
+2024-01-18 23:25:09,153   - Batch 29400/126838
+2024-01-18 23:25:46,621   - Batch 29500/126838
+2024-01-18 23:26:24,900   - Batch 29600/126838
+2024-01-18 23:27:02,683   - Batch 29700/126838
+2024-01-18 23:27:40,565   - Batch 29800/126838
+2024-01-18 23:28:18,778   - Batch 29900/126838
+2024-01-18 23:28:56,664   - Batch 30000/126838
+2024-01-18 23:29:34,433   - Batch 30100/126838
+2024-01-18 23:30:12,367   - Batch 30200/126838
+2024-01-18 23:30:50,725   - Batch 30300/126838
+2024-01-18 23:31:28,747   - Batch 30400/126838
+2024-01-18 23:32:07,952   - Batch 30500/126838
+2024-01-18 23:32:45,864   - Batch 30600/126838
+2024-01-18 23:33:24,016   - Batch 30700/126838
+2024-01-18 23:34:01,792   - Batch 30800/126838
+2024-01-18 23:34:39,954   - Batch 30900/126838
+2024-01-18 23:35:18,557   - Batch 31000/126838
+2024-01-18 23:35:56,520   - Batch 31100/126838
+2024-01-18 23:36:34,377   - Batch 31200/126838
+2024-01-18 23:37:12,320   - Batch 31300/126838
+2024-01-18 23:37:50,422   - Batch 31400/126838
+2024-01-18 23:38:28,233   - Batch 31500/126838
+2024-01-18 23:39:05,707   - Batch 31600/126838
+2024-01-18 23:39:43,467   - Batch 31700/126838
+2024-01-18 23:40:21,490   - Batch 31800/126838
+2024-01-18 23:40:59,317   - Batch 31900/126838
+2024-01-18 23:41:37,098   - Batch 32000/126838
+2024-01-18 23:42:14,727   - Batch 32100/126838
+2024-01-18 23:42:52,447   - Batch 32200/126838
+2024-01-18 23:43:30,079   - Batch 32300/126838
+2024-01-18 23:44:07,783   - Batch 32400/126838
+2024-01-18 23:44:45,432   - Batch 32500/126838
+2024-01-18 23:45:23,323   - Batch 32600/126838
+2024-01-18 23:46:01,216   - Batch 32700/126838
+2024-01-18 23:46:38,855   - Batch 32800/126838
+2024-01-18 23:47:16,664   - Batch 32900/126838
+2024-01-18 23:47:54,639   - Batch 33000/126838
+2024-01-18 23:48:32,264   - Batch 33100/126838
+2024-01-18 23:49:09,862   - Batch 33200/126838
+2024-01-18 23:49:47,630   - Batch 33300/126838
+2024-01-18 23:50:25,610   - Batch 33400/126838
+2024-01-18 23:51:03,500   - Batch 33500/126838
+2024-01-18 23:51:41,317   - Batch 33600/126838
+2024-01-18 23:52:19,290   - Batch 33700/126838
+2024-01-18 23:52:56,887   - Batch 33800/126838
+2024-01-18 23:53:34,587   - Batch 33900/126838
+2024-01-18 23:54:12,297   - Batch 34000/126838
+2024-01-18 23:54:50,113   - Batch 34100/126838
+2024-01-18 23:55:27,901   - Batch 34200/126838
+2024-01-18 23:56:05,573   - Batch 34300/126838
+2024-01-18 23:56:43,311   - Batch 34400/126838
+2024-01-18 23:57:21,162   - Batch 34500/126838
+2024-01-18 23:57:58,600   - Batch 34600/126838
+2024-01-18 23:58:36,467   - Batch 34700/126838
+2024-01-18 23:59:14,407   - Batch 34800/126838
+2024-01-18 23:59:52,116   - Batch 34900/126838
+2024-01-19 00:00:29,874   - Batch 35000/126838
+2024-01-19 00:01:07,940   - Batch 35100/126838
+2024-01-19 00:01:45,937   - Batch 35200/126838
+2024-01-19 00:02:24,081   - Batch 35300/126838
+2024-01-19 00:03:01,870   - Batch 35400/126838
+2024-01-19 00:03:39,965   - Batch 35500/126838
+2024-01-19 00:04:17,600   - Batch 35600/126838
+2024-01-19 00:04:55,643   - Batch 35700/126838
+2024-01-19 00:05:33,397   - Batch 35800/126838
+2024-01-19 00:06:11,457   - Batch 35900/126838
+2024-01-19 00:06:49,958   - Batch 36000/126838
+2024-01-19 00:07:27,706   - Batch 36100/126838
+2024-01-19 00:08:05,671   - Batch 36200/126838
+2024-01-19 00:08:43,303   - Batch 36300/126838
+2024-01-19 00:09:21,702   - Batch 36400/126838
+2024-01-19 00:09:59,557   - Batch 36500/126838
+2024-01-19 00:10:37,381   - Batch 36600/126838
+2024-01-19 00:11:15,410   - Batch 36700/126838
+2024-01-19 00:11:55,521   - Batch 36800/126838
+2024-01-19 00:12:33,616   - Batch 36900/126838
+2024-01-19 00:13:11,530   - Batch 37000/126838
+2024-01-19 00:13:49,810   - Batch 37100/126838
+2024-01-19 00:14:27,492   - Batch 37200/126838
+2024-01-19 00:15:05,356   - Batch 37300/126838
+2024-01-19 00:15:43,359   - Batch 37400/126838
+2024-01-19 00:16:21,320   - Batch 37500/126838
+2024-01-19 00:16:59,308   - Batch 37600/126838
+2024-01-19 00:17:37,255   - Batch 37700/126838
+2024-01-19 00:18:15,126   - Batch 37800/126838
+2024-01-19 00:18:52,803   - Batch 37900/126838
+2024-01-19 00:19:30,448   - Batch 38000/126838
+2024-01-19 00:20:07,767   - Batch 38100/126838
+2024-01-19 00:20:45,525   - Batch 38200/126838
+2024-01-19 00:21:23,270   - Batch 38300/126838
+2024-01-19 00:22:01,205   - Batch 38400/126838
+2024-01-19 00:22:39,129   - Batch 38500/126838
+2024-01-19 00:23:17,997   - Batch 38600/126838
+2024-01-19 00:23:56,364   - Batch 38700/126838
+2024-01-19 00:24:34,291   - Batch 38800/126838
+2024-01-19 00:25:12,252   - Batch 38900/126838
+2024-01-19 00:25:50,126   - Batch 39000/126838
+2024-01-19 00:26:27,883   - Batch 39100/126838
+2024-01-19 00:27:05,454   - Batch 39200/126838
+2024-01-19 00:27:43,074   - Batch 39300/126838
+2024-01-19 00:28:20,844   - Batch 39400/126838
+2024-01-19 00:28:58,519   - Batch 39500/126838
+2024-01-19 00:29:36,278   - Batch 39600/126838
+2024-01-19 00:30:13,919   - Batch 39700/126838
+2024-01-19 00:30:51,750   - Batch 39800/126838
+2024-01-19 00:31:29,652   - Batch 39900/126838
+2024-01-19 00:32:07,507   - Batch 40000/126838
+2024-01-19 00:32:45,313   - Batch 40100/126838
+2024-01-19 00:33:23,086   - Batch 40200/126838
+2024-01-19 00:34:00,783   - Batch 40300/126838
+2024-01-19 00:34:38,593   - Batch 40400/126838
+2024-01-19 00:35:16,444   - Batch 40500/126838
+2024-01-19 00:35:54,209   - Batch 40600/126838
+2024-01-19 00:36:31,941   - Batch 40700/126838
+2024-01-19 00:37:09,620   - Batch 40800/126838
+2024-01-19 00:37:47,263   - Batch 40900/126838
+2024-01-19 00:38:24,783   - Batch 41000/126838
+2024-01-19 00:39:02,358   - Batch 41100/126838
+2024-01-19 00:39:40,320   - Batch 41200/126838
+2024-01-19 00:40:18,281   - Batch 41300/126838
+2024-01-19 00:40:56,411   - Batch 41400/126838
+2024-01-19 00:41:34,132   - Batch 41500/126838
+2024-01-19 00:42:11,839   - Batch 41600/126838
+2024-01-19 00:42:50,154   - Batch 41700/126838
+2024-01-19 00:43:27,997   - Batch 41800/126838
+2024-01-19 00:44:06,347   - Batch 41900/126838
+2024-01-19 00:44:44,582   - Batch 42000/126838
+2024-01-19 00:45:22,807   - Batch 42100/126838
+2024-01-19 00:46:01,289   - Batch 42200/126838
+2024-01-19 00:46:39,235   - Batch 42300/126838
+2024-01-19 00:47:17,470   - Batch 42400/126838
+2024-01-19 00:47:56,098   - Batch 42500/126838
+2024-01-19 00:48:33,997   - Batch 42600/126838
+2024-01-19 00:49:11,890   - Batch 42700/126838
+2024-01-19 00:49:50,000   - Batch 42800/126838
+2024-01-19 00:50:27,976   - Batch 42900/126838
+2024-01-19 00:51:05,664   - Batch 43000/126838
+2024-01-19 00:51:43,758   - Batch 43100/126838
+2024-01-19 00:52:21,662   - Batch 43200/126838
+2024-01-19 00:52:59,770   - Batch 43300/126838
+2024-01-19 00:53:37,892   - Batch 43400/126838
+2024-01-19 00:54:15,909   - Batch 43500/126838
+2024-01-19 00:54:54,374   - Batch 43600/126838
+2024-01-19 00:55:32,142   - Batch 43700/126838
+2024-01-19 00:56:10,328   - Batch 43800/126838
+2024-01-19 00:56:48,577   - Batch 43900/126838
+2024-01-19 00:57:26,389   - Batch 44000/126838
+2024-01-19 00:58:04,590   - Batch 44100/126838
+2024-01-19 00:58:42,305   - Batch 44200/126838
+2024-01-19 00:59:21,018   - Batch 44300/126838
+2024-01-19 00:59:58,957   - Batch 44400/126838
+2024-01-19 01:00:36,872   - Batch 44500/126838
+2024-01-19 01:01:14,571   - Batch 44600/126838
+2024-01-19 01:01:52,572   - Batch 44700/126838
+2024-01-19 01:02:30,606   - Batch 44800/126838
+2024-01-19 01:03:08,486   - Batch 44900/126838
+2024-01-19 01:03:46,502   - Batch 45000/126838
+2024-01-19 01:04:25,054   - Batch 45100/126838
+2024-01-19 01:05:02,774   - Batch 45200/126838
+2024-01-19 01:05:40,942   - Batch 45300/126838
+2024-01-19 01:06:19,598   - Batch 45400/126838
+2024-01-19 01:06:57,566   - Batch 45500/126838
+2024-01-19 01:07:35,462   - Batch 45600/126838
+2024-01-19 01:08:13,311   - Batch 45700/126838
+2024-01-19 01:08:51,408   - Batch 45800/126838
+2024-01-19 01:09:28,915   - Batch 45900/126838
+2024-01-19 01:10:06,526   - Batch 46000/126838
+2024-01-19 01:10:44,176   - Batch 46100/126838
+2024-01-19 01:11:22,135   - Batch 46200/126838
+2024-01-19 01:11:59,994   - Batch 46300/126838
+2024-01-19 01:12:37,853   - Batch 46400/126838
+2024-01-19 01:13:15,677   - Batch 46500/126838
+2024-01-19 01:13:53,680   - Batch 46600/126838
+2024-01-19 01:14:31,703   - Batch 46700/126838
+2024-01-19 01:15:09,575   - Batch 46800/126838
+2024-01-19 01:15:47,583   - Batch 46900/126838
+2024-01-19 01:16:25,568   - Batch 47000/126838
+2024-01-19 01:17:03,642   - Batch 47100/126838
+2024-01-19 01:17:41,784   - Batch 47200/126838
+2024-01-19 01:18:20,461   - Batch 47300/126838
+2024-01-19 01:18:58,569   - Batch 47400/126838
+2024-01-19 01:19:36,643   - Batch 47500/126838
+2024-01-19 01:20:14,429   - Batch 47600/126838
+2024-01-19 01:20:52,248   - Batch 47700/126838
+2024-01-19 01:21:30,066   - Batch 47800/126838
+2024-01-19 01:22:08,062   - Batch 47900/126838
+2024-01-19 01:22:45,936   - Batch 48000/126838
+2024-01-19 01:23:23,805   - Batch 48100/126838
+2024-01-19 01:24:02,025   - Batch 48200/126838
+2024-01-19 01:24:39,968   - Batch 48300/126838
+2024-01-19 01:25:17,895   - Batch 48400/126838
+2024-01-19 01:25:56,162   - Batch 48500/126838
+2024-01-19 01:26:34,078   - Batch 48600/126838
+2024-01-19 01:27:12,191   - Batch 48700/126838
+2024-01-19 01:27:50,458   - Batch 48800/126838
+2024-01-19 01:28:28,217   - Batch 48900/126838
+2024-01-19 01:29:06,299   - Batch 49000/126838
+2024-01-19 01:29:44,372   - Batch 49100/126838
+2024-01-19 01:30:22,872   - Batch 49200/126838
+2024-01-19 01:31:00,894   - Batch 49300/126838
+2024-01-19 01:31:38,639   - Batch 49400/126838
+2024-01-19 01:32:16,790   - Batch 49500/126838
+2024-01-19 01:32:55,391   - Batch 49600/126838
+2024-01-19 01:33:33,583   - Batch 49700/126838
+2024-01-19 01:34:11,795   - Batch 49800/126838
+2024-01-19 01:34:50,178   - Batch 49900/126838
+2024-01-19 01:35:28,277   - Batch 50000/126838
+2024-01-19 01:36:06,144   - Batch 50100/126838
+2024-01-19 01:36:44,138   - Batch 50200/126838
+2024-01-19 01:37:22,263   - Batch 50300/126838
+2024-01-19 01:38:00,291   - Batch 50400/126838
+2024-01-19 01:38:38,297   - Batch 50500/126838
+2024-01-19 01:39:16,117   - Batch 50600/126838
+2024-01-19 01:39:54,532   - Batch 50700/126838
+2024-01-19 01:40:33,093   - Batch 50800/126838
+2024-01-19 01:41:11,177   - Batch 50900/126838
+2024-01-19 01:41:49,500   - Batch 51000/126838
+2024-01-19 01:42:27,231   - Batch 51100/126838
+2024-01-19 01:43:05,385   - Batch 51200/126838
+2024-01-19 01:43:43,389   - Batch 51300/126838
+2024-01-19 01:44:22,176   - Batch 51400/126838
+2024-01-19 01:45:00,187   - Batch 51500/126838
+2024-01-19 01:45:37,927   - Batch 51600/126838
+2024-01-19 01:46:15,816   - Batch 51700/126838
+2024-01-19 01:46:53,744   - Batch 51800/126838
+2024-01-19 01:47:32,001   - Batch 51900/126838
+2024-01-19 01:48:09,818   - Batch 52000/126838
+2024-01-19 01:48:47,375   - Batch 52100/126838
+2024-01-19 01:49:25,282   - Batch 52200/126838
+2024-01-19 01:50:02,976   - Batch 52300/126838
+2024-01-19 01:50:40,742   - Batch 52400/126838
+2024-01-19 01:51:18,600   - Batch 52500/126838
+2024-01-19 01:51:56,464   - Batch 52600/126838
+2024-01-19 01:52:34,384   - Batch 52700/126838
+2024-01-19 01:53:12,215   - Batch 52800/126838
+2024-01-19 01:53:50,079   - Batch 52900/126838
+2024-01-19 01:54:27,869   - Batch 53000/126838
+2024-01-19 01:55:05,822   - Batch 53100/126838
+2024-01-19 01:55:43,779   - Batch 53200/126838
+2024-01-19 01:56:21,821   - Batch 53300/126838
+2024-01-19 01:56:59,838   - Batch 53400/126838
+2024-01-19 01:57:37,848   - Batch 53500/126838
+2024-01-19 01:58:15,788   - Batch 53600/126838
+2024-01-19 01:58:53,727   - Batch 53700/126838
+2024-01-19 01:59:31,584   - Batch 53800/126838
+2024-01-19 02:00:09,627   - Batch 53900/126838
+2024-01-19 02:00:47,429   - Batch 54000/126838
+2024-01-19 02:01:25,221   - Batch 54100/126838
+2024-01-19 02:02:03,045   - Batch 54200/126838
+2024-01-19 02:02:40,726   - Batch 54300/126838
+2024-01-19 02:03:18,428   - Batch 54400/126838
+2024-01-19 02:03:56,385   - Batch 54500/126838
+2024-01-19 02:04:34,234   - Batch 54600/126838
+2024-01-19 02:05:12,294   - Batch 54700/126838
+2024-01-19 02:05:50,338   - Batch 54800/126838
+2024-01-19 02:06:28,741   - Batch 54900/126838
+2024-01-19 02:07:06,720   - Batch 55000/126838
+2024-01-19 02:07:45,157   - Batch 55100/126838
+2024-01-19 02:08:23,187   - Batch 55200/126838
+2024-01-19 02:09:01,096   - Batch 55300/126838
+2024-01-19 02:09:39,622   - Batch 55400/126838
+2024-01-19 02:10:17,984   - Batch 55500/126838
+2024-01-19 02:10:56,320   - Batch 55600/126838
+2024-01-19 02:11:34,191   - Batch 55700/126838
+2024-01-19 02:12:12,679   - Batch 55800/126838
+2024-01-19 02:12:51,045   - Batch 55900/126838
+2024-01-19 02:13:28,866   - Batch 56000/126838
+2024-01-19 02:14:07,010   - Batch 56100/126838
+2024-01-19 02:14:44,723   - Batch 56200/126838
+2024-01-19 02:15:23,366   - Batch 56300/126838
+2024-01-19 02:16:01,647   - Batch 56400/126838
+2024-01-19 02:16:39,833   - Batch 56500/126838
+2024-01-19 02:17:17,758   - Batch 56600/126838
+2024-01-19 02:17:55,973   - Batch 56700/126838
+2024-01-19 02:18:34,304   - Batch 56800/126838
+2024-01-19 02:19:12,246   - Batch 56900/126838
+2024-01-19 02:19:50,655   - Batch 57000/126838
+2024-01-19 02:20:28,848   - Batch 57100/126838
+2024-01-19 02:21:07,061   - Batch 57200/126838
+2024-01-19 02:21:44,931   - Batch 57300/126838
+2024-01-19 02:22:23,889   - Batch 57400/126838
+2024-01-19 02:23:02,049   - Batch 57500/126838
+2024-01-19 02:23:40,035   - Batch 57600/126838
+2024-01-19 02:24:18,268   - Batch 57700/126838
+2024-01-19 02:24:56,215   - Batch 57800/126838
+2024-01-19 02:25:33,920   - Batch 57900/126838
+2024-01-19 02:26:12,029   - Batch 58000/126838
+2024-01-19 02:26:50,501   - Batch 58100/126838
+2024-01-19 02:27:28,800   - Batch 58200/126838
+2024-01-19 02:28:06,999   - Batch 58300/126838
+2024-01-19 02:28:45,197   - Batch 58400/126838
+2024-01-19 02:29:23,757   - Batch 58500/126838
+2024-01-19 02:30:01,564   - Batch 58600/126838
+2024-01-19 02:30:40,023   - Batch 58700/126838
+2024-01-19 02:31:18,549   - Batch 58800/126838
+2024-01-19 02:31:56,553   - Batch 58900/126838
+2024-01-19 02:32:34,600   - Batch 59000/126838
+2024-01-19 02:33:12,345   - Batch 59100/126838
+2024-01-19 02:33:50,501   - Batch 59200/126838
+2024-01-19 02:34:28,200   - Batch 59300/126838
+2024-01-19 02:35:05,772   - Batch 59400/126838
+2024-01-19 02:35:43,385   - Batch 59500/126838
+2024-01-19 02:36:21,292   - Batch 59600/126838
+2024-01-19 02:36:59,058   - Batch 59700/126838
+2024-01-19 02:37:36,844   - Batch 59800/126838
+2024-01-19 02:38:14,864   - Batch 59900/126838
+2024-01-19 02:38:53,128   - Batch 60000/126838
+2024-01-19 02:39:31,342   - Batch 60100/126838
+2024-01-19 02:40:09,260   - Batch 60200/126838
+2024-01-19 02:40:47,506   - Batch 60300/126838
+2024-01-19 02:41:25,875   - Batch 60400/126838
+2024-01-19 02:42:03,703   - Batch 60500/126838
+2024-01-19 02:42:41,514   - Batch 60600/126838
+2024-01-19 02:43:19,325   - Batch 60700/126838
+2024-01-19 02:43:57,157   - Batch 60800/126838
+2024-01-19 02:44:35,068   - Batch 60900/126838
+2024-01-19 02:45:13,134   - Batch 61000/126838
+2024-01-19 02:45:50,924   - Batch 61100/126838
+2024-01-19 02:46:28,735   - Batch 61200/126838
+2024-01-19 02:47:06,564   - Batch 61300/126838
+2024-01-19 02:47:44,599   - Batch 61400/126838
+2024-01-19 02:48:22,552   - Batch 61500/126838
+2024-01-19 02:49:00,667   - Batch 61600/126838
+2024-01-19 02:49:38,916   - Batch 61700/126838
+2024-01-19 02:50:17,186   - Batch 61800/126838
+2024-01-19 02:50:55,515   - Batch 61900/126838
+2024-01-19 02:51:33,316   - Batch 62000/126838
+2024-01-19 02:52:11,288   - Batch 62100/126838
+2024-01-19 02:52:50,010   - Batch 62200/126838
+2024-01-19 02:53:28,740   - Batch 62300/126838
+2024-01-19 02:54:06,529   - Batch 62400/126838
+2024-01-19 02:54:44,691   - Batch 62500/126838
+2024-01-19 02:55:23,066   - Batch 62600/126838
+2024-01-19 02:56:00,715   - Batch 62700/126838
+2024-01-19 02:56:39,273   - Batch 62800/126838
+2024-01-19 02:57:17,611   - Batch 62900/126838
+2024-01-19 02:57:55,686   - Batch 63000/126838
+2024-01-19 02:58:33,694   - Batch 63100/126838
+2024-01-19 02:59:11,633   - Batch 63200/126838
+2024-01-19 02:59:50,172   - Batch 63300/126838
+2024-01-19 03:00:28,573   - Batch 63400/126838
+2024-01-19 03:01:07,027   - Batch 63500/126838
+2024-01-19 03:01:45,174   - Batch 63600/126838
+2024-01-19 03:02:23,321   - Batch 63700/126838
+2024-01-19 03:03:01,502   - Batch 63800/126838
+2024-01-19 03:03:39,221   - Batch 63900/126838
+2024-01-19 03:04:17,517   - Batch 64000/126838
+2024-01-19 03:04:56,049   - Batch 64100/126838
+2024-01-19 03:05:33,807   - Batch 64200/126838
+2024-01-19 03:06:11,786   - Batch 64300/126838
+2024-01-19 03:06:50,006   - Batch 64400/126838
+2024-01-19 03:07:27,705   - Batch 64500/126838
+2024-01-19 03:08:05,774   - Batch 64600/126838
+2024-01-19 03:08:44,403   - Batch 64700/126838
+2024-01-19 03:09:22,936   - Batch 64800/126838
+2024-01-19 03:10:01,297   - Batch 64900/126838
+2024-01-19 03:10:39,506   - Batch 65000/126838
+2024-01-19 03:11:18,464   - Batch 65100/126838
+2024-01-19 03:11:57,330   - Batch 65200/126838
+2024-01-19 03:12:35,295   - Batch 65300/126838
+2024-01-19 03:13:13,195   - Batch 65400/126838
+2024-01-19 03:13:51,720   - Batch 65500/126838
+2024-01-19 03:14:29,733   - Batch 65600/126838
+2024-01-19 03:15:07,609   - Batch 65700/126838
+2024-01-19 03:15:45,474   - Batch 65800/126838
+2024-01-19 03:16:24,045   - Batch 65900/126838
+2024-01-19 03:17:01,900   - Batch 66000/126838
+2024-01-19 03:17:41,007   - Batch 66100/126838
+2024-01-19 03:18:19,085   - Batch 66200/126838
+2024-01-19 03:18:57,374   - Batch 66300/126838
+2024-01-19 03:19:35,588   - Batch 66400/126838
+2024-01-19 03:20:14,091   - Batch 66500/126838
+2024-01-19 03:20:52,166   - Batch 66600/126838
+2024-01-19 03:21:30,193   - Batch 66700/126838
+2024-01-19 03:22:08,077   - Batch 66800/126838
+2024-01-19 03:22:45,990   - Batch 66900/126838
+2024-01-19 03:23:24,202   - Batch 67000/126838
+2024-01-19 03:24:02,545   - Batch 67100/126838
+2024-01-19 03:24:40,572   - Batch 67200/126838
+2024-01-19 03:25:18,429   - Batch 67300/126838
+2024-01-19 03:25:56,407   - Batch 67400/126838
+2024-01-19 03:26:34,188   - Batch 67500/126838
+2024-01-19 03:27:12,314   - Batch 67600/126838
+2024-01-19 03:27:50,528   - Batch 67700/126838
+2024-01-19 03:28:28,297   - Batch 67800/126838
+2024-01-19 03:29:06,192   - Batch 67900/126838
+2024-01-19 03:29:44,154   - Batch 68000/126838
+2024-01-19 03:30:22,078   - Batch 68100/126838
+2024-01-19 03:31:00,195   - Batch 68200/126838
+2024-01-19 03:31:38,790   - Batch 68300/126838
+2024-01-19 03:32:17,440   - Batch 68400/126838
+2024-01-19 03:32:55,455   - Batch 68500/126838
+2024-01-19 03:33:33,719   - Batch 68600/126838
+2024-01-19 03:34:11,770   - Batch 68700/126838
+2024-01-19 03:34:49,949   - Batch 68800/126838
+2024-01-19 03:35:28,821   - Batch 68900/126838
+2024-01-19 03:36:07,233   - Batch 69000/126838
+2024-01-19 03:36:45,412   - Batch 69100/126838
+2024-01-19 03:37:23,854   - Batch 69200/126838
+2024-01-19 03:38:02,350   - Batch 69300/126838
+2024-01-19 03:38:40,611   - Batch 69400/126838
+2024-01-19 03:39:19,661   - Batch 69500/126838
+2024-01-19 03:39:58,950   - Batch 69600/126838
+2024-01-19 03:40:37,163   - Batch 69700/126838
+2024-01-19 03:41:15,127   - Batch 69800/126838
+2024-01-19 03:41:53,710   - Batch 69900/126838
+2024-01-19 03:42:31,637   - Batch 70000/126838
+2024-01-19 03:43:09,936   - Batch 70100/126838
+2024-01-19 03:43:48,616   - Batch 70200/126838
+2024-01-19 03:44:26,333   - Batch 70300/126838
+2024-01-19 03:45:04,182   - Batch 70400/126838
+2024-01-19 03:45:41,878   - Batch 70500/126838
+2024-01-19 03:46:20,523   - Batch 70600/126838
+2024-01-19 03:46:58,813   - Batch 70700/126838
+2024-01-19 03:47:37,115   - Batch 70800/126838
+2024-01-19 03:48:15,239   - Batch 70900/126838
+2024-01-19 03:48:54,147   - Batch 71000/126838
+2024-01-19 03:49:31,923   - Batch 71100/126838
+2024-01-19 03:50:09,918   - Batch 71200/126838
+2024-01-19 03:50:48,313   - Batch 71300/126838
+2024-01-19 03:51:26,883   - Batch 71400/126838
+2024-01-19 03:52:04,749   - Batch 71500/126838
+2024-01-19 03:52:42,982   - Batch 71600/126838
+2024-01-19 03:53:21,280   - Batch 71700/126838
+2024-01-19 03:53:59,361   - Batch 71800/126838
+2024-01-19 03:54:37,598   - Batch 71900/126838
+2024-01-19 03:55:16,263   - Batch 72000/126838
+2024-01-19 03:55:55,026   - Batch 72100/126838
+2024-01-19 03:56:33,522   - Batch 72200/126838
+2024-01-19 03:57:11,353   - Batch 72300/126838
+2024-01-19 03:57:49,442   - Batch 72400/126838
+2024-01-19 03:58:27,480   - Batch 72500/126838
+2024-01-19 03:59:06,603   - Batch 72600/126838
+2024-01-19 03:59:44,240   - Batch 72700/126838
+2024-01-19 04:00:22,912   - Batch 72800/126838
+2024-01-19 04:01:00,823   - Batch 72900/126838
+2024-01-19 04:01:39,326   - Batch 73000/126838
+2024-01-19 04:02:17,286   - Batch 73100/126838
+2024-01-19 04:02:56,098   - Batch 73200/126838
+2024-01-19 04:03:33,849   - Batch 73300/126838
+2024-01-19 04:04:11,970   - Batch 73400/126838
+2024-01-19 04:04:50,015   - Batch 73500/126838
+2024-01-19 04:05:27,880   - Batch 73600/126838
+2024-01-19 04:06:05,895   - Batch 73700/126838
+2024-01-19 04:06:44,116   - Batch 73800/126838
+2024-01-19 04:07:22,059   - Batch 73900/126838
+2024-01-19 04:08:00,348   - Batch 74000/126838
+2024-01-19 04:08:38,312   - Batch 74100/126838
+2024-01-19 04:09:16,248   - Batch 74200/126838
+2024-01-19 04:09:54,158   - Batch 74300/126838
+2024-01-19 04:10:32,239   - Batch 74400/126838
+2024-01-19 04:11:10,869   - Batch 74500/126838
+2024-01-19 04:11:51,821   - Batch 74600/126838
+2024-01-19 04:12:29,929   - Batch 74700/126838
+2024-01-19 04:13:08,541   - Batch 74800/126838
+2024-01-19 04:13:46,935   - Batch 74900/126838
+2024-01-19 04:14:25,857   - Batch 75000/126838
+2024-01-19 04:15:03,850   - Batch 75100/126838
+2024-01-19 04:15:41,657   - Batch 75200/126838
+2024-01-19 04:16:19,486   - Batch 75300/126838
+2024-01-19 04:16:57,740   - Batch 75400/126838
+2024-01-19 04:17:36,135   - Batch 75500/126838
+2024-01-19 04:18:14,559   - Batch 75600/126838
+2024-01-19 04:18:53,394   - Batch 75700/126838
+2024-01-19 04:19:31,448   - Batch 75800/126838
+2024-01-19 04:20:09,487   - Batch 75900/126838
+2024-01-19 04:20:48,489   - Batch 76000/126838
+2024-01-19 04:21:26,836   - Batch 76100/126838
+2024-01-19 04:22:05,023   - Batch 76200/126838
+2024-01-19 04:22:43,819   - Batch 76300/126838
+2024-01-19 04:23:22,602   - Batch 76400/126838
+2024-01-19 04:24:00,965   - Batch 76500/126838
+2024-01-19 04:24:38,813   - Batch 76600/126838
+2024-01-19 04:25:17,016   - Batch 76700/126838
+2024-01-19 04:25:55,661   - Batch 76800/126838
+2024-01-19 04:26:34,665   - Batch 76900/126838
+2024-01-19 04:27:12,928   - Batch 77000/126838
+2024-01-19 04:27:51,321   - Batch 77100/126838
+2024-01-19 04:28:29,398   - Batch 77200/126838
+2024-01-19 04:29:07,469   - Batch 77300/126838
+2024-01-19 04:29:45,768   - Batch 77400/126838
+2024-01-19 04:30:25,108   - Batch 77500/126838
+2024-01-19 04:31:03,232   - Batch 77600/126838
+2024-01-19 04:31:41,558   - Batch 77700/126838
+2024-01-19 04:32:20,049   - Batch 77800/126838
+2024-01-19 04:32:58,283   - Batch 77900/126838
+2024-01-19 04:33:36,709   - Batch 78000/126838
+2024-01-19 04:34:15,578   - Batch 78100/126838
+2024-01-19 04:34:54,009   - Batch 78200/126838
+2024-01-19 04:35:32,437   - Batch 78300/126838
+2024-01-19 04:36:10,352   - Batch 78400/126838
+2024-01-19 04:36:49,193   - Batch 78500/126838
+2024-01-19 04:37:27,392   - Batch 78600/126838
+2024-01-19 04:38:05,654   - Batch 78700/126838
+2024-01-19 04:38:43,550   - Batch 78800/126838
+2024-01-19 04:39:21,813   - Batch 78900/126838
+2024-01-19 04:39:59,710   - Batch 79000/126838
+2024-01-19 04:40:37,844   - Batch 79100/126838
+2024-01-19 04:41:16,435   - Batch 79200/126838
+2024-01-19 04:41:55,818   - Batch 79300/126838
+2024-01-19 04:42:33,746   - Batch 79400/126838
+2024-01-19 04:43:11,814   - Batch 79500/126838
+2024-01-19 04:43:50,129   - Batch 79600/126838
+2024-01-19 04:44:28,119   - Batch 79700/126838
+2024-01-19 04:45:06,714   - Batch 79800/126838
+2024-01-19 04:45:45,832   - Batch 79900/126838
+2024-01-19 04:46:23,771   - Batch 80000/126838
+2024-01-19 04:47:02,098   - Batch 80100/126838
+2024-01-19 04:47:40,385   - Batch 80200/126838
+2024-01-19 04:48:18,110   - Batch 80300/126838
+2024-01-19 04:48:56,300   - Batch 80400/126838
+2024-01-19 04:49:34,089   - Batch 80500/126838
+2024-01-19 04:50:12,595   - Batch 80600/126838
+2024-01-19 04:50:50,498   - Batch 80700/126838
+2024-01-19 04:51:28,785   - Batch 80800/126838
+2024-01-19 04:52:06,899   - Batch 80900/126838
+2024-01-19 04:52:45,176   - Batch 81000/126838
+2024-01-19 04:53:23,655   - Batch 81100/126838
+2024-01-19 04:54:02,641   - Batch 81200/126838
+2024-01-19 04:54:40,631   - Batch 81300/126838
+2024-01-19 04:55:18,793   - Batch 81400/126838
+2024-01-19 04:55:57,341   - Batch 81500/126838
+2024-01-19 04:56:35,186   - Batch 81600/126838
+2024-01-19 04:57:13,630   - Batch 81700/126838
+2024-01-19 04:57:52,763   - Batch 81800/126838
+2024-01-19 04:58:31,101   - Batch 81900/126838
+2024-01-19 04:59:09,689   - Batch 82000/126838
+2024-01-19 04:59:47,350   - Batch 82100/126838
+2024-01-19 05:00:25,704   - Batch 82200/126838
+2024-01-19 05:01:03,889   - Batch 82300/126838
+2024-01-19 05:01:42,316   - Batch 82400/126838
+2024-01-19 05:02:20,343   - Batch 82500/126838
+2024-01-19 05:02:58,465   - Batch 82600/126838
+2024-01-19 05:03:36,612   - Batch 82700/126838
+2024-01-19 05:04:14,653   - Batch 82800/126838
+2024-01-19 05:04:53,049   - Batch 82900/126838
+2024-01-19 05:05:31,824   - Batch 83000/126838
+2024-01-19 05:06:10,222   - Batch 83100/126838
+2024-01-19 05:06:48,996   - Batch 83200/126838
+2024-01-19 05:07:26,969   - Batch 83300/126838
+2024-01-19 05:08:05,511   - Batch 83400/126838
+2024-01-19 05:08:43,622   - Batch 83500/126838
+2024-01-19 05:09:22,669   - Batch 83600/126838
+2024-01-19 05:10:00,534   - Batch 83700/126838
+2024-01-19 05:10:38,889   - Batch 83800/126838
+2024-01-19 05:11:17,488   - Batch 83900/126838
+2024-01-19 05:11:56,748   - Batch 84000/126838
+2024-01-19 05:12:35,604   - Batch 84100/126838
+2024-01-19 05:13:14,792   - Batch 84200/126838
+2024-01-19 05:13:53,151   - Batch 84300/126838
+2024-01-19 05:14:31,609   - Batch 84400/126838
+2024-01-19 05:15:10,436   - Batch 84500/126838
+2024-01-19 05:15:49,026   - Batch 84600/126838
+2024-01-19 05:16:28,675   - Batch 84700/126838
+2024-01-19 05:17:08,097   - Batch 84800/126838
+2024-01-19 05:17:46,348   - Batch 84900/126838
+2024-01-19 05:18:25,480   - Batch 85000/126838
+2024-01-19 05:19:04,195   - Batch 85100/126838
+2024-01-19 05:19:42,122   - Batch 85200/126838
+2024-01-19 05:20:21,319   - Batch 85300/126838
+2024-01-19 05:21:00,892   - Batch 85400/126838
+2024-01-19 05:21:38,862   - Batch 85500/126838
+2024-01-19 05:22:17,257   - Batch 85600/126838
+2024-01-19 05:22:56,420   - Batch 85700/126838
+2024-01-19 05:23:34,335   - Batch 85800/126838
+2024-01-19 05:24:12,778   - Batch 85900/126838
+2024-01-19 05:24:52,148   - Batch 86000/126838
+2024-01-19 05:25:30,163   - Batch 86100/126838
+2024-01-19 05:26:09,114   - Batch 86200/126838
+2024-01-19 05:26:47,590   - Batch 86300/126838
+2024-01-19 05:27:25,606   - Batch 86400/126838
+2024-01-19 05:28:04,539   - Batch 86500/126838
+2024-01-19 05:28:43,758   - Batch 86600/126838
+2024-01-19 05:29:21,599   - Batch 86700/126838
+2024-01-19 05:29:59,926   - Batch 86800/126838
+2024-01-19 05:30:39,167   - Batch 86900/126838
+2024-01-19 05:31:18,595   - Batch 87000/126838
+2024-01-19 05:31:57,068   - Batch 87100/126838
+2024-01-19 05:32:36,374   - Batch 87200/126838
+2024-01-19 05:33:14,306   - Batch 87300/126838
+2024-01-19 05:33:52,568   - Batch 87400/126838
+2024-01-19 05:34:30,917   - Batch 87500/126838
+2024-01-19 05:35:08,847   - Batch 87600/126838
+2024-01-19 05:35:47,318   - Batch 87700/126838
+2024-01-19 05:36:26,665   - Batch 87800/126838
+2024-01-19 05:37:04,956   - Batch 87900/126838
+2024-01-19 05:37:43,224   - Batch 88000/126838
+2024-01-19 05:38:21,652   - Batch 88100/126838
+2024-01-19 05:39:00,158   - Batch 88200/126838
+2024-01-19 05:39:38,241   - Batch 88300/126838
+2024-01-19 05:40:17,267   - Batch 88400/126838
+2024-01-19 05:40:56,444   - Batch 88500/126838
+2024-01-19 05:41:36,024   - Batch 88600/126838
+2024-01-19 05:42:15,836   - Batch 88700/126838
+2024-01-19 05:42:55,427   - Batch 88800/126838
+2024-01-19 05:43:34,005   - Batch 88900/126838
+2024-01-19 05:44:13,336   - Batch 89000/126838
+2024-01-19 05:44:51,413   - Batch 89100/126838
+2024-01-19 05:45:30,635   - Batch 89200/126838
+2024-01-19 05:46:08,253   - Batch 89300/126838
+2024-01-19 05:46:46,698   - Batch 89400/126838
+2024-01-19 05:47:25,886   - Batch 89500/126838
+2024-01-19 05:48:05,360   - Batch 89600/126838
+2024-01-19 05:48:43,315   - Batch 89700/126838
+2024-01-19 05:49:22,200   - Batch 89800/126838
+2024-01-19 05:50:00,332   - Batch 89900/126838
+2024-01-19 05:50:38,723   - Batch 90000/126838
+2024-01-19 05:51:17,191   - Batch 90100/126838
+2024-01-19 05:51:56,358   - Batch 90200/126838
+2024-01-19 05:52:34,264   - Batch 90300/126838
+2024-01-19 05:53:12,915   - Batch 90400/126838
+2024-01-19 05:53:51,714   - Batch 90500/126838
+2024-01-19 05:54:29,818   - Batch 90600/126838
+2024-01-19 05:55:08,677   - Batch 90700/126838
+2024-01-19 05:55:48,601   - Batch 90800/126838
+2024-01-19 05:56:26,996   - Batch 90900/126838
+2024-01-19 05:57:04,913   - Batch 91000/126838
+2024-01-19 05:57:43,514   - Batch 91100/126838
+2024-01-19 05:58:22,024   - Batch 91200/126838
+2024-01-19 05:59:00,347   - Batch 91300/126838
+2024-01-19 05:59:39,879   - Batch 91400/126838
+2024-01-19 06:00:18,148   - Batch 91500/126838
+2024-01-19 06:00:56,372   - Batch 91600/126838
+2024-01-19 06:01:35,229   - Batch 91700/126838
+2024-01-19 06:02:13,193   - Batch 91800/126838
+2024-01-19 06:02:51,841   - Batch 91900/126838
+2024-01-19 06:03:31,503   - Batch 92000/126838
+2024-01-19 06:04:09,827   - Batch 92100/126838
+2024-01-19 06:04:48,117   - Batch 92200/126838
+2024-01-19 06:05:27,176   - Batch 92300/126838
+2024-01-19 06:06:05,083   - Batch 92400/126838
+2024-01-19 06:06:43,865   - Batch 92500/126838
+2024-01-19 06:07:23,396   - Batch 92600/126838
+2024-01-19 06:08:01,376   - Batch 92700/126838
+2024-01-19 06:08:39,579   - Batch 92800/126838
+2024-01-19 06:09:17,905   - Batch 92900/126838
+2024-01-19 06:09:55,944   - Batch 93000/126838
+2024-01-19 06:10:34,902   - Batch 93100/126838
+2024-01-19 06:11:14,613   - Batch 93200/126838
+2024-01-19 06:11:54,696   - Batch 93300/126838
+2024-01-19 06:12:34,625   - Batch 93400/126838
+2024-01-19 06:13:14,422   - Batch 93500/126838
+2024-01-19 06:13:54,137   - Batch 93600/126838
+2024-01-19 06:14:32,717   - Batch 93700/126838
+2024-01-19 06:15:12,349   - Batch 93800/126838
+2024-01-19 06:15:52,132   - Batch 93900/126838
+2024-01-19 06:16:31,753   - Batch 94000/126838
+2024-01-19 06:17:11,882   - Batch 94100/126838
+2024-01-19 06:17:49,971   - Batch 94200/126838
+2024-01-19 06:18:29,187   - Batch 94300/126838
+2024-01-19 06:19:08,687   - Batch 94400/126838
+2024-01-19 06:19:48,223   - Batch 94500/126838
+2024-01-19 06:20:27,644   - Batch 94600/126838
+2024-01-19 06:21:07,295   - Batch 94700/126838
+2024-01-19 06:21:47,199   - Batch 94800/126838
+2024-01-19 06:22:27,217   - Batch 94900/126838
+2024-01-19 06:23:06,786   - Batch 95000/126838
+2024-01-19 06:23:46,611   - Batch 95100/126838
+2024-01-19 06:24:26,324   - Batch 95200/126838
+2024-01-19 06:25:06,319   - Batch 95300/126838
+2024-01-19 06:25:45,926   - Batch 95400/126838
+2024-01-19 06:26:24,684   - Batch 95500/126838
+2024-01-19 06:27:03,979   - Batch 95600/126838
+2024-01-19 06:27:42,346   - Batch 95700/126838
+2024-01-19 06:28:21,216   - Batch 95800/126838
+2024-01-19 06:28:59,502   - Batch 95900/126838
+2024-01-19 06:29:38,203   - Batch 96000/126838
+2024-01-19 06:30:17,553   - Batch 96100/126838
+2024-01-19 06:30:57,535   - Batch 96200/126838
+2024-01-19 06:31:36,137   - Batch 96300/126838
+2024-01-19 06:32:14,450   - Batch 96400/126838
+2024-01-19 06:32:54,338   - Batch 96500/126838
+2024-01-19 06:33:32,573   - Batch 96600/126838
+2024-01-19 06:34:11,739   - Batch 96700/126838
+2024-01-19 06:34:51,707   - Batch 96800/126838
+2024-01-19 06:35:29,976   - Batch 96900/126838
+2024-01-19 06:36:08,653   - Batch 97000/126838
+2024-01-19 06:36:48,659   - Batch 97100/126838
+2024-01-19 06:37:27,182   - Batch 97200/126838
+2024-01-19 06:38:05,965   - Batch 97300/126838
+2024-01-19 06:38:45,741   - Batch 97400/126838
+2024-01-19 06:39:25,808   - Batch 97500/126838
+2024-01-19 06:40:06,097   - Batch 97600/126838
+2024-01-19 06:40:45,885   - Batch 97700/126838
+2024-01-19 06:41:25,965   - Batch 97800/126838
+2024-01-19 06:42:05,799   - Batch 97900/126838
+2024-01-19 06:42:45,708   - Batch 98000/126838
+2024-01-19 06:43:26,143   - Batch 98100/126838
+2024-01-19 06:44:05,942   - Batch 98200/126838
+2024-01-19 06:44:46,056   - Batch 98300/126838
+2024-01-19 06:45:25,997   - Batch 98400/126838
+2024-01-19 06:46:05,563   - Batch 98500/126838
+2024-01-19 06:46:45,096   - Batch 98600/126838
+2024-01-19 06:47:24,999   - Batch 98700/126838
+2024-01-19 06:48:05,123   - Batch 98800/126838
+2024-01-19 06:48:45,089   - Batch 98900/126838
+2024-01-19 06:49:25,696   - Batch 99000/126838
+2024-01-19 06:50:05,516   - Batch 99100/126838
+2024-01-19 06:50:45,552   - Batch 99200/126838
+2024-01-19 06:51:25,712   - Batch 99300/126838
+2024-01-19 06:52:05,387   - Batch 99400/126838
+2024-01-19 06:52:45,103   - Batch 99500/126838
+2024-01-19 06:53:25,342   - Batch 99600/126838
+2024-01-19 06:54:04,649   - Batch 99700/126838
+2024-01-19 06:54:44,564   - Batch 99800/126838
+2024-01-19 06:55:24,447   - Batch 99900/126838
+2024-01-19 06:56:04,091   - Batch 100000/126838
+2024-01-19 06:56:43,935   - Batch 100100/126838
+2024-01-19 06:57:23,925   - Batch 100200/126838
+2024-01-19 06:58:03,447   - Batch 100300/126838
+2024-01-19 06:58:42,982   - Batch 100400/126838
+2024-01-19 06:59:22,832   - Batch 100500/126838
+2024-01-19 07:00:02,446   - Batch 100600/126838
+2024-01-19 07:00:42,268   - Batch 100700/126838
+2024-01-19 07:01:21,934   - Batch 100800/126838
+2024-01-19 07:02:01,788   - Batch 100900/126838
+2024-01-19 07:02:41,636   - Batch 101000/126838
+2024-01-19 07:03:21,501   - Batch 101100/126838
+2024-01-19 07:04:01,271   - Batch 101200/126838
+2024-01-19 07:04:41,044   - Batch 101300/126838
+2024-01-19 07:05:20,753   - Batch 101400/126838
+2024-01-19 07:06:00,532   - Batch 101500/126838
+2024-01-19 07:06:40,113   - Batch 101600/126838
+2024-01-19 07:07:19,978   - Batch 101700/126838
+2024-01-19 07:07:59,903   - Batch 101800/126838
+2024-01-19 07:08:39,805   - Batch 101900/126838
+2024-01-19 07:09:19,756   - Batch 102000/126838
+2024-01-19 07:10:00,013   - Batch 102100/126838
+2024-01-19 07:10:40,299   - Batch 102200/126838
+2024-01-19 07:11:20,855   - Batch 102300/126838
+2024-01-19 07:12:00,497   - Batch 102400/126838
+2024-01-19 07:12:40,583   - Batch 102500/126838
+2024-01-19 07:13:20,565   - Batch 102600/126838
+2024-01-19 07:14:00,305   - Batch 102700/126838
+2024-01-19 07:14:40,742   - Batch 102800/126838
+2024-01-19 07:15:21,233   - Batch 102900/126838
+2024-01-19 07:16:01,173   - Batch 103000/126838
+2024-01-19 07:16:41,460   - Batch 103100/126838
+2024-01-19 07:17:21,441   - Batch 103200/126838
+2024-01-19 07:18:01,325   - Batch 103300/126838
+2024-01-19 07:18:41,131   - Batch 103400/126838
+2024-01-19 07:19:21,521   - Batch 103500/126838
+2024-01-19 07:20:01,546   - Batch 103600/126838
+2024-01-19 07:20:41,434   - Batch 103700/126838
+2024-01-19 07:21:21,774   - Batch 103800/126838
+2024-01-19 07:22:01,568   - Batch 103900/126838
+2024-01-19 07:22:41,899   - Batch 104000/126838
+2024-01-19 07:23:22,722   - Batch 104100/126838
+2024-01-19 07:24:02,573   - Batch 104200/126838
+2024-01-19 07:24:42,728   - Batch 104300/126838
+2024-01-19 07:25:22,805   - Batch 104400/126838
+2024-01-19 07:26:02,984   - Batch 104500/126838
+2024-01-19 07:26:42,850   - Batch 104600/126838
+2024-01-19 07:27:23,015   - Batch 104700/126838
+2024-01-19 07:28:02,807   - Batch 104800/126838
+2024-01-19 07:28:42,763   - Batch 104900/126838
+2024-01-19 07:29:22,619   - Batch 105000/126838
+2024-01-19 07:30:02,558   - Batch 105100/126838
+2024-01-19 07:30:42,558   - Batch 105200/126838
+2024-01-19 07:31:22,918   - Batch 105300/126838
+2024-01-19 07:32:02,825   - Batch 105400/126838
+2024-01-19 07:32:42,775   - Batch 105500/126838
+2024-01-19 07:33:22,867   - Batch 105600/126838
+2024-01-19 07:34:02,719   - Batch 105700/126838
+2024-01-19 07:34:42,600   - Batch 105800/126838
+2024-01-19 07:35:22,503   - Batch 105900/126838
+2024-01-19 07:36:04,871   - Batch 106000/126838
+2024-01-19 07:36:46,575   - Batch 106100/126838
+2024-01-19 07:37:27,652   - Batch 106200/126838
+2024-01-19 07:38:07,676   - Batch 106300/126838
+2024-01-19 07:38:47,757   - Batch 106400/126838
+2024-01-19 07:39:27,880   - Batch 106500/126838
+2024-01-19 07:40:08,178   - Batch 106600/126838
+2024-01-19 07:40:48,464   - Batch 106700/126838
+2024-01-19 07:41:29,050   - Batch 106800/126838
+2024-01-19 07:42:08,782   - Batch 106900/126838
+2024-01-19 07:42:48,945   - Batch 107000/126838
+2024-01-19 07:43:29,356   - Batch 107100/126838
+2024-01-19 07:44:09,390   - Batch 107200/126838
+2024-01-19 07:44:49,814   - Batch 107300/126838
+2024-01-19 07:45:29,545   - Batch 107400/126838
+2024-01-19 07:46:04,659 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-19 07:46:04,660 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-19 07:46:04,660 latest_checkpoint='../checkpoints/lstm/epoch_0_batch_106999.pt'
+2024-01-19 07:46:11,629   - Batch 107500/126838
+2024-01-19 07:46:57,017   - Batch 107600/126838
+2024-01-19 07:47:34,620 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-19 07:47:34,620 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-19 07:47:34,621 latest_checkpoint='../checkpoints/lstm/epoch_0_batch_106999.pt'
+2024-01-19 07:47:40,689   - Batch 107700/126838
+2024-01-19 07:48:52,113 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:48:52,113 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:48:52,113 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:48:52,113 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-19 07:48:52,113 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:48:52,113 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:48:52,113 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:48:52,113 Initializing wandb...
+2024-01-19 07:48:53,566 ## Loading datasets with skeletons:
+2024-01-19 07:49:13,560 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:49:13,560 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:49:13,560 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:49:13,560 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-19 07:49:13,560 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:49:13,560 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:49:13,560 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:49:13,560 Initializing wandb...
+2024-01-19 07:49:14,824 ## Loading datasets with skeletons:
+2024-01-19 07:49:38,684 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-19 07:49:38,684 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-19 07:51:10,764 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-19 07:51:10,764 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-19 07:51:30,292 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:51:30,293 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:51:30,293 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:51:30,293 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-19 07:51:30,293 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:51:30,293 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:51:30,293 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 07:51:30,293 ## Loading datasets with skeletons:
+2024-01-19 07:51:30,604 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-19 07:51:30,604 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-19 08:06:59,699 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:06:59,700 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:06:59,700 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:06:59,700 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-19 08:06:59,700 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:06:59,700 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:06:59,700 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:06:59,700 ## Loading datasets with skeletons:
+2024-01-19 08:06:59,867 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-19 08:06:59,867 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-19 08:07:51,609 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:07:51,609 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:07:51,609 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:07:51,609 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-19 08:07:51,609 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:07:51,609 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:07:51,609 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:07:51,609 ## Loading datasets with skeletons:
+2024-01-19 08:07:51,757 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-19 08:07:51,757 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-19 08:08:01,486   - Batch 50/50
+2024-01-19 08:08:01,798 epoch=0 / 10
+2024-01-19 08:08:01,798 Training Set Evaluation: 
+2024-01-19 08:08:10,565   - Batch 50/50
+2024-01-19 08:08:10,879 epoch=1 / 10
+2024-01-19 08:08:10,879 Training Set Evaluation: 
+2024-01-19 08:08:19,617   - Batch 50/50
+2024-01-19 08:08:19,926 epoch=2 / 10
+2024-01-19 08:08:19,926 Training Set Evaluation: 
+2024-01-19 08:08:28,779   - Batch 50/50
+2024-01-19 08:08:29,091 epoch=3 / 10
+2024-01-19 08:08:29,091 Training Set Evaluation: 
+2024-01-19 08:08:37,917   - Batch 50/50
+2024-01-19 08:08:38,231 epoch=4 / 10
+2024-01-19 08:08:38,231 Training Set Evaluation: 
+2024-01-19 08:09:18,310 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:18,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:18,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:18,332 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-19 08:09:18,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:18,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:18,332 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:18,332 Initializing wandb...
+2024-01-19 08:09:19,630 ## Loading datasets with skeletons:
+2024-01-19 08:09:36,952 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:36,952 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:36,952 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:36,952 ERROR: UNCOMMITTED CHANGES IN REPO! THIS WILL MAKE IT HARD TO REPLICATE THIS EXPERIMENT LATER
+2024-01-19 08:09:36,952 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:36,952 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:36,952 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2024-01-19 08:09:36,952 Initializing wandb...
+2024-01-19 08:09:38,081 ## Loading datasets with skeletons:
+2024-01-19 08:09:44,565 self.in_mlp=Sequential(
+  (0): Linear(in_features=3, out_features=128, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=128, out_features=1024, bias=True)
+  (3): Sigmoid()
+)
+2024-01-19 08:09:44,565 self.out_mlp=Sequential(
+  (0): Linear(in_features=1024, out_features=1024, bias=True)
+  (1): Sigmoid()
+  (2): Linear(in_features=1024, out_features=108, bias=True)
+  (3): Tanh()
+)
+2024-01-19 08:10:13,057   - Batch 100/872330
+2024-01-19 08:10:26,754   - Batch 200/872330
+2024-01-19 08:10:46,711   - Batch 300/872330
+2024-01-19 08:11:00,564   - Batch 400/872330
+2024-01-19 08:11:14,157   - Batch 500/872330
+2024-01-19 08:11:27,433   - Batch 600/872330
+2024-01-19 08:11:40,657   - Batch 700/872330
+2024-01-19 08:11:53,662   - Batch 800/872330
+2024-01-19 08:12:07,034   - Batch 900/872330
+2024-01-19 08:12:22,764   - Batch 1000/872330
+2024-01-19 08:12:39,686   - Batch 1100/872330
+2024-01-19 08:12:55,646   - Batch 1200/872330
+2024-01-19 08:13:11,151   - Batch 1300/872330
+2024-01-19 08:13:26,865   - Batch 1400/872330
+2024-01-19 08:13:42,906   - Batch 1500/872330
+2024-01-19 08:13:58,608   - Batch 1600/872330
+2024-01-19 08:14:14,370   - Batch 1700/872330
+2024-01-19 08:14:29,709   - Batch 1800/872330
+2024-01-19 08:14:45,296   - Batch 1900/872330
+2024-01-19 08:15:00,631   - Batch 2000/872330
+2024-01-19 08:15:16,272   - Batch 2100/872330
+2024-01-19 08:15:31,783   - Batch 2200/872330
+2024-01-19 08:15:48,524   - Batch 2300/872330
+2024-01-19 08:16:05,055   - Batch 2400/872330
+2024-01-19 08:16:21,454   - Batch 2500/872330
+2024-01-19 08:16:38,407   - Batch 2600/872330
+2024-01-19 08:16:54,567   - Batch 2700/872330
+2024-01-19 08:17:10,476   - Batch 2800/872330
+2024-01-19 08:17:25,610   - Batch 2900/872330
+2024-01-19 08:17:40,785   - Batch 3000/872330
+2024-01-19 08:17:56,537   - Batch 3100/872330
+2024-01-19 08:18:12,405   - Batch 3200/872330
+2024-01-19 08:18:27,863   - Batch 3300/872330
+2024-01-19 08:18:43,027   - Batch 3400/872330
+2024-01-19 08:18:58,543   - Batch 3500/872330
+2024-01-19 08:19:13,667   - Batch 3600/872330
+2024-01-19 08:19:28,822   - Batch 3700/872330
+2024-01-19 08:19:45,098   - Batch 3800/872330
+2024-01-19 08:20:01,181   - Batch 3900/872330
+2024-01-19 08:20:16,653   - Batch 4000/872330
+2024-01-19 08:20:33,708   - Batch 4100/872330
+2024-01-19 08:20:49,684   - Batch 4200/872330
+2024-01-19 08:21:05,569   - Batch 4300/872330
