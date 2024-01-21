@@ -1,5 +1,4 @@
 import torch
-from data.AddBiomechanicsDataset import AddBiomechanicsDataset
 from typing import Dict, List, Optional
 import numpy as np
 import wandb
@@ -10,12 +9,9 @@ import argparse
 
 
 class RegressionLossEvaluator:
-    dataset: AddBiomechanicsDataset
-
     losses: List[torch.Tensor]
 
-    def __init__(self, dataset: AddBiomechanicsDataset, split: str):
-        self.dataset = dataset
+    def __init__(self, split: str, num_classes: int):
         self.split = split
 
         # Aggregating losses across batches for dev set evaluation
@@ -48,6 +44,7 @@ class RegressionLossEvaluator:
     def __call__(self,
                  outputs: torch.Tensor,
                  labels: torch.Tensor,
+                 mask: torch.Tensor,
                  split: str = 'dev',
                  log_reports_to_wandb: bool = False,
                  args: argparse.Namespace = None) -> torch.Tensor:

@@ -3,7 +3,6 @@ import argparse
 import torch
 import torch.multiprocessing as mp
 from torch.utils.data import DataLoader
-from data.AddBiomechanicsDataset import AddBiomechanicsDataset
 from typing import Dict, Tuple, List
 from cli.abstract_command import AbstractCommand
 import os
@@ -13,7 +12,6 @@ import numpy as np
 import logging
 import subprocess
 import torch.optim.lr_scheduler as lr_scheduler
-from loss.RegressionLossEvaluator import RegressionLossEvaluator
 
 
 # Utility to get the current repo's git hash, which is useful for replicating runs later
@@ -48,11 +46,11 @@ class TrainCommand(AbstractCommand):
         subparser.add_argument('--learning-rate', type=float, default=1e-5,
                                help='The learning rate for weight updates.')
         subparser.add_argument('--epochs', type=int, default=10, help='The number of epochs to run training for.')
-        subparser.add_argument('--opt-type', type=str, default='rmsprop',
+        subparser.add_argument('--opt-type', type=str, default='adam',
                                help='The optimizer to use when adapting the weights of the model during training.')
         subparser.add_argument('--batch-size', type=int, default=4,
                                help='The batch size to use when training the model.')
-        subparser.add_argument('--data-loading-workers', type=int, default=5,
+        subparser.add_argument('--data-loading-workers', type=int, default=2,
                                help='Number of separate processes to spawn to load data in parallel.')
 
     def run(self, args: argparse.Namespace):
@@ -67,6 +65,8 @@ class TrainCommand(AbstractCommand):
         log_to_wandb: bool = not args.no_wandb
         data_loading_workers: int = args.data_loading_workers
         overfit: bool = args.overfit
+        if overfit:
+            epochs = 100
 
         has_uncommitted = has_uncommitted_changes()
         if has_uncommitted:
@@ -97,7 +97,7 @@ class TrainCommand(AbstractCommand):
         logging.info('## Loading datasets with skeletons:')
 
         train_dataset = self.get_dataset(args, 'train')
-        train_loss_evaluator = RegressionLossEvaluator(dataset=train_dataset, split='train')
+        train_loss_evaluator = self.get_loss(args, 'train')
         train_dataloader = DataLoader(train_dataset,
                                       batch_size=batch_size,
                                       shuffle=True,
@@ -105,7 +105,7 @@ class TrainCommand(AbstractCommand):
                                       persistent_workers=True)
 
         dev_dataset = self.get_dataset(args, 'dev')
-        dev_loss_evaluator = RegressionLossEvaluator(dataset=dev_dataset, split='dev')
+        dev_loss_evaluator = self.get_loss(args, 'dev')
         dev_dataloader = DataLoader(dev_dataset,
                                     batch_size=batch_size,
                                     shuffle=False,
@@ -147,22 +147,25 @@ class TrainCommand(AbstractCommand):
             #     model.eval()  # Turn dropout off
             #     for i, batch in enumerate(dev_dataloader):
             #         # print(f"batch iter: {i=}")
-            #         inputs: Dict[str, torch.Tensor]
-            #         labels: Dict[str, torch.Tensor]
+            #         inputs: torch.Tensor
+            #         labels: torch.Tensor
+            #         mask: torch.Tensor
             #         batch_subject_indices: List[int]
             #         batch_trial_indices: List[int]
             #         data_time = time.time()
-            #         inputs, labels, batch_subject_indices, batch_trial_indices = batch
+            #         inputs, labels, mask, batch_subject_indices, batch_trial_indices = batch
+            #         assert(labels.shape == mask.shape)
             #         data_time = time.time() - data_time
             #         forward_time = time.time()
-            #         outputs = model(inputs)
+            #         outputs = model(inputs, mask)
             #         forward_time = time.time() - forward_time
             #         loss_time = time.time()
             #         dev_loss_evaluator(outputs,
-            #                                 labels,
-            #                                 split = 'dev',
-            #                                  log_reports_to_wandb = log_to_wandb,
-            #                                  args=args)
+            #                            labels,
+            #                            mask,
+            #                            split='dev',
+            #                            log_reports_to_wandb=log_to_wandb,
+            #                            args=args)
             #         loss_time = time.time() - loss_time
             #         # logging.info(f"{data_time=}, {forward_time=}, {loss_time}")
             #         if (i + 1) % 100 == 0 or i == len(dev_dataloader) - 1:
@@ -175,21 +178,24 @@ class TrainCommand(AbstractCommand):
             model.train()  # Turn dropout back on
             for i, batch in enumerate(train_dataloader):
                 # print(f"batch iter: {i=}")
-                inputs: Dict[str, torch.Tensor]
-                labels: Dict[str, torch.Tensor]
+                inputs: torch.Tensor
+                labels: torch.Tensor
+                mask: torch.Tensor
                 batch_subject_indices: List[int]
                 batch_trial_indices: List[int]
-                inputs, labels, batch_subject_indices, batch_trial_indices = batch
+                inputs, labels, mask, batch_subject_indices, batch_trial_indices = batch
+                assert (labels.shape == mask.shape)
 
                 # Clear the gradients
                 optimizer.zero_grad()
 
                 # Forward pass
-                outputs = model(inputs)
+                outputs = model(inputs, mask)
 
                 # Compute the loss
                 loss = train_loss_evaluator(outputs,
                                             labels,
+                                            mask,
                                             split='train',
                                             log_reports_to_wandb=log_to_wandb,
                                             args=args)

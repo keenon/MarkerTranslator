@@ -2,7 +2,7 @@ import argparse
 
 import torch
 from torch.utils.data import DataLoader
-from data.AddBiomechanicsDataset import AddBiomechanicsDataset
+from data.MarkerTranslatorDataset import MarkerTranslatorDataset
 from typing import Dict, Tuple, List
 from cli.abstract_command import AbstractCommand
 import os

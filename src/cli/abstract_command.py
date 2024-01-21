@@ -1,8 +1,12 @@
 import argparse
 import os
 import torch
-from data.AddBiomechanicsDataset import AddBiomechanicsDataset
-from models.MaxPoolLSTM import MaxPoolLSTM
+from data.MarkerTranslatorDataset import MarkerTranslatorDataset
+from data.MarkerLabelerDataset import MarkerLabelerDataset
+from models.MaxPoolLSTMPointCloudRegressor import MaxPoolLSTMPointCloudRegressor
+from models.TransformerSequenceClassifier import TransformerSequenceClassifier
+from loss.RegressionLossEvaluator import RegressionLossEvaluator
+from loss.MaskedCrossEntropyLoss import MaskedCrossEntropyLoss
 from typing import List
 import logging
 
@@ -22,7 +26,7 @@ class AbstractCommand:
     def register_standard_options(self, subparser: argparse.ArgumentParser):
         subparser.add_argument('--dataset-home', type=str, default='../data',
                                help='The path to the AddBiomechanics dataset.')
-        subparser.add_argument('--model-type', type=str, default='lstm', help='The model to train.')
+        subparser.add_argument('--model-type', type=str, default='classifier', help='The model to type to train. Options are "classifier" and "regressor".')
         subparser.add_argument('--output-data-format', type=str, default='all_frames',
                                choices=['all_frames', 'last_frame'],
                                help='Output for all frames in a window or only the last frame.')
@@ -34,14 +38,16 @@ class AbstractCommand:
                                help='Path to the Geometry folder with bone mesh data.')
         subparser.add_argument('--history-len', type=int, default=150,
                                help='The number of timesteps of context to show when constructing the inputs.')
-        subparser.add_argument('--stride', type=int, default=5,
+        subparser.add_argument('--stride', type=int, default=15,
                                help='The number of timesteps of context to show when constructing the inputs.')
         subparser.add_argument('--num-input-markers', type=int, default=70,
                                help='The (maximum) number of input markers the model can take.')
         subparser.add_argument('--num-output-markers', type=int, default=36,
                                help='The number of output markers the model produces.')
-        subparser.add_argument('--dropout', action='store_true', help='Apply dropout?')
-        subparser.add_argument('--dropout-prob', type=float, default=0.5, help='Dropout prob')
+        subparser.add_argument('--num-classes', type=int, default=13,
+                               help='The number of classes the model predicts.')
+        subparser.add_argument('--dropout', action='store_true', default=True, help='Apply dropout?')
+        subparser.add_argument('--dropout-prob', type=float, default=0.3, help='Dropout prob')
         subparser.add_argument('--in-hidden-dims', type=int, nargs='+', default=[128],
                                help='Hidden dims across different layers.')
         subparser.add_argument('--time-hidden-dim', type=int, nargs='+', default=1024,
@@ -90,22 +96,26 @@ class AbstractCommand:
         num_input_markers: int = args.num_input_markers
         num_output_markers: int = args.num_output_markers
         time_hidden_dim: int = args.time_hidden_dim
+        num_classes: int = args.num_classes
 
-        assert (model_type == 'lstm')
-
-        return MaxPoolLSTM(history_len=history_len,
-                           num_input_markers=num_input_markers,
-                           num_output_markers=num_output_markers,
-                           in_mlp_hidden_dims=in_hidden_dims,
-                           time_hidden_dim=time_hidden_dim,
-                           out_mlp_hidden_dims=out_hidden_dims,
-                           dropout=dropout,
-                           dropout_prob=dropout_prob,
-                           batchnorm=batchnorm,
-                           activation=activation,
-                           device=device)
+        if model_type == "regressor":
+            return MaxPoolLSTMPointCloudRegressor(history_len=history_len,
+                                                  num_input_markers=num_input_markers,
+                                                  num_output_markers=num_output_markers,
+                                                  in_mlp_hidden_dims=in_hidden_dims,
+                                                  time_hidden_dim=time_hidden_dim,
+                                                  out_mlp_hidden_dims=out_hidden_dims,
+                                                  dropout=dropout,
+                                                  dropout_prob=dropout_prob,
+                                                  batchnorm=batchnorm,
+                                                  activation=activation,
+                                                  device=device)
+        else:
+            assert(model_type == "classifier")
+            return TransformerSequenceClassifier(num_classes=num_classes, device=device)
 
     def get_dataset(self, args, suffix: str):
+        model_type: str = args.model_type
         dataset_home: str = args.dataset_home
         history_len: int = args.history_len
         device: str = args.device
@@ -117,16 +127,37 @@ class AbstractCommand:
         overfit: bool = args.overfit
 
         dataset_path = os.path.abspath(os.path.join(dataset_home, suffix))
-        dataset = AddBiomechanicsDataset(dataset_path,
-                                         history_len,
-                                         num_input_markers=num_input_markers,
-                                         num_output_markers=num_output_markers,
-                                         device=torch.device(device),
-                                         stride=stride,
-                                         geometry_folder=geometry,
-                                         testing_with_short_dataset=short,
-                                         overfit=overfit)
+        if model_type == "regressor":
+            dataset = MarkerTranslatorDataset(dataset_path,
+                                              history_len,
+                                              num_input_markers=num_input_markers,
+                                              num_output_markers=num_output_markers,
+                                              device=torch.device(device),
+                                              stride=stride,
+                                              geometry_folder=geometry,
+                                              testing_with_short_dataset=short,
+                                              overfit=overfit)
+        else:
+            assert(model_type == "classifier")
+            dataset = MarkerLabelerDataset(dataset_path,
+                                           history_len,
+                                           num_input_markers=num_input_markers,
+                                           device=torch.device(device),
+                                           stride=stride,
+                                           geometry_folder=geometry,
+                                           testing_with_short_dataset=short,
+                                           overfit=overfit)
         return dataset
+
+
+    def get_loss(self, args, split: str):
+        model_type: str = args.model_type
+        num_classes: int = args.num_classes
+        if model_type == "regressor":
+            return RegressionLossEvaluator(split, num_classes)
+        else:
+            assert(model_type == "classifier")
+            return MaskedCrossEntropyLoss(split, num_classes)
 
     def load_latest_checkpoint(self, model, optimizer=None, checkpoint_dir="../checkpoints/lstm"):
         if not os.path.exists(checkpoint_dir):

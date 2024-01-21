@@ -6,7 +6,7 @@ import os
 import numpy as np
 
 
-class AddBiomechanicsDataset(Dataset):
+class MarkerTranslatorDataset(Dataset):
     stride: int
     data_path: str
     window_size: int
@@ -110,7 +110,7 @@ class AddBiomechanicsDataset(Dataset):
     def __len__(self):
         return len(self.windows)
 
-    def __getitem__(self, index: int) -> Tuple[torch.Tensor, torch.Tensor, int, int]:
+    def __getitem__(self, index: int) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor, int, int]:
         subject_index, trial, window_start = self.windows[index]
 
         # Read the frames from disk
@@ -144,7 +144,10 @@ class AddBiomechanicsDataset(Dataset):
                 for j in range(len(marker_world_positions) // 3):
                     label[i, j * 3:j * 3 + 3] = torch.tensor(marker_world_positions[j*3: j*3 + 3] - marker_obs_avg, dtype=self.dtype)
 
-        return input, label, subject_index, trial
+            # Ignored
+            mask: torch.Tensor = torch.zeros((0), dtype=torch.int8)
+
+        return input, label, mask, subject_index, trial
 
     def __getstate__(self):
         state = self.__dict__.copy()

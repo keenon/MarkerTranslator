@@ -13,7 +13,7 @@ ACTIVATION_FUNCS = {
 
 
 
-class MaxPoolLSTM(nn.Module):
+class MaxPoolLSTMPointCloudRegressor(nn.Module):
     history_len: int
     num_input_markers: int
     num_output_markers: int
@@ -31,7 +31,7 @@ class MaxPoolLSTM(nn.Module):
                  batchnorm: bool = False,
                  activation: str = 'sigmoid',
                  device: str = 'cpu'):
-        super(MaxPoolLSTM, self).__init__()
+        super(MaxPoolLSTMPointCloudRegressor, self).__init__()
 
         self.history_len = history_len
         self.num_input_markers = num_input_markers
@@ -74,33 +74,33 @@ class MaxPoolLSTM(nn.Module):
         logging.info(f"{self.in_mlp=}")
         logging.info(f"{self.out_mlp=}")
 
-    def forward(self, tensor: torch.Tensor) -> torch.Tensor:
+    def forward(self, x: torch.Tensor, mask: torch.Tensor) -> torch.Tensor:
         # Reshape tensor: (batch_size * seq_len * num_points, 3)
-        batch_size, seq_len, _ = tensor.size()
+        batch_size, seq_len, _ = x.size()
         num_points = _ // 3
-        tensor = tensor.view(-1, 3)
+        x = x.view(-1, 3)
 
-        tensor_norms = torch.norm(tensor, dim=1)
+        tensor_norms = torch.norm(x, dim=1)
         tensor_norms_nonzero = tensor_norms > 0
         tensor_norms_indicator = tensor_norms_nonzero.float()
         tensor_norms_indicator = self.in_dropout(tensor_norms_indicator)
 
         # Process each point independently
-        tensor = self.in_mlp(tensor)
+        x = self.in_mlp(x)
 
         # Zero out the points that are zero on inputs
-        tensor = tensor * tensor_norms_indicator.unsqueeze(1)
+        x = x * tensor_norms_indicator.unsqueeze(1)
 
         # Reshape back and max-pool
-        hidden_size = tensor.size(-1)
-        tensor = tensor.view(batch_size, seq_len, num_points, hidden_size)
-        tensor = torch.mean(tensor, dim=2)  # Mean-pool over the points
+        hidden_size = x.size(-1)
+        x = x.view(batch_size, seq_len, num_points, hidden_size)
+        x = torch.mean(x, dim=2)  # Mean-pool over the points
 
         # Run through time model
-        tensor, _ = self.time_model(tensor)
+        x, _ = self.time_model(x)
 
         # Run through output models
 
         # Return the outputs
-        outputs = self.out_mlp(tensor)
+        outputs = self.out_mlp(x)
         return outputs
