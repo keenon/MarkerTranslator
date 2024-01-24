@@ -7,7 +7,6 @@ import numpy as np
 from utils.TrainingMarkerLabel import TrainingMarkerLabel
 
 
-
 class MarkerSupersetDataset(Dataset):
     stride: int
     data_path: str
