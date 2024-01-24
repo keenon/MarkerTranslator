@@ -4,9 +4,11 @@ from torch.utils.data import Dataset
 from typing import List, Dict, Tuple
 import os
 import numpy as np
+from utils.TrainingMarkerLabel import TrainingMarkerLabel
 
 
-class MarkerLabelerDataset(Dataset):
+
+class MarkerSupersetDataset(Dataset):
     stride: int
     data_path: str
     window_size: int
@@ -19,18 +21,21 @@ class MarkerLabelerDataset(Dataset):
     windows: List[Tuple[int, int, int]]  # Subject, trial, start_frame
     skeletons: List[nimble.dynamics.Skeleton]
     max_input_markers: int
-    marker_name_to_body_index: Dict[str, int]
+    skeleton_marker_name_to_index: Dict[TrainingMarkerLabel, int]
+    skeleton_osim: str
+    pad_with_random_unknown_markers: bool
 
     def __init__(self,
                  data_path: str,
                  window_size: int,
                  geometry_folder: str,
+                 output_class_tsv: str,
                  device: torch.device = torch.device('cpu'),
                  dtype: torch.dtype = torch.float32,
                  testing_with_short_dataset: bool = False,
                  stride: int = 1,
                  output_data_format: str = 'last_frame',
-                 skip_loading_skeletons: bool = False,
+                 skip_loading_skeletons: bool = True,
                  num_input_markers: int = 70,
                  overfit: bool = False):
         self.stride = stride
@@ -44,8 +49,8 @@ class MarkerLabelerDataset(Dataset):
         self.windows = []
         self.contact_bodies = []
         self.skeletons = []
-        self.skeletons_markersets = []
         self.overfit = overfit
+        self.pad_with_random_unknown_markers = True
 
         if os.path.isdir(data_path):
             for root, dirs, files in os.walk(data_path):
@@ -61,9 +66,25 @@ class MarkerLabelerDataset(Dataset):
         if overfit:
             self.subject_paths = self.subject_paths[:1]
 
+        subject_file_names = [os.path.basename(subject_path) for subject_path in self.subject_paths]
+        max_classification_index = 0
+        with open(output_class_tsv, 'r') as f:
+            lines = f.readlines()
+            self.skeleton_marker_name_to_index = {}
+            for line in lines[1:]:
+                parts = line.strip().split('\t')
+                subject_path = parts[0]
+                subject_path_basename = os.path.basename(subject_path)
+                if subject_path_basename not in subject_file_names:
+                    continue
+                subject_index = subject_file_names.index(subject_path_basename)
+                marker_name = parts[1]
+                classification_index = int(parts[2])
+                if classification_index > max_classification_index:
+                    max_classification_index = classification_index
+                self.skeleton_marker_name_to_index[TrainingMarkerLabel(marker_name, subject_index)] = classification_index
+
         self.max_input_markers = num_input_markers
-        self.marker_name_to_body_index = {}
-        self.unknown_marker_index = 0
 
         # Walk the folder path, and check for any with the ".b3d" extension (indicating that they are
         # AddBiomechanics binary data files)
@@ -75,9 +96,6 @@ class MarkerLabelerDataset(Dataset):
                     len(self.subject_paths)) + f' for subject {subject_path}')
                 osim = subject.readOpenSimFile(subject.getNumProcessingPasses() - 1, geometry_folder)
                 skeleton = osim.skeleton
-                self.unknown_marker_index = skeleton.getNumBodyNodes()
-                for marker in osim.markersMap:
-                    self.marker_name_to_body_index[marker] = osim.markersMap[marker][0].getIndexInSkeleton()
                 self.skeletons.append(skeleton)
 
             self.subjects.append(subject)
@@ -87,6 +105,11 @@ class MarkerLabelerDataset(Dataset):
                 for window_start in range(max(trial_length - self.window_size - 1, 0)):
                     assert window_start + self.window_size < trial_length
                     self.windows.append((i, trial_index, window_start))
+
+        # Assign a unique index to the unknown marker
+        self.unknown_marker_index = max_classification_index + 1
+
+        print('Num classes: '+str(self.unknown_marker_index + 1))
 
         if overfit:
             self.windows = self.windows[:256]
@@ -112,7 +135,7 @@ class MarkerLabelerDataset(Dataset):
         with torch.no_grad():
             input: torch.Tensor = torch.zeros((sequence_length, 4), dtype=self.dtype)
             label: torch.Tensor = torch.zeros(sequence_length, dtype=torch.int64)
-            mask: torch.Tensor = torch.zeros(sequence_length, dtype=self.dtype)
+            mask: torch.Tensor = torch.zeros(sequence_length, dtype=torch.int32)
 
             marker_obs_avg = np.zeros((3,))
             num_obs_markers = 0
@@ -138,8 +161,9 @@ class MarkerLabelerDataset(Dataset):
                         continue
                     input[cursor, :3] = torch.tensor(marker_obs[j][1] - marker_obs_avg, dtype=self.dtype)
                     input[cursor, 3] = float(i)
-                    if marker_obs[j][0] in self.marker_name_to_body_index:
-                        label[cursor] = self.marker_name_to_body_index[marker_obs[j][0]]
+                    marker_label = TrainingMarkerLabel(marker_obs[j][0], subject_index)
+                    if marker_label in self.skeleton_marker_name_to_index:
+                        label[cursor] = self.skeleton_marker_name_to_index[marker_label]
                     else:
                         label[cursor] = self.unknown_marker_index
                     cursor += 1
@@ -148,6 +172,16 @@ class MarkerLabelerDataset(Dataset):
                 input[cursor, 3] = 0.0
                 label[cursor] = self.unknown_marker_index
                 cursor = 1
+
+            if self.pad_with_random_unknown_markers:
+                available_pad = sequence_length - cursor
+                if available_pad > 0:
+                    random_pad = torch.randint(0, available_pad, (1,)).item()
+                    for i in range(random_pad):
+                        input[cursor, :3] = torch.randn(3, dtype=self.dtype)
+                        input[cursor, 3] = torch.randint(0, len(frames), (1,)).float()
+                        label[cursor] = self.unknown_marker_index
+                        cursor += 1
             mask[:cursor] = 1
 
         # Assert there are no NaNs in input, label, or mask

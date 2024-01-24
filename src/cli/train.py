@@ -43,7 +43,7 @@ class TrainCommand(AbstractCommand):
         self.register_standard_options(subparser)
         subparser.add_argument('--no-wandb', action='store_true', default=False,
                                help='Log this run to Weights and Biases.')
-        subparser.add_argument('--learning-rate', type=float, default=1e-5,
+        subparser.add_argument('--learning-rate', type=float, default=1e-4,
                                help='The learning rate for weight updates.')
         subparser.add_argument('--epochs', type=int, default=10, help='The number of epochs to run training for.')
         subparser.add_argument('--opt-type', type=str, default='adam',

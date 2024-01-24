@@ -1,6 +1,7 @@
 ./log
 ./src/log
-./src/Geometry
+./src/Geometry/*
+./src/wandb/*
 ./checkpoints/*
 ./data/*
 ./.idea

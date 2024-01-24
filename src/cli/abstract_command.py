@@ -3,6 +3,7 @@ import os
 import torch
 from data.MarkerTranslatorDataset import MarkerTranslatorDataset
 from data.MarkerLabelerDataset import MarkerLabelerDataset
+from data.MarkerSupersetDataset import MarkerSupersetDataset
 from models.MaxPoolLSTMPointCloudRegressor import MaxPoolLSTMPointCloudRegressor
 from models.TransformerSequenceClassifier import TransformerSequenceClassifier
 from loss.RegressionLossEvaluator import RegressionLossEvaluator
@@ -26,7 +27,8 @@ class AbstractCommand:
     def register_standard_options(self, subparser: argparse.ArgumentParser):
         subparser.add_argument('--dataset-home', type=str, default='../data',
                                help='The path to the AddBiomechanics dataset.')
-        subparser.add_argument('--model-type', type=str, default='classifier', help='The model to type to train. Options are "classifier" and "regressor".')
+        subparser.add_argument('--model-type', type=str, default='classifier',
+                               help='The model to type to train. Options are "classifier" and "regressor".')
         subparser.add_argument('--output-data-format', type=str, default='all_frames',
                                choices=['all_frames', 'last_frame'],
                                help='Output for all frames in a window or only the last frame.')
@@ -44,8 +46,8 @@ class AbstractCommand:
                                help='The (maximum) number of input markers the model can take.')
         subparser.add_argument('--num-output-markers', type=int, default=36,
                                help='The number of output markers the model produces.')
-        subparser.add_argument('--num-classes', type=int, default=13,
-                               help='The number of classes the model predicts.')
+        subparser.add_argument('--output-class-tsv', type=str, default='../data/class_map.tsv',
+                               help='The map from file and marker name to class number.')
         subparser.add_argument('--dropout', action='store_true', default=True, help='Apply dropout?')
         subparser.add_argument('--dropout-prob', type=float, default=0.3, help='Dropout prob')
         subparser.add_argument('--in-hidden-dims', type=int, nargs='+', default=[128],
@@ -81,6 +83,19 @@ class AbstractCommand:
             geometry += '/'
         return geometry
 
+    def get_num_classes(self, args):
+        max_classification_index = 0
+        output_class_tsv: str = args.output_class_tsv
+        with open(output_class_tsv, 'r') as f:
+            lines = f.readlines()
+            for line in lines[1:]:
+                parts = line.strip().split('\t')
+                classification_index = int(parts[2])
+                if classification_index > max_classification_index:
+                    max_classification_index = classification_index
+        num_classes = max_classification_index + 2
+        return num_classes
+
     def get_model(self, args):
         model_type: str = args.model_type
         checkpoint_dir: str = os.path.join(os.path.abspath(args.checkpoint_dir), model_type)
@@ -88,6 +103,7 @@ class AbstractCommand:
         in_hidden_dims: List[int] = args.in_hidden_dims
         out_hidden_dims: List[int] = args.out_hidden_dims
         device: str = args.device
+        dtype: torch.dtype = torch.float64
         stride: int = args.stride
         batchnorm: bool = args.batchnorm
         dropout: bool = args.dropout
@@ -96,7 +112,7 @@ class AbstractCommand:
         num_input_markers: int = args.num_input_markers
         num_output_markers: int = args.num_output_markers
         time_hidden_dim: int = args.time_hidden_dim
-        num_classes: int = args.num_classes
+
 
         if model_type == "regressor":
             return MaxPoolLSTMPointCloudRegressor(history_len=history_len,
@@ -111,7 +127,8 @@ class AbstractCommand:
                                                   activation=activation,
                                                   device=device)
         else:
-            assert(model_type == "classifier")
+            assert (model_type == "classifier")
+            num_classes = self.get_num_classes(args)
             return TransformerSequenceClassifier(num_classes=num_classes, device=device)
 
     def get_dataset(self, args, suffix: str):
@@ -125,6 +142,7 @@ class AbstractCommand:
         num_input_markers: int = args.num_input_markers
         num_output_markers: int = args.num_output_markers
         overfit: bool = args.overfit
+        output_class_tsv: str = args.output_class_tsv
 
         dataset_path = os.path.abspath(os.path.join(dataset_home, suffix))
         if model_type == "regressor":
@@ -138,25 +156,25 @@ class AbstractCommand:
                                               testing_with_short_dataset=short,
                                               overfit=overfit)
         else:
-            assert(model_type == "classifier")
-            dataset = MarkerLabelerDataset(dataset_path,
-                                           history_len,
-                                           num_input_markers=num_input_markers,
-                                           device=torch.device(device),
-                                           stride=stride,
-                                           geometry_folder=geometry,
-                                           testing_with_short_dataset=short,
-                                           overfit=overfit)
+            assert (model_type == "classifier")
+            dataset = MarkerSupersetDataset(dataset_path,
+                                            history_len,
+                                            geometry_folder=geometry,
+                                            output_class_tsv=output_class_tsv,
+                                            num_input_markers=num_input_markers,
+                                            device=torch.device(device),
+                                            stride=stride,
+                                            testing_with_short_dataset=short,
+                                            overfit=overfit)
         return dataset
-
 
     def get_loss(self, args, split: str):
         model_type: str = args.model_type
-        num_classes: int = args.num_classes
+        num_classes = self.get_num_classes(args)
         if model_type == "regressor":
             return RegressionLossEvaluator(split, num_classes)
         else:
-            assert(model_type == "classifier")
+            assert (model_type == "classifier")
             return MaskedCrossEntropyLoss(split, num_classes)
 
     def load_latest_checkpoint(self, model, optimizer=None, checkpoint_dir="../checkpoints/lstm"):
