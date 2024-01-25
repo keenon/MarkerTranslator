@@ -23,6 +23,7 @@ class MarkerSupersetDataset(Dataset):
     skeleton_marker_name_to_index: Dict[TrainingMarkerLabel, int]
     skeleton_osim: str
     pad_with_random_unknown_markers: bool
+    randomly_hide_markers_prob: float
 
     def __init__(self,
                  data_path: str,
@@ -36,6 +37,7 @@ class MarkerSupersetDataset(Dataset):
                  output_data_format: str = 'last_frame',
                  skip_loading_skeletons: bool = True,
                  num_input_markers: int = 70,
+                 randomly_hide_markers_prob: float = 0.3,
                  overfit: bool = False):
         self.stride = stride
         self.output_data_format = output_data_format
@@ -50,6 +52,7 @@ class MarkerSupersetDataset(Dataset):
         self.skeletons = []
         self.overfit = overfit
         self.pad_with_random_unknown_markers = True
+        self.randomly_hide_markers_prob = randomly_hide_markers_prob
 
         if os.path.isdir(data_path):
             for root, dirs, files in os.walk(data_path):
@@ -136,11 +139,24 @@ class MarkerSupersetDataset(Dataset):
             label: torch.Tensor = torch.zeros(sequence_length, dtype=torch.int64)
             mask: torch.Tensor = torch.zeros(sequence_length, dtype=torch.int32)
 
+            all_marker_names = []
+            for i in range(len(frames)):
+                marker_obs = frames[i].markerObservations[:self.max_input_markers]
+                for j in range(len(marker_obs)):
+                    if marker_obs[j][0] not in all_marker_names:
+                        all_marker_names.append(marker_obs[j][0])
+
+            randomly_hide_marker: Dict[str, bool] = {}
+            for marker_name in all_marker_names:
+                randomly_hide_marker[marker_name] = torch.rand((1,)).item() < self.randomly_hide_markers_prob
+
             marker_obs_avg = np.zeros((3,))
             num_obs_markers = 0
             for i in range(len(frames)):
                 marker_obs = frames[i].markerObservations[:self.max_input_markers]
                 for j in range(len(marker_obs)):
+                    if randomly_hide_marker[marker_obs[j][0]]:
+                        continue
                     # if marker_obs has any nan, skip it
                     if np.isnan(marker_obs[j][1]).any():
                         continue
@@ -155,6 +171,8 @@ class MarkerSupersetDataset(Dataset):
             for i in range(len(frames)):
                 marker_obs = frames[i].markerObservations[:self.max_input_markers]
                 for j in range(min(len(marker_obs), self.max_input_markers)):
+                    if randomly_hide_marker[marker_obs[j][0]]:
+                        continue
                     # if marker_obs has any nan, skip it
                     if np.isnan(marker_obs[j][1]).any():
                         continue
@@ -173,6 +191,18 @@ class MarkerSupersetDataset(Dataset):
                 cursor = 1
 
             if self.pad_with_random_unknown_markers:
+                # First, add some static irrelevant markers, since that's a common case
+                available_pad = sequence_length - cursor
+                if available_pad > 0:
+                    random_pad_stillness = torch.randint(0, available_pad // len(frames), (1,)).item()
+                    for i in range(random_pad_stillness):
+                        point = torch.randn(3, dtype=self.dtype)
+                        for t in range(len(frames)):
+                            input[cursor, :3] = point + torch.randn(3, dtype=self.dtype) * 0.005
+                            input[cursor, 3] = t
+                            label[cursor] = self.unknown_marker_index
+                            cursor += 1
+                # Next, add some random noise irrelevant markers, since that's the other common case
                 available_pad = sequence_length - cursor
                 if available_pad > 0:
                     random_pad = torch.randint(0, available_pad, (1,)).item()

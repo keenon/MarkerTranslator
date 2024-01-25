@@ -11,15 +11,20 @@ class TransformerSequenceClassifier(nn.Module):
                  num_transformer_layers=6,
                  dim_feedforward=128,
                  device: str = 'cpu',
-                 dtype: torch.dtype = torch.float32):
+                 dtype: torch.dtype = torch.float32,
+                 dropout: float = 0.1):
         super(TransformerSequenceClassifier, self).__init__()
 
         # Embedding layer to match the transformer's input dimensions
         self.embedding = nn.Linear(4, d_model, device=device, dtype=dtype)
 
+        self.dropout_1 = nn.Dropout(dropout)
+
         # Transformer Layer
-        transformer_layer = nn.TransformerEncoderLayer(d_model=d_model, nhead=nhead, dim_feedforward=dim_feedforward, batch_first=True, device=device, dtype=dtype)
+        transformer_layer = nn.TransformerEncoderLayer(d_model=d_model, nhead=nhead, dim_feedforward=dim_feedforward, batch_first=True, device=device, dtype=dtype, dropout=dropout)
         self.transformer_encoder = nn.TransformerEncoder(transformer_layer, num_layers=num_transformer_layers)
+
+        self.dropout_2 = nn.Dropout(dropout)
 
         # Output layer
         self.output_layer = nn.Linear(d_model, num_classes, device=device, dtype=dtype)
@@ -32,6 +37,9 @@ class TransformerSequenceClassifier(nn.Module):
         x = self.embedding(x)
         assert not torch.any(torch.isnan(x))
 
+        # Pass through dropout layer
+        x = self.dropout_1(x)
+
         # Transformer Encoder
         # The mask for the transformer needs to be different, it should be a boolean mask where True values are ignored
         transformer_mask = mask == 0  # Assuming mask is of shape [batch_size, N]
@@ -43,6 +51,9 @@ class TransformerSequenceClassifier(nn.Module):
         # x = self.transformer_encoder(x)
         x = self.transformer_encoder(x, src_key_padding_mask=transformer_mask)
         assert not torch.any(torch.isnan(x))
+
+        # Pass through dropout layer
+        x = self.dropout_2(x)
 
         # Pass through output layer and apply softmax
         assert not torch.any(torch.isnan(x))

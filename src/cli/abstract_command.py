@@ -49,7 +49,7 @@ class AbstractCommand:
         subparser.add_argument('--output-class-tsv', type=str, default='../class_map.tsv',
                                help='The map from file and marker name to class number.')
         subparser.add_argument('--dropout', action='store_true', default=True, help='Apply dropout?')
-        subparser.add_argument('--dropout-prob', type=float, default=0.3, help='Dropout prob')
+        subparser.add_argument('--dropout-prob', type=float, default=0.1, help='Dropout prob')
         subparser.add_argument('--in-hidden-dims', type=int, nargs='+', default=[128],
                                help='Hidden dims across different layers.')
         subparser.add_argument('--time-hidden-dim', type=int, nargs='+', default=1024,
@@ -138,7 +138,7 @@ class AbstractCommand:
         else:
             assert (model_type == "classifier")
             num_classes = self.get_num_classes(args)
-            return TransformerSequenceClassifier(num_classes=num_classes, device=device, nhead=transformer_nheads, num_transformer_layers=transformer_nlayers, dim_feedforward=transformer_dim, d_model=transformer_dim)
+            return TransformerSequenceClassifier(num_classes=num_classes, device=device, nhead=transformer_nheads, num_transformer_layers=transformer_nlayers, dim_feedforward=transformer_dim, d_model=transformer_dim, dropout=dropout_prob)
 
     def get_dataset(self, args, suffix: str):
         model_type: str = args.model_type
