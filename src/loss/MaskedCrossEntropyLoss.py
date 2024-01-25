@@ -11,12 +11,14 @@ class MaskedCrossEntropyLoss:
     correct_predictions: int
     total_predictions: int
     confusion: np.ndarray
+    num_classes: int
 
     def __init__(self, split: str, num_classes: int):
         self.correct_predictions = 0
         self.total_predictions = 0
         self.split = split
         self.confusion = np.zeros((num_classes, num_classes), dtype=np.int32)
+        self.num_classes = num_classes
 
     def __call__(self,
                  logits: torch.Tensor,
@@ -28,6 +30,10 @@ class MaskedCrossEntropyLoss:
         # logits: Predictions from the model, shape [batch_size, N, num_classes]
         # target: True labels, shape [batch_size, N]
         # mask: Mask tensor, shape [batch_size, N]
+        batch_size, n, num_classes = logits.shape
+        assert num_classes == self.num_classes
+        assert target.shape == (batch_size, n)
+        assert mask.shape == (batch_size, n)
 
         # Flatten the tensors
         logits_flat = logits.view(-1, logits.size(-1))

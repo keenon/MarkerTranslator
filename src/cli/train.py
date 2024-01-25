@@ -105,7 +105,8 @@ class TrainCommand(AbstractCommand):
                                       num_workers=data_loading_workers,
                                       persistent_workers=True,
                                       pin_memory=device != 'cpu',
-                                      pin_memory_device=device)
+                                      pin_memory_device=device,
+                                      drop_last=True)
 
         dev_dataset = self.get_dataset(args, 'dev')
         dev_loss_evaluator = self.get_loss(args, 'dev')
@@ -115,7 +116,8 @@ class TrainCommand(AbstractCommand):
                                     num_workers=data_loading_workers,
                                     persistent_workers=True,
                                     pin_memory=device != 'cpu',
-                                    pin_memory_device=device)
+                                    pin_memory_device=device,
+                                    drop_last=True)
 
         mp.set_start_method('spawn')  # 'spawn' or 'fork' or 'forkserver'
 
@@ -213,24 +215,22 @@ class TrainCommand(AbstractCommand):
                     mask: torch.Tensor
                     batch_subject_indices: List[int]
                     batch_trial_indices: List[int]
-                    data_time = time.time()
                     inputs, labels, mask, batch_subject_indices, batch_trial_indices = batch
                     inputs = inputs.to(device)
                     labels = labels.to(device)
                     mask = mask.to(device)
-                    assert(labels.shape == mask.shape)
-                    data_time = time.time() - data_time
-                    forward_time = time.time()
+                    assert (labels.shape == mask.shape)
+
                     outputs = model(inputs, mask)
-                    forward_time = time.time() - forward_time
-                    loss_time = time.time()
+
+                    # Compute the loss
                     dev_loss_evaluator(outputs,
                                        labels,
                                        mask,
                                        split='dev',
                                        log_reports_to_wandb=log_to_wandb,
                                        args=args)
-                    loss_time = time.time() - loss_time
+
                     # logging.info(f"{data_time=}, {forward_time=}, {loss_time}")
                     if (i + 1) % 100 == 0 or i == len(dev_dataloader) - 1:
                         print('  - Batch ' + str(i + 1) + '/' + str(len(dev_dataloader)))
