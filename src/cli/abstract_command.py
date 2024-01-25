@@ -138,7 +138,7 @@ class AbstractCommand:
         else:
             assert (model_type == "classifier")
             num_classes = self.get_num_classes(args)
-            return TransformerSequenceClassifier(num_classes=num_classes, device=device, nhead=transformer_nheads, num_encoder_layers=transformer_nlayers, dim_feedforward=transformer_dim, d_model=transformer_dim)
+            return TransformerSequenceClassifier(num_classes=num_classes, device=device, nhead=transformer_nheads, num_transformer_layers=transformer_nlayers, dim_feedforward=transformer_dim, d_model=transformer_dim)
 
     def get_dataset(self, args, suffix: str):
         model_type: str = args.model_type
