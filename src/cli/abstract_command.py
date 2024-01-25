@@ -62,11 +62,11 @@ class AbstractCommand:
                                help='Use very short datasets to test without loading a bunch of data.')
         subparser.add_argument('--overfit', action='store_true',
                                help='Use a tiny dataset to check if the model can overfit the data.')
-        subparser.add_argument('--transformer-dim', type=int, nargs='+', default=128,
+        subparser.add_argument('--transformer-dim', type=int, default=128,
                                help='Hidden dims on the classification transformer.')
-        subparser.add_argument('--transformer-nheads', type=int, nargs='+', default=4,
+        subparser.add_argument('--transformer-nheads', type=int, default=4,
                                help='Number of attention heads on the classification transformer.')
-        subparser.add_argument('--transformer-nlayers', type=int, nargs='+', default=6,
+        subparser.add_argument('--transformer-nlayers', type=int, default=6,
                                help='Number of layers in the classification transformer.')
         pass
 
