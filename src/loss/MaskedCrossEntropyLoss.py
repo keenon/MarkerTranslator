@@ -30,9 +30,10 @@ class MaskedCrossEntropyLoss:
         # logits: Predictions from the model, shape [batch_size, N, num_classes]
         # target: True labels, shape [batch_size, N]
         # mask: Mask tensor, shape [batch_size, N]
-        batch_size, n, num_classes = logits.shape
-        assert num_classes == self.num_classes
-        assert target.shape == (batch_size, n)
+        batch_size, n = target.shape
+        if logits.shape[1] < n:
+            # If we have fewer frames than expected, pad the logits with zeros
+            logits = F.pad(logits, (0, 0, 0, n - logits.shape[1]))
         assert mask.shape == (batch_size, n)
 
         # Flatten the tensors
