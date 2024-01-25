@@ -73,14 +73,14 @@ class MarkerSupersetDataset(Dataset):
             for line in lines[1:]:
                 parts = line.strip().split('\t')
                 subject_path = parts[0]
+                classification_index = int(parts[2])
                 subject_path_basename = os.path.basename(subject_path)
+                if classification_index > max_classification_index:
+                    max_classification_index = classification_index
                 if subject_path_basename not in subject_file_names:
                     continue
                 subject_index = subject_file_names.index(subject_path_basename)
                 marker_name = parts[1]
-                classification_index = int(parts[2])
-                if classification_index > max_classification_index:
-                    max_classification_index = classification_index
                 self.skeleton_marker_name_to_index[TrainingMarkerLabel(marker_name, subject_index)] = classification_index
 
         self.max_input_markers = num_input_markers
@@ -206,6 +206,8 @@ class MarkerSupersetDataset(Dataset):
         # Create the non picklable SubjectOnDisk objects.
         for i, subject_path in enumerate(self.subject_paths):
             subject = nimble.biomechanics.SubjectOnDisk(subject_path)
+            print('Loading subject header ' + str(i + 1) + '/' + str(len(self.subject_paths)))
             self.subjects.append(subject)
+        print('Done!')
 
 
