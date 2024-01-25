@@ -65,6 +65,7 @@ class TrainCommand(AbstractCommand):
         log_to_wandb: bool = not args.no_wandb
         data_loading_workers: int = args.data_loading_workers
         overfit: bool = args.overfit
+        device: str = args.device
         if overfit:
             epochs = 100
 
@@ -102,7 +103,9 @@ class TrainCommand(AbstractCommand):
                                       batch_size=batch_size,
                                       shuffle=True,
                                       num_workers=data_loading_workers,
-                                      persistent_workers=True)
+                                      persistent_workers=True,
+                                      pin_memory=device != 'cpu',
+                                      pin_memory_device=device)
 
         dev_dataset = self.get_dataset(args, 'dev')
         dev_loss_evaluator = self.get_loss(args, 'dev')
@@ -110,7 +113,9 @@ class TrainCommand(AbstractCommand):
                                     batch_size=batch_size,
                                     shuffle=False,
                                     num_workers=data_loading_workers,
-                                    persistent_workers=True)
+                                    persistent_workers=True,
+                                    pin_memory=device != 'cpu',
+                                    pin_memory_device=device)
 
         mp.set_start_method('spawn')  # 'spawn' or 'fork' or 'forkserver'
 
@@ -141,38 +146,6 @@ class TrainCommand(AbstractCommand):
 
         for epoch in range(epochs):
             # Iterate over the entire training dataset
-
-            # print(f'Evaluating Dev Set before {epoch=}')
-            # with torch.no_grad():
-            #     model.eval()  # Turn dropout off
-            #     for i, batch in enumerate(dev_dataloader):
-            #         # print(f"batch iter: {i=}")
-            #         inputs: torch.Tensor
-            #         labels: torch.Tensor
-            #         mask: torch.Tensor
-            #         batch_subject_indices: List[int]
-            #         batch_trial_indices: List[int]
-            #         data_time = time.time()
-            #         inputs, labels, mask, batch_subject_indices, batch_trial_indices = batch
-            #         assert(labels.shape == mask.shape)
-            #         data_time = time.time() - data_time
-            #         forward_time = time.time()
-            #         outputs = model(inputs, mask)
-            #         forward_time = time.time() - forward_time
-            #         loss_time = time.time()
-            #         dev_loss_evaluator(outputs,
-            #                            labels,
-            #                            mask,
-            #                            split='dev',
-            #                            log_reports_to_wandb=log_to_wandb,
-            #                            args=args)
-            #         loss_time = time.time() - loss_time
-            #         # logging.info(f"{data_time=}, {forward_time=}, {loss_time}")
-            #         if (i + 1) % 100 == 0 or i == len(dev_dataloader) - 1:
-            #             print('  - Batch ' + str(i + 1) + '/' + str(len(dev_dataloader)))
-            # # Report dev loss on this epoch
-            # logging.info('Dev Set Evaluation: ')
-            # dev_loss_evaluator.print_report(reset=True)
 
             print('Running Train Epoch ' + str(epoch))
             model.train()  # Turn dropout back on
@@ -226,6 +199,39 @@ class TrainCommand(AbstractCommand):
             logging.info(f"{epoch=} / {epochs}")
             logging.info('Training Set Evaluation: ')
             train_loss_evaluator.print_report(reset=True)
+
+            print(f'Evaluating Dev Set after {epoch=}')
+            with torch.no_grad():
+                model.eval()  # Turn dropout off
+                for i, batch in enumerate(dev_dataloader):
+                    # print(f"batch iter: {i=}")
+                    inputs: torch.Tensor
+                    labels: torch.Tensor
+                    mask: torch.Tensor
+                    batch_subject_indices: List[int]
+                    batch_trial_indices: List[int]
+                    data_time = time.time()
+                    inputs, labels, mask, batch_subject_indices, batch_trial_indices = batch
+                    assert(labels.shape == mask.shape)
+                    data_time = time.time() - data_time
+                    forward_time = time.time()
+                    outputs = model(inputs, mask)
+                    forward_time = time.time() - forward_time
+                    loss_time = time.time()
+                    dev_loss_evaluator(outputs,
+                                       labels,
+                                       mask,
+                                       split='dev',
+                                       log_reports_to_wandb=log_to_wandb,
+                                       args=args)
+                    loss_time = time.time() - loss_time
+                    # logging.info(f"{data_time=}, {forward_time=}, {loss_time}")
+                    if (i + 1) % 100 == 0 or i == len(dev_dataloader) - 1:
+                        print('  - Batch ' + str(i + 1) + '/' + str(len(dev_dataloader)))
+            # Report dev loss on this epoch
+            logging.info('Dev Set Evaluation: ')
+            dev_loss_evaluator.print_report(reset=True)
+
         return True
 
 # python3 main.py train --model feedforward --checkpoint-dir "../checkpoints/checkpoint-gait-ly-only" --hidden-dims 32 32 --batchnorm True --dropout True --dropout-prob 0.5 --activation tanh --learning-rate 0.01 --opt-type adagrad --dataset-home "../data" --epochs 500
