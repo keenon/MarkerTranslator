@@ -157,6 +157,9 @@ class TrainCommand(AbstractCommand):
                 batch_subject_indices: List[int]
                 batch_trial_indices: List[int]
                 inputs, labels, mask, batch_subject_indices, batch_trial_indices = batch
+                inputs = inputs.to(device)
+                labels = labels.to(device)
+                mask = mask.to(device)
                 assert (labels.shape == mask.shape)
 
                 # Clear the gradients
