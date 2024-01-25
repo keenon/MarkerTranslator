@@ -62,6 +62,12 @@ class AbstractCommand:
                                help='Use very short datasets to test without loading a bunch of data.')
         subparser.add_argument('--overfit', action='store_true',
                                help='Use a tiny dataset to check if the model can overfit the data.')
+        subparser.add_argument('--transformer-dim', type=int, nargs='+', default=128,
+                               help='Hidden dims on the classification transformer.')
+        subparser.add_argument('--transformer-nheads', type=int, nargs='+', default=4,
+                               help='Number of attention heads on the classification transformer.')
+        subparser.add_argument('--transformer-nlayers', type=int, nargs='+', default=6,
+                               help='Number of layers in the classification transformer.')
         pass
 
     def ensure_geometry(self, geometry: str):
@@ -112,6 +118,9 @@ class AbstractCommand:
         num_input_markers: int = args.num_input_markers
         num_output_markers: int = args.num_output_markers
         time_hidden_dim: int = args.time_hidden_dim
+        transformer_dim: int = args.transformer_dim
+        transformer_nheads: int = args.transformer_nheads
+        transformer_nlayers: int = args.transformer_nlayers
 
 
         if model_type == "regressor":
@@ -129,7 +138,7 @@ class AbstractCommand:
         else:
             assert (model_type == "classifier")
             num_classes = self.get_num_classes(args)
-            return TransformerSequenceClassifier(num_classes=num_classes, device=device)
+            return TransformerSequenceClassifier(num_classes=num_classes, device=device, nhead=transformer_nheads, num_encoder_layers=transformer_nlayers, dim_feedforward=transformer_dim, d_model=transformer_dim)
 
     def get_dataset(self, args, suffix: str):
         model_type: str = args.model_type
