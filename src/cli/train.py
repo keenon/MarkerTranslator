@@ -215,6 +215,9 @@ class TrainCommand(AbstractCommand):
                     batch_trial_indices: List[int]
                     data_time = time.time()
                     inputs, labels, mask, batch_subject_indices, batch_trial_indices = batch
+                    inputs = inputs.to(device)
+                    labels = labels.to(device)
+                    mask = mask.to(device)
                     assert(labels.shape == mask.shape)
                     data_time = time.time() - data_time
                     forward_time = time.time()
