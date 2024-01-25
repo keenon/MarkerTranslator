@@ -46,7 +46,7 @@ class AbstractCommand:
                                help='The (maximum) number of input markers the model can take.')
         subparser.add_argument('--num-output-markers', type=int, default=36,
                                help='The number of output markers the model produces.')
-        subparser.add_argument('--output-class-tsv', type=str, default='../data/class_map.tsv',
+        subparser.add_argument('--output-class-tsv', type=str, default='../class_map.tsv',
                                help='The map from file and marker name to class number.')
         subparser.add_argument('--dropout', action='store_true', default=True, help='Apply dropout?')
         subparser.add_argument('--dropout-prob', type=float, default=0.3, help='Dropout prob')
