@@ -86,6 +86,8 @@ class MarkerSupersetDataset(Dataset):
                 marker_name = parts[1]
                 self.skeleton_marker_name_to_index[TrainingMarkerLabel(marker_name, subject_index)] = classification_index
 
+        print(subject_file_names)
+
         self.max_input_markers = num_input_markers
 
         # Walk the folder path, and check for any with the ".b3d" extension (indicating that they are

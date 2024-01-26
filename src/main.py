@@ -5,11 +5,13 @@ import nimblephysics_libs.biomechanics
 from cli.visualize import VisualizeCommand
 from cli.train import TrainCommand
 from cli.create_marker_superset import CreateMarkerSuperset
+from cli.mock_stream import MockStreamCommand
+from cli.eval import EvalCommand
 import nimblephysics as nimble
 import logging
 
 def main():
-    commands = [VisualizeCommand(), TrainCommand(), CreateMarkerSuperset()]
+    commands = [VisualizeCommand(), TrainCommand(), CreateMarkerSuperset(), MockStreamCommand(), EvalCommand()]
 
     # Create an ArgumentParser object
     parser = argparse.ArgumentParser(

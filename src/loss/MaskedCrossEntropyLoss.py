@@ -89,8 +89,8 @@ class MaskedCrossEntropyLoss:
 
     def print_report(self, reset: bool = True):
         accuracy = 100.0 * self.correct_predictions / self.total_predictions if self.total_predictions > 0 else 0
-        # print(f"Confusion Matrix:")
-        # print(self.confusion)
+        print(f"Confusion Matrix:")
+        print(self.confusion)
         print(f"Current Accuracy: {accuracy:.2f}%")
         if reset:
             self.correct_predictions = 0

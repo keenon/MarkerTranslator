@@ -62,9 +62,9 @@ class AbstractCommand:
                                help='Use very short datasets to test without loading a bunch of data.')
         subparser.add_argument('--overfit', action='store_true',
                                help='Use a tiny dataset to check if the model can overfit the data.')
-        subparser.add_argument('--transformer-dim', type=int, default=128,
+        subparser.add_argument('--transformer-dim', type=int, default=256,
                                help='Hidden dims on the classification transformer.')
-        subparser.add_argument('--transformer-nheads', type=int, default=4,
+        subparser.add_argument('--transformer-nheads', type=int, default=8,
                                help='Number of attention heads on the classification transformer.')
         subparser.add_argument('--transformer-nlayers', type=int, default=6,
                                help='Number of layers in the classification transformer.')
@@ -186,7 +186,7 @@ class AbstractCommand:
             assert (model_type == "classifier")
             return MaskedCrossEntropyLoss(split, num_classes)
 
-    def load_latest_checkpoint(self, model, optimizer=None, checkpoint_dir="../checkpoints/lstm"):
+    def load_latest_checkpoint(self, model, optimizer=None, checkpoint_dir="../checkpoints/lstm", device='cpu'):
         if not os.path.exists(checkpoint_dir):
             print("Checkpoint directory does not exist!")
             return
@@ -207,7 +207,7 @@ class AbstractCommand:
 
         logging.info(f"{latest_checkpoint=}")
         # Load the checkpoint
-        checkpoint = torch.load(latest_checkpoint)
+        checkpoint = torch.load(latest_checkpoint, map_location=torch.device(device))
 
         # Load the model and optimizer states
         model.load_state_dict(checkpoint['model_state_dict'])
