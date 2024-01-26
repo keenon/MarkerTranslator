@@ -106,7 +106,7 @@ class MarkerSupersetDataset(Dataset):
             # Prepare the list of windows we can use for training
             for trial_index in range(subject.getNumTrials()):
                 trial_length = subject.getTrialLength(trial_index)
-                for window_start in range(max(trial_length - self.window_size - 1, 0)):
+                for window_start in range(0, max(trial_length - self.window_size - 1, 0), self.window_size):
                     assert window_start + self.window_size < trial_length
                     self.windows.append((i, trial_index, window_start))
 
