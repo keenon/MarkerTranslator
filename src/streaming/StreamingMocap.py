@@ -35,15 +35,18 @@ def slow_inference_process(
     model.eval()
 
     x: np.ndarray
-    points_to_trace_uuids: List[str]
+    trace_ids: np.ndarray
     while True:
         # Check for new data from the inference process
         if not processing_queue.empty():
-            x, points_to_trace_uuids = processing_queue.get()
-            x = torch.tensor(np.stack(x), device=device).unsqueeze(0)
+            x, trace_ids = processing_queue.get()
+            if x.size == 0:
+                result_queue.put((np.zeros((0, num_classes)), trace_ids))
+                continue
+            x = torch.tensor(x, device=device, dtype=torch.float32).unsqueeze(0)
             mask = torch.ones((1, x.shape[1]), device=device)
-            logits = model(x, mask).to('cpu').detach().numpy()
-            result_queue.put((logits, points_to_trace_uuids))
+            logits = model(x, mask).squeeze(axis=0).to('cpu').detach().numpy()
+            result_queue.put((logits, trace_ids))
         time.sleep(0.1)
 
 
@@ -57,6 +60,7 @@ class StreamingMocap:
     unknown_class_index: int
     window: int
     stride: float
+    stride_ms: int
     cut_off_time: float
     device: str
     processing_queue: multiprocessing.Queue
@@ -68,6 +72,8 @@ class StreamingMocap:
     dim_feedforward: int
     device: str
     dtype: torch.dtype
+    lab_streaming: nimble.biomechanics.StreamingMocapLab
+    markers: List[Tuple[nimble.dynamics.BodyNode, np.ndarray]]
 
     def __init__(self,
                  # Model paths
@@ -86,6 +92,8 @@ class StreamingMocap:
                  dtype: torch.dtype = torch.float32):
         self.traces = []
         self.osim_file = nimble.biomechanics.OpenSimParser.parseOsim(os.path.abspath(unscaled_generic_model_path), geometryFolder=os.path.abspath(geometry_path)+'/' if len(geometry_path) > 0 else '')
+        self.osim_file.skeleton.setPositionLowerLimits(np.full(self.osim_file.skeleton.getNumDofs(), -1000, dtype=np.float32))
+        self.osim_file.skeleton.setPositionUpperLimits(np.full(self.osim_file.skeleton.getNumDofs(), 1000, dtype=np.float32))
         self.weights_path = weights_path
         max_marker_index = max([int(key) for key in self.osim_file.markersMap.keys()])
         self.num_bodies = self.osim_file.skeleton.getNumBodyNodes()
@@ -93,6 +101,7 @@ class StreamingMocap:
         self.num_classes = max_marker_index + 2
         self.window = int(window)
         self.stride = float(stride)
+        self.stride_ms = int(stride * 1000)
         self.gui = None
         # Drop traces that haven't been updated in this many seconds
         self.cut_off_time = 0.5
@@ -105,6 +114,15 @@ class StreamingMocap:
         self.dim_feedforward = dim_feedforward
         self.device = device
         self.dtype = dtype
+        self.markers = []
+        for i in range(len(self.osim_file.markersMap)):
+            key = str(i + self.osim_file.skeleton.getNumBodyNodes())
+            assert key in self.osim_file.markersMap
+            self.markers.append(self.osim_file.markersMap[key])
+        # buffer_size = self.window * int(self.stride / 0.01) * 100
+        buffer_size = 50000
+        print('Buffer size: '+str(buffer_size))
+        self.lab_streaming = nimble.biomechanics.StreamingMocapLab(self.osim_file.skeleton, self.markers, bufferSize=buffer_size)
 
     def start_inference_process(self):
         self.inference_process = multiprocessing.Process(target=slow_inference_process,
@@ -124,80 +142,19 @@ class StreamingMocap:
     def start_gui(self):
         self.gui = nimble.gui_server.NimbleGUI()
         self.gui.serve(8080)
+        # self.gui.nativeAPI().createBox('Center', np.ones(3)*0.5, np.zeros(3), np.zeros(3))
+        self.lab_streaming.startGUIThread(self.gui.nativeAPI())
 
-    def run_ik_update(self):
-        # 1. Work out which traces are currently classified as anatomical markers
-        markers: Dict[str, np.ndarray] = {}
-        # print('Running IK update')
-        for i, trace in enumerate(self.traces):
-            if not trace.logits.nonzero():
-                # print(i, 'Zero logits trace')
-                continue
-            max_logit_index = np.argmax(trace.logits)
-            if max_logit_index < self.num_bodies:
-                # print(i, 'Body trace ', max_logit_index)
-                continue
-            if max_logit_index == self.unknown_class_index:
-                # print(i, 'Unknown trace')
-                continue
-            # print(i, 'Adding marker', max_logit_index, 'to IK')
-            markers[str(max_logit_index)] = trace.points[-1]
-        if len(markers) < 3:
-            return
-        # 2. Run IK
-        marker_list: List[Tuple[nimble.dynamics.BodyNode, np.ndarray]] = []
-        marker_positions: np.ndarray = np.zeros(len(markers) * 3, dtype=np.float32)
-        marker_weights: np.ndarray = np.ones(len(markers), dtype=np.float32)
-        marker_cursor = 0
-        for key in markers.keys():
-            if key not in self.osim_file.markersMap:
-                print('Marker', key, 'not found in osim file, which has ', self.osim_file.markersMap.keys(), 'markers')
-                continue
-            marker_list.append(self.osim_file.markersMap[key])
-            marker_positions[marker_cursor:marker_cursor + 3] = markers[key]
-            marker_cursor += 3
-        print('Running IK with markers', markers.keys())
-        self.osim_file.skeleton.fitMarkersToWorldPositions(marker_list, marker_positions, marker_weights, scaleBodies=True, maxStepCount=10, lineSearch=True)
-        # 3. Update the gui
-        if self.gui:
-            print('Rendering skeleton')
-            self.gui.nativeAPI().renderSkeleton(self.osim_file.skeleton)
+    def start_ik_thread(self):
+        self.lab_streaming.startSolverThread()
 
-    def observe_markers(self, markers: List[np.ndarray], now: float):
-        # 1. Trim the old traces
-        drop_traces = [trace for trace in self.traces if trace.time_since_last_point(now) >= self.cut_off_time]
-        for trace in drop_traces:
-            trace.drop_from_gui(self.gui)
-        self.traces = [trace for trace in self.traces if trace.time_since_last_point(now) < self.cut_off_time]
-        # 2. Assign markers to traces
-        # 2.0. Pre-compute the distances between all markers and traces
-        markers_assigned: List[bool] = [False for _ in markers]
-        dists: np.ndarray = np.zeros((len(self.traces), len(markers)), dtype=np.float32)
-        for i, trace in enumerate(self.traces):
-            projected_marker = trace.project_to(now)
-            for j, marker in enumerate(markers):
-                dists[i, j] = np.linalg.norm(projected_marker - marker)
-        # 2.1. Greedily assign the closest pair together, until we have no pairs left
-        for k in range(min(len(markers), len(self.traces))):
-            # Find the closest pair
-            i, j = np.unravel_index(np.argmin(dists), dists.shape)
-            dist = dists[i, j]
-            if dist > 0.1:
-                break
-            # Add the marker to the trace
-            markers_assigned[j] = True
-            self.traces[i].add_point(markers[j], now)
-            dists[i, :] = np.inf
-            dists[:, j] = np.inf
-        # 3. Add any remaining markers as new traces
-        for j in range(len(markers)):
-            if not markers_assigned[j]:
-                self.traces.append(Trace(markers[j], now, self.num_classes, self.num_bodies))
-        # 4. Render the traces on the gui
-        for trace in self.traces:
-            trace.render_on_gui(self.gui)
+    def connect_to_cortex(self, cortex_host: str, port: int):
+        self.lab_streaming.listenToCortex(cortex_host, port)
 
-    def run_model(self):
+    def observe_markers(self, markers: List[np.ndarray], now_ms: int):
+        self.lab_streaming.manuallyObserveMarkers(markers, now_ms)
+
+    def run_model(self, now_ms: int):
         """
         Run the model on the current traces, if possible, and add the classification logits to the traces estimates
         """
@@ -206,49 +163,31 @@ class StreamingMocap:
         if self.processing_queue.full():
             return
 
-        start_compute_time = time.time()
-
         if not self.result_queue.empty():
-            logits, points_to_trace_uuids = self.result_queue.get()
+            logits, trace_ids = self.result_queue.get()
+            self.lab_streaming.observeTraceLogits(logits, trace_ids)
 
-            # Add the last logits to the traces
-            trace_dict = {trace.uuid: trace for trace in self.traces}
-            for i in range(len(points_to_trace_uuids)):
-                trace_uuid = points_to_trace_uuids[i]
-                if trace_uuid not in trace_dict:
-                    continue
-                trace = trace_dict[trace_uuid]
-                # trace.logits = logits[0, i, :] * 0.5 + trace.logits * 0.5
-                trace.logits = logits[0, i, :]
+        input_points, trace_ids = self.lab_streaming.getTraceFeatures(self.window, self.stride_ms, now_ms)
 
-        # Get the traces that are long enough to run the model on
-        if len(self.traces) == 0:
-            return
-        expected_duration = self.window * self.stride
-        now: float = max([trace.last_time() for trace in self.traces])
-        start: float = min([trace.start_time() for trace in self.traces])
-        if now - start < expected_duration:
-            return
+        # self.gui.nativeAPI().deleteObjectsByPrefix('trace_')
 
-        input_points: List[np.ndarray] = []
-        points_to_trace_uuids: List[str] = []
+        lines: Dict[int, List[np.ndarray]] = {}
+        for i in range(input_points.shape[1]):
+            point = input_points[0:3, i]
+            trace_id = int(trace_ids[i])
+            if trace_id not in lines:
+                lines[trace_id] = []
+            lines[trace_id].append(point)
 
-        for i in range(len(self.traces)):
-            trace = self.traces[i]
-            points = trace.get_points_at_intervals(now, self.stride, self.window)
-            input_points.extend(points)
-            points_to_trace_uuids.extend([trace.uuid for _ in range(len(points))])
+        for trace_id, points in lines.items():
+            while len(points) < self.window:
+                points.append(points[-1])
+            self.gui.nativeAPI().createLine('trace_'+str(trace_id), points, [0.5, 0.5, 0.5, 1.0])
 
-        x = np.stack(input_points)
-        # Center the first 3 rows
-        x[:, :3] -= x[:, :3].mean(axis=0)
-        self.processing_queue.put((x, points_to_trace_uuids))
-        print('Time to compute inputs:', time.time() - start_compute_time)
+        self.processing_queue.put((input_points.transpose(), trace_ids.transpose()))
 
     def get_traces(self) -> List[Trace]:
         return self.traces
 
     def reset(self):
-        for trace in self.traces:
-            trace.drop_from_gui(self.gui)
-        self.traces = []
+        self.lab_streaming.reset()

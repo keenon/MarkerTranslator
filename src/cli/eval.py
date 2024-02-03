@@ -26,7 +26,7 @@ class EvalCommand(AbstractCommand):
         logging.info('## Loading datasets with skeletons:')
 
         dev_dataset = self.get_dataset(args, 'dev')
-        dev_dataset.pad_with_random_unknown_markers = True
+        dev_dataset.pad_with_random_unknown_markers = False
         dev_dataset.randomly_hide_markers_prob = 0.0
         dev_loss_evaluator = self.get_loss(args, 'dev')
         dev_dataloader = DataLoader(dev_dataset,

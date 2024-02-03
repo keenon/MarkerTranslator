@@ -6,12 +6,14 @@ from cli.visualize import VisualizeCommand
 from cli.train import TrainCommand
 from cli.create_marker_superset import CreateMarkerSuperset
 from cli.mock_stream import MockStreamCommand
+from cli.real_stream import RealStreamCommand
+from cli.record import RecordCommand
 from cli.eval import EvalCommand
 import nimblephysics as nimble
 import logging
 
 def main():
-    commands = [VisualizeCommand(), TrainCommand(), CreateMarkerSuperset(), MockStreamCommand(), EvalCommand()]
+    commands = [VisualizeCommand(), TrainCommand(), CreateMarkerSuperset(), MockStreamCommand(), EvalCommand(), RealStreamCommand(), RecordCommand()]
 
     # Create an ArgumentParser object
     parser = argparse.ArgumentParser(
