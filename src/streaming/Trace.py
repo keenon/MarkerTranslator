@@ -53,7 +53,7 @@ class Trace:
         evenly_spaced_times = np.linspace(start, end, windows)
 
         # Find the indices of the points that are closest to the evenly spaced times, if any
-        threshold = 0.01
+        threshold = 0.1
         points: List[np.ndarray] = []
 
         points_cursor = 0
@@ -94,6 +94,7 @@ class Trace:
         max_logit_index = np.argmax(self.logits)
         is_nothing = max_logit_index == len(self.logits) - 1
         is_anatomical = max_logit_index > self.num_bodies
-        color = [0.5, 0.5, 0.5, 1.0] if is_nothing else ([0., 0, 1.0, 1.0] if is_anatomical else [1.0, 0., 0., 1.0])
+        # color = [0.5, 0.5, 0.5, 1.0] if is_nothing else ([0., 0, 1.0, 1.0] if is_anatomical else [1.0, 0., 0., 1.0])
+        color = [0.5, 1.0, 0.5, 1.0]
         gui.nativeAPI().createLine(self.uuid, line_points, color)
 

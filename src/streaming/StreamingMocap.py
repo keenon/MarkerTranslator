@@ -46,7 +46,7 @@ def slow_inference_process(
             x = torch.tensor(x, device=device, dtype=torch.float32).unsqueeze(0)
             mask = torch.ones((1, x.shape[1]), device=device)
             logits = model(x, mask).squeeze(axis=0).to('cpu').detach().numpy()
-            result_queue.put((logits, trace_ids))
+            result_queue.put((logits.transpose(), trace_ids.transpose()))
         time.sleep(0.1)
 
 
@@ -74,6 +74,8 @@ class StreamingMocap:
     dtype: torch.dtype
     lab_streaming: nimble.biomechanics.StreamingMocapLab
     markers: List[Tuple[nimble.dynamics.BodyNode, np.ndarray]]
+
+    lines_in_gui: List[str]
 
     def __init__(self,
                  # Model paths
@@ -120,9 +122,9 @@ class StreamingMocap:
             assert key in self.osim_file.markersMap
             self.markers.append(self.osim_file.markersMap[key])
         # buffer_size = self.window * int(self.stride / 0.01) * 100
-        buffer_size = 50000
-        print('Buffer size: '+str(buffer_size))
-        self.lab_streaming = nimble.biomechanics.StreamingMocapLab(self.osim_file.skeleton, self.markers, bufferSize=buffer_size)
+        self.lab_streaming = nimble.biomechanics.StreamingMocapLab(self.osim_file.skeleton, self.markers)
+        self.lab_streaming.getMarkerTraces().setMaxJoinDistance(0.15)
+        self.lines_in_gui = []
 
     def start_inference_process(self):
         self.inference_process = multiprocessing.Process(target=slow_inference_process,
@@ -151,8 +153,9 @@ class StreamingMocap:
     def connect_to_cortex(self, cortex_host: str, port: int):
         self.lab_streaming.listenToCortex(cortex_host, port)
 
-    def observe_markers(self, markers: List[np.ndarray], now_ms: int):
-        self.lab_streaming.manuallyObserveMarkers(markers, now_ms)
+    def observe_markers(self, markers: List[np.ndarray], now: float):
+        self.lab_streaming.manuallyObserveMarkers(markers, int(now * 1000))
+        # self.lab_streaming.getMarkerTraces().renderTracesToGUI(self.gui.nativeAPI())
 
     def run_model(self, now_ms: int):
         """
@@ -167,23 +170,9 @@ class StreamingMocap:
             logits, trace_ids = self.result_queue.get()
             self.lab_streaming.observeTraceLogits(logits, trace_ids)
 
-        input_points, trace_ids = self.lab_streaming.getTraceFeatures(self.window, self.stride_ms, now_ms)
-
-        # self.gui.nativeAPI().deleteObjectsByPrefix('trace_')
-
-        lines: Dict[int, List[np.ndarray]] = {}
-        for i in range(input_points.shape[1]):
-            point = input_points[0:3, i]
-            trace_id = int(trace_ids[i])
-            if trace_id not in lines:
-                lines[trace_id] = []
-            lines[trace_id].append(point)
-
-        for trace_id, points in lines.items():
-            while len(points) < self.window:
-                points.append(points[-1])
-            self.gui.nativeAPI().createLine('trace_'+str(trace_id), points, [0.5, 0.5, 0.5, 1.0])
-
+        input_points, trace_ids = self.lab_streaming.getTraceFeatures(
+            numWindows=self.window,
+            windowDuration=int(self.stride * 1000))
         self.processing_queue.put((input_points.transpose(), trace_ids.transpose()))
 
     def get_traces(self) -> List[Trace]:

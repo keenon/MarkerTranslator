@@ -84,7 +84,7 @@ class MockStreamCommand(AbstractCommand):
             true_markers: List[Tuple[str, np.ndarray]] = frames[0].markerObservations
             marker_obs: List[np.ndarray] = [pair[1] for pair in true_markers]
 
-            streaming.observe_markers(marker_obs, now_ms)
+            streaming.observe_markers(marker_obs, now_ms / 1000.0)
 
             if playing:
                 frame += 1
