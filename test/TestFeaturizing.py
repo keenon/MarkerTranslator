@@ -1,85 +1,159 @@
+import os.path
 import unittest
 import torch
 import torch.optim as optim
 import numpy as np
+import nimblephysics as nimble
+from typing import List
 from src.loss.MaskedCrossEntropyLoss import MaskedCrossEntropyLoss
 
 
 class TestMaskedCrossEntropyLoss(unittest.TestCase):
+    @staticmethod
+    def featurize_truly_original(subject: nimble.biomechanics.SubjectOnDisk,
+                                 trial: int = 0,
+                                 start: int = 0,
+                                 window_size: int = 10,
+                                 stride: int = 5,
+                                 max_input_markers: int = 50):
+        frames: nimble.biomechanics.FrameList = subject.readFrames(trial,
+                                                                   start,
+                                                                   window_size // stride,
+                                                                   stride=stride,
+                                                                   includeSensorData=True,
+                                                                   includeProcessingPasses=False)
+        assert (len(frames) == window_size // stride)
 
-    def setUp(self):
-        self.num_classes = 3
-        self.loss_function = MaskedCrossEntropyLoss(split='test', num_classes=self.num_classes)
+        sequence_length = (window_size // stride) * max_input_markers
 
-    def test_initialization(self):
-        self.assertEqual(self.loss_function.split, 'test')
-        self.assertEqual(self.loss_function.correct_predictions, 0)
-        self.assertEqual(self.loss_function.total_predictions, 0)
-        self.assertTrue((self.loss_function.confusion == np.zeros((self.num_classes, self.num_classes))).all())
+        with torch.no_grad():
+            input: torch.Tensor = torch.zeros((sequence_length, 4), dtype=torch.float32)
+            mask: torch.Tensor = torch.zeros(sequence_length, dtype=torch.float32)
 
-    def test_call(self):
-        # Create dummy data
-        logits = torch.randn(10, 5, self.num_classes)  # Example size
-        target = torch.randint(0, self.num_classes, (10, 5))
-        mask = torch.randint(0, 2, (10, 5)).float()
+            marker_obs_avg = np.zeros((3,))
+            num_obs_markers = 0
+            for i in range(len(frames)):
+                marker_obs = frames[i].markerObservations[:max_input_markers]
+                for j in range(len(marker_obs)):
+                    # if marker_obs has any nan, skip it
+                    if np.isnan(marker_obs[j][1]).any():
+                        continue
+                    marker_obs_avg += marker_obs[j][1]
+                    num_obs_markers += 1
+            if num_obs_markers > 0:
+                marker_obs_avg /= num_obs_markers
 
-        # Call the loss function
-        loss = self.loss_function(logits, target, mask)
+            assert not np.isnan(marker_obs_avg).any()
 
-        # Check loss type and value
-        self.assertIsInstance(loss, torch.Tensor)
-        self.assertGreaterEqual(loss.item(), 0)
+            cursor = 0
+            for i in range(len(frames)):
+                marker_obs = frames[i].markerObservations[:max_input_markers]
+                for j in range(min(len(marker_obs), max_input_markers)):
+                    # if marker_obs has any nan, skip it
+                    if np.isnan(marker_obs[j][1]).any():
+                        continue
+                    input[cursor, :3] = torch.tensor(marker_obs[j][1] - marker_obs_avg, dtype=self.dtype)
+                    input[cursor, 3] = float(i)
+                    cursor += 1
+            if cursor == 0:
+                input[cursor, :3] = torch.randn(3, dtype=self.dtype)
+                input[cursor, 3] = 0.0
+                cursor = 1
+            mask[:cursor] = 1
 
-        # Check if internal state is updated correctly
-        self.assertGreaterEqual(self.loss_function.total_predictions, mask.sum().item())
-        self.assertGreaterEqual(self.loss_function.correct_predictions, 0)
+        # Assert there are no NaNs in input, label, or mask
+        assert not torch.any(torch.isnan(input))
+        assert not torch.any(torch.isnan(mask))
+
+        return input, mask
+
+    @staticmethod
+    def featurize_no_extra_padding(subject: nimble.biomechanics.SubjectOnDisk,
+                                   trial: int = 0,
+                                   start: int = 0,
+                                   window_size: int = 10,
+                                   stride: int = 5,
+                                   max_input_markers: int = 50):
+        frames: nimble.biomechanics.FrameList = subject.readFrames(trial,
+                                                                   start,
+                                                                   window_size // stride,
+                                                                   stride=stride,
+                                                                   includeSensorData=True,
+                                                                   includeProcessingPasses=False)
+        assert (len(frames) == window_size // stride)
+
+        input_vectors: List[np.ndarray] = []
+
+        with torch.no_grad():
+            marker_obs_avg = np.zeros((3,))
+            num_obs_markers = 0
+            for i in range(len(frames)):
+                marker_obs = frames[i].markerObservations[:max_input_markers]
+                for j in range(len(marker_obs)):
+                    # if marker_obs has any nan, skip it
+                    if np.isnan(marker_obs[j][1]).any():
+                        continue
+                    marker_obs_avg += marker_obs[j][1]
+                    num_obs_markers += 1
+            if num_obs_markers > 0:
+                marker_obs_avg /= num_obs_markers
+
+            assert not np.isnan(marker_obs_avg).any()
+
+            for i in range(len(frames)):
+                marker_obs = frames[i].markerObservations[:max_input_markers]
+                for j in range(min(len(marker_obs), max_input_markers)):
+                    # if marker_obs has any nan, skip it
+                    if np.isnan(marker_obs[j][1]).any():
+                        continue
+                    input_vec = np.zeros(4, dtype=np.float32)
+                    input_vec[:3] = marker_obs[j][1] - marker_obs_avg
+                    input_vec[3] = float(i)
+                    input_vectors.append(input_vec)
+
+        return np.stack(input_vectors)
+
+    @staticmethod
+    def featurize_native_accelerated(subject: nimble.biomechanics.SubjectOnDisk,
+                                     trial: int = 0,
+                                     start: int = 0,
+                                     window_size: int = 10,
+                                     stride: int = 5,
+                                     max_input_markers: int = 50):
+        frames: nimble.biomechanics.FrameList = subject.readFrames(trial,
+                                                                   start,
+                                                                   window_size,
+                                                                   stride=1,
+                                                                   includeSensorData=True,
+                                                                   includeProcessingPasses=False)
+        assert (len(frames) == window_size)
+        streaming: nimble.biomechanics.StreamingMarkerTraces = nimble.biomechanics.StreamingMarkerTraces(50, window_size // stride, stride, max_input_markers)
+
+        for i in range(len(frames)):
+            marker_obs = frames[i].markerObservations[:max_input_markers]
+            raw_marker_points: List[np.ndarray] = []
+            for j in range(len(marker_obs)):
+                # if marker_obs has any nan, skip it
+                if np.isnan(marker_obs[j][1]).any():
+                    continue
+                raw_marker_points.append(marker_obs[j][1])
+            streaming.observeMarkers(raw_marker_points, i * 10)
+
+        features, logits = streaming.getTraceFeatures(center=True)
+        return features.transpose()
+
+    def test_native_featurizing_equality(self):
+        subject_path = os.path.abspath('../data/Falisse_subject_1_raw.b3d')
+        subject: nimble.biomechanics.SubjectOnDisk = nimble.biomechanics.SubjectOnDisk(subject_path)
+
+        windows = 6
+        stride = 3
+
+        feat1 = self.featurize_no_extra_padding(subject, window_size=windows, stride=stride)
+        feat2 = self.featurize_native_accelerated(subject, window_size=windows, stride=stride)
 
         # Check confusion matrix
-        self.assertIsInstance(self.loss_function.confusion, np.ndarray)
-
-    def test_reset(self):
-        # Call the loss function with some dummy data to change internal state
-        logits = torch.randn(10, 5, self.num_classes)
-        target = torch.randint(0, self.num_classes, (10, 5))
-        mask = torch.randint(0, 2, (10, 5)).float()
-        _ = self.loss_function(logits, target, mask)
-
-        # Reset and test if internal state is reset
-        self.loss_function.print_report(reset=True)
-        self.assertEqual(self.loss_function.correct_predictions, 0)
-        self.assertEqual(self.loss_function.total_predictions, 0)
-        self.assertTrue((self.loss_function.confusion == np.zeros((self.num_classes, self.num_classes))).all())
-
-    def test_sgd_on_logits(self):
-        num_classes = 3
-        num_samples = 50  # Number of samples
-        num_steps = 500  # Number of SGD iterations
-        learning_rate = 0.5
-
-        # Initialize a tensor of logits
-        logits = torch.randn(num_samples, num_classes, requires_grad=True)
-
-        # Random target labels and mask
-        targets = torch.randint(0, num_classes, (num_samples,))
-        mask = torch.ones(num_samples)
-
-        # Loss function and optimizer
-        loss_function = MaskedCrossEntropyLoss(split='train', num_classes=num_classes)
-        optimizer = optim.SGD([logits], lr=learning_rate)
-
-        for _ in range(num_steps):
-            # Calculate loss
-            loss = loss_function(logits.unsqueeze(0), targets.unsqueeze(0), mask.unsqueeze(0))
-            loss_function.print_report(reset=True)
-
-            # Backward and optimize
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-
-        # Check if loss has decreased
-        final_loss = loss.item()
-        self.assertLess(final_loss, 1.0)  # Threshold depends on the specific task
+        np.testing.assert_allclose(feat1, feat2)
 
 
 if __name__ == '__main__':

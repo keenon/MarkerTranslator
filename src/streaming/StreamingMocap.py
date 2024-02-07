@@ -126,6 +126,22 @@ class StreamingMocap:
         self.lab_streaming.getMarkerTraces().setMaxJoinDistance(0.15)
         self.lines_in_gui = []
 
+    def set_anthropometrics(self, xml_path: str, data_path: str):
+        anthropometrics: nimble.biomechanics.Anthropometrics = nimble.biomechanics.Anthropometrics.loadFromFile(
+            xml_path)
+        cols = anthropometrics.getMetricNames()
+        gauss: nimble.math.MultivariateGaussian = nimble.math.MultivariateGaussian.loadFromCSV(
+            data_path,
+            cols,
+            0.001)  # mm -> m
+        # observed_values = {
+        #     'stature': self.heightM,
+        #     'weightkg': self.massKg * 0.01,
+        # }
+        # gauss = gauss.condition(observed_values)
+        anthropometrics.setDistribution(gauss)
+        self.lab_streaming.setAnthropometricPrior(anthropometrics)
+
     def start_inference_process(self):
         self.inference_process = multiprocessing.Process(target=slow_inference_process,
                                                          daemon=False,
@@ -155,9 +171,9 @@ class StreamingMocap:
 
     def observe_markers(self, markers: List[np.ndarray], now: float):
         self.lab_streaming.manuallyObserveMarkers(markers, int(now * 1000))
-        # self.lab_streaming.getMarkerTraces().renderTracesToGUI(self.gui.nativeAPI())
+        self.lab_streaming.getMarkerTraces().renderTracesToGUI(self.gui.nativeAPI())
 
-    def run_model(self, now_ms: int):
+    def run_model(self):
         """
         Run the model on the current traces, if possible, and add the classification logits to the traces estimates
         """
@@ -179,4 +195,4 @@ class StreamingMocap:
         return self.traces
 
     def reset(self):
-        self.lab_streaming.reset()
+        self.lab_streaming.reset(self.gui.nativeAPI())
