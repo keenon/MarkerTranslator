@@ -169,6 +169,11 @@ class MarkerSupersetDataset(Dataset):
 
             assert not np.isnan(marker_obs_avg).any()
 
+            rotation_about_y_axis = torch.rand((1,)).item() * 2 * np.pi
+            rotation_matrix = np.array([[np.cos(rotation_about_y_axis), 0, np.sin(rotation_about_y_axis)],
+                                        [0, 1, 0],
+                                        [-np.sin(rotation_about_y_axis), 0, np.cos(rotation_about_y_axis)]])
+
             cursor = 0
             for i in range(len(frames)):
                 marker_obs = frames[i].markerObservations[:self.max_input_markers]
@@ -178,7 +183,7 @@ class MarkerSupersetDataset(Dataset):
                     # if marker_obs has any nan, skip it
                     if np.isnan(marker_obs[j][1]).any():
                         continue
-                    input[cursor, :3] = torch.tensor(marker_obs[j][1] - marker_obs_avg, dtype=self.dtype)
+                    input[cursor, :3] = torch.tensor(rotation_matrix @ (marker_obs[j][1] - marker_obs_avg), dtype=self.dtype)
                     input[cursor, 3] = float(i)
                     marker_label = TrainingMarkerLabel(marker_obs[j][0], subject_index)
                     if marker_label in self.skeleton_marker_name_to_index:

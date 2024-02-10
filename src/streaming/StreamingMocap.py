@@ -94,8 +94,10 @@ class StreamingMocap:
                  dtype: torch.dtype = torch.float32):
         self.traces = []
         self.osim_file = nimble.biomechanics.OpenSimParser.parseOsim(os.path.abspath(unscaled_generic_model_path), geometryFolder=os.path.abspath(geometry_path)+'/' if len(geometry_path) > 0 else '')
-        self.osim_file.skeleton.setPositionLowerLimits(np.full(self.osim_file.skeleton.getNumDofs(), -1000, dtype=np.float32))
-        self.osim_file.skeleton.setPositionUpperLimits(np.full(self.osim_file.skeleton.getNumDofs(), 1000, dtype=np.float32))
+        # self.osim_file.skeleton.setPositionLowerLimits(np.full(self.osim_file.skeleton.getNumDofs(), -1000, dtype=np.float32))
+        # self.osim_file.skeleton.setPositionUpperLimits(np.full(self.osim_file.skeleton.getNumDofs(), 1000, dtype=np.float32))
+        self.osim_file.skeleton.autogroupSymmetricSuffixes()
+        self.osim_file.skeleton.autogroupSymmetricPrefixes()
         self.weights_path = weights_path
         max_marker_index = max([int(key) for key in self.osim_file.markersMap.keys()])
         self.num_bodies = self.osim_file.skeleton.getNumBodyNodes()
@@ -123,7 +125,8 @@ class StreamingMocap:
             self.markers.append(self.osim_file.markersMap[key])
         # buffer_size = self.window * int(self.stride / 0.01) * 100
         self.lab_streaming = nimble.biomechanics.StreamingMocapLab(self.osim_file.skeleton, self.markers)
-        self.lab_streaming.getMarkerTraces().setMaxJoinDistance(0.15)
+        self.lab_streaming.getMarkerTraces().setMaxJoinDistance(0.10)
+        self.lab_streaming.getMarkerTraces().setTraceTimeoutMillis(400)
         self.lines_in_gui = []
 
     def set_anthropometrics(self, xml_path: str, data_path: str):
