@@ -68,6 +68,9 @@ class AbstractCommand:
                                help='Number of attention heads on the classification transformer.')
         subparser.add_argument('--transformer-nlayers', type=int, default=10,
                                help='Number of layers in the classification transformer.')
+        # subparser.add_argument("--transformer-dim", type=int, help="The dimension of the transformer model.", default=1024)
+        # subparser.add_argument("--transformer-nheads", type=int, help="The dimension of the transformer model.", default=32)
+        # subparser.add_argument("--transformer-nlayers", type=int, help="The dimension of the transformer model.", default=8)
         pass
 
     def ensure_geometry(self, geometry: str):

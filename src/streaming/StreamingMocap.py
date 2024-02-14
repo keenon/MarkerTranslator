@@ -125,8 +125,8 @@ class StreamingMocap:
             self.markers.append(self.osim_file.markersMap[key])
         # buffer_size = self.window * int(self.stride / 0.01) * 100
         self.lab_streaming = nimble.biomechanics.StreamingMocapLab(self.osim_file.skeleton, self.markers)
-        self.lab_streaming.getMarkerTraces().setMaxJoinDistance(0.10)
-        self.lab_streaming.getMarkerTraces().setTraceTimeoutMillis(400)
+        self.lab_streaming.getMarkerTraces().setMaxJoinDistance(0.12)
+        self.lab_streaming.getMarkerTraces().setTraceTimeoutMillis(600)
         self.lines_in_gui = []
 
     def set_anthropometrics(self, xml_path: str, data_path: str):
@@ -169,12 +169,11 @@ class StreamingMocap:
     def start_ik_thread(self):
         self.lab_streaming.startSolverThread()
 
-    def connect_to_cortex(self, cortex_host: str, port: int):
-        self.lab_streaming.listenToCortex(cortex_host, port)
+    def connect_to_cortex(self, cortex_host: str, cortex_multicast_port: int = 1001, cortex_requests_port: int = 1510):
+        self.lab_streaming.listenToCortex(cortex_host, cortex_multicast_port, cortex_requests_port)
 
-    def observe_markers(self, markers: List[np.ndarray], now: float):
-        self.lab_streaming.manuallyObserveMarkers(markers, int(now * 1000))
-        self.lab_streaming.getMarkerTraces().renderTracesToGUI(self.gui.nativeAPI())
+    def observe_markers(self, markers: List[np.ndarray], now: float, cop_torque_forces: List[np.ndarray]):
+        self.lab_streaming.manuallyObserveMarkers(markers, int(now * 1000), cop_torque_forces)
 
     def run_model(self):
         """

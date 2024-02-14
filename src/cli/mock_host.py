@@ -15,54 +15,34 @@ import threading
 import re
 
 
-class MockStreamCommand(AbstractCommand):
+class MockHostCommand(AbstractCommand):
     def __init__(self):
         super().__init__()
 
     def register_subcommand(self, subparsers: argparse._SubParsersAction):
-        subparser = subparsers.add_parser('mock-stream', help='Test the streaming model against markers from a B3D file.')
+        subparser = subparsers.add_parser('mock-host', help='Test the streaming model against markers from a B3D file.')
         self.register_standard_options(subparser)
         subparser.add_argument('--b3d_path', type=str, help='Path to the B3D file to test.', default='../data/dev/Carter2023_Formatted_No_Arm_P003_split5.b3d')
         subparser.add_argument('--tsv-path', type=str, help='Path to the TSV file to test.', default='')
         subparser.add_argument("--trial", type=int, help="Trial to visualize or process.", default=0)
         subparser.add_argument("--unscaled-generic-model", type=str, help="The path to the unscaled generic OpenSim model with the anatomical markerset.", default='../markerset.osim')
         subparser.add_argument("--geometry-path", type=str, help="The path to the Geometry/ folder.", default='../data/Geometry/')
-        subparser.add_argument("--anthro-xml", type=str, help="The path to the anthropometrics XML file.", default='../data/ANSUR_metrics.xml')
-        subparser.add_argument("--anthro-data", type=str, help="The path to the anthropometrics data file.", default='../data/ANSUR_II_BOTH_Public.csv')
         subparser.add_argument("--model-weights", type=str, help="The path to the model weights file.", default='../checkpoints/classifier_pretrained/classifier/epoch_2_batch_8230.pt')
-        # subparser.add_argument("--model-weights", type=str, help="The path to the model weights file.", default='../checkpoints/big_model_pretrained/epoch_6_batch_8230.pt')
 
     def run(self, args: argparse.Namespace):
         """
         Iterate over all *.b3d files in a directory hierarchy,
         compute file hash, and move to train or dev directories.
         """
-        if 'command' in args and args.command != 'mock-stream':
+        if 'command' in args and args.command != 'mock-host':
             return False
 
         b3d_path = os.path.abspath(args.b3d_path)
         tsv_path = args.tsv_path
-        unscaled_generic_model_path = args.unscaled_generic_model
-        weights_path = args.model_weights
-        geometry_path = args.geometry_path
-        transformer_dim: int = args.transformer_dim
-        transformer_nheads: int = args.transformer_nheads
-        transformer_nlayers: int = args.transformer_nlayers
-        anthro_xml: str = os.path.abspath(args.anthro_xml)
-        anthro_data: str = os.path.abspath(args.anthro_data)
-
-        print('Loading model...')
-        print('Transformers: d_model='+str(transformer_dim)+', nhead='+str(transformer_nheads)+', num_layers='+str(transformer_nlayers)+', dim_feedforward='+str(transformer_dim))
-
-        streaming = StreamingMocap(unscaled_generic_model_path, geometry_path, weights_path, d_model=transformer_dim, nhead=transformer_nheads, num_transformer_layers=transformer_nlayers, dim_feedforward=transformer_dim)
-        streaming.set_anthropometrics(anthro_xml, anthro_data)
-        streaming.start_gui()
-        streaming.start_inference_process()
-        streaming.start_ik_thread()
 
         markers = []
-        cop_torque_forces = []
         timestamps = []
+        cop_torque_forces = []
         timestep = 0.01
 
         # Create an instance of the dataset
@@ -77,7 +57,7 @@ class MockStreamCommand(AbstractCommand):
                     remaining_line_parts = line_parts[1:]
                     marker_obs: List[np.ndarray] = []
                     for i in range(0, len(remaining_line_parts) // 3):
-                        marker_obs.append(np.array([float(remaining_line_parts[i*3]), float(remaining_line_parts[i*3+2]), float(remaining_line_parts[i*3+1])]) * 0.001)
+                        marker_obs.append(np.array([float(remaining_line_parts[i*3]), float(remaining_line_parts[i*3+1]), float(remaining_line_parts[i*3+2])]))
                     markers.append(marker_obs)
                     timestamps.append(int(line_parts[0]) / 1000.0)
                     cop_torque_forces.append([])
@@ -94,59 +74,46 @@ class MockStreamCommand(AbstractCommand):
                                                                        includeProcessingPasses=False)
             for i, f in enumerate(frames):
                 true_markers: List[Tuple[str, np.ndarray]] = f.markerObservations
+                marker_obs: List[np.ndarray] = [pair[1] for pair in true_markers]
+                marker_obs_cortex: List[np.ndarray] = []
                 frame_cop_torque_forces: List[np.ndarray] = []
                 for plate in range(len(frames[i].rawForcePlateForces)):
                     cop = frames[i].rawForcePlateCenterOfPressures[plate]
                     torque = frames[i].rawForcePlateTorques[plate]
                     forces = frames[i].rawForcePlateForces[plate]
-                    frame_cop_torque_forces.append(np.array([cop[0], cop[1], cop[2], torque[0], torque[1], torque[2], forces[0], forces[1], forces[2]]))
+                    cop_torque_force = np.expand_dims(np.array([cop[0] * 1000.0, cop[2] * 1000.0, cop[1] * 1000.0, torque[0], torque[2], torque[1], forces[0], forces[2], forces[1]]), axis=0)
+                    frame_cop_torque_forces.append(cop_torque_force)
                 cop_torque_forces.append(frame_cop_torque_forces)
-                marker_obs: List[np.ndarray] = [pair[1] for pair in true_markers]
-                markers.append(marker_obs)
+                for marker in marker_obs:
+                    marker_obs_cortex.append(np.array([marker[0], marker[2], marker[1]]) * 1000.0)
+                markers.append(marker_obs_cortex)
                 timestamps.append(i * subject.getTrialTimestep(trial))
         print('Loaded '+str(len(markers))+' timesteps from file.')
 
-        frame: int = 0
-        playing: bool = True
+        # first_frame: nimble.biomechanics.Frame = \
+        #     subject.readFrames(trial, 0, 1, includeSensorData=True, includeProcessingPasses=False)[0]
+        # marker_names: List[str] = [pair[0] for pair in first_frame.markerObservations]
+        # num_force_plates: int = len(first_frame.rawForcePlateForces)
 
-        ticker: nimble.realtime.Ticker = nimble.realtime.Ticker(timestep)
+        # Create the server
+        server = nimble.biomechanics.CortexStreaming('127.0.0.1')
 
-        def inference_thread():
-            nonlocal streaming
-            nonlocal playing
+        marker_names = [str(i) for i in range(len(markers[i]))]
+        marker_poses = markers[i]
+        force_plate_cop_torque_forces = cop_torque_forces[0]
+        server.mockServerSetData(marker_names, marker_poses, force_plate_cop_torque_forces)
 
-            while True:
-                if playing:
-                    streaming.run_model()
-                    time.sleep(0.5)
+        server.startMockServer()
 
-        inference_thread = threading.Thread(target=inference_thread)
-        inference_thread.start()
+        while True:
+            for i in range(len(markers)):
+                # Send the frame
+                marker_names = [str(i) for i in range(len(markers[i]))]
+                marker_poses = markers[i]
+                force_plate_cop_torque_forces = cop_torque_forces[i]
+                # print(marker_poses)
+                server.mockServerSetData(marker_names, marker_poses, force_plate_cop_torque_forces)
+                server.mockServerSendFrameMulticast()
 
-        def on_tick(now_ms: int):
-            nonlocal frame
-            nonlocal playing
-            nonlocal markers
-
-            streaming.observe_markers(markers[frame], timestamps[frame], cop_torque_forces[frame])
-
-            if playing:
-                frame += 1
-                if frame >= len(markers):
-                    streaming.reset()
-                    frame = 0
-                    print('Resetting')
-
-        ticker.registerTickListener(on_tick)
-        if len(markers) > 0:
-            ticker.start()
-
-        # time_ms = 0
-        # timestep_millis = int(subject.getTrialTimestep(0) * 1000)
-        # while True:
-        #     on_tick(time_ms)
-        #     time_ms += timestep_millis
-        #     time.sleep(timestep_millis / 1000.0)
-
-        streaming.gui.blockWhileServing()
-
+                # Wait for the next frame
+                time.sleep(timestep)

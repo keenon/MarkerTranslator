@@ -9,11 +9,12 @@ from cli.mock_stream import MockStreamCommand
 from cli.real_stream import RealStreamCommand
 from cli.record import RecordCommand
 from cli.eval import EvalCommand
+from cli.mock_host import MockHostCommand
 import nimblephysics as nimble
 import logging
 
 def main():
-    commands = [VisualizeCommand(), TrainCommand(), CreateMarkerSuperset(), MockStreamCommand(), EvalCommand(), RealStreamCommand(), RecordCommand()]
+    commands = [VisualizeCommand(), TrainCommand(), CreateMarkerSuperset(), MockStreamCommand(), EvalCommand(), RealStreamCommand(), RecordCommand(), MockHostCommand()]
 
     # Create an ArgumentParser object
     parser = argparse.ArgumentParser(
